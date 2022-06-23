@@ -240,6 +240,14 @@ struct TenarySearchTree {
             return res;
         }
 
+        int isChoose = random(0, 5);
+        if(root->EOS && isChoose == 0) {
+            buffer[pos] = root->data;
+            buffer[++pos] = '\0';
+            string res = string(buffer);
+            return res;
+        }
+
         Node* nextNode;
 
         while(1) {
@@ -288,6 +296,7 @@ struct TenarySearchTree {
         string res = randomWord(root, buffer);
 
         cout << res << '\n';
+        
         // vector <string> listWord;
 
         // const int numWord = 4;
