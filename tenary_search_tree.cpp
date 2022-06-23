@@ -183,7 +183,7 @@ struct TenarySearchTree {
 
     // to fill my current word (suggest to fill)
     vector <string> fillCurrentWord(Node* root, string pattern) {
-        char buffer[1001];
+        char buffer[105];
  
         vector<string> res;
      
@@ -223,7 +223,92 @@ struct TenarySearchTree {
     void viewListHistoryWord() {
         for(auto i : listHistoryWord) cout << i << '\n';
     }
-    
+
+    long long random(int L, int R) {
+        long long t = RAND_MAX + 1;
+
+        return L + (t * t * t * rand() + t * t * rand() + t * rand() + rand()) % (R - L + 1);
+    }
+
+    string randomWord(Node* root, char* buffer, int pos = 0) {
+        if(!root) return "";
+
+        if(!root->left && !root->right && !root->middle) {
+            buffer[pos] = root->data;
+            buffer[++pos] = '\0';
+            string res = string(buffer);
+            return res;
+        }
+
+        Node* nextNode;
+
+        while(1) {
+            int curRand = random(1, 3);
+
+            nextNode = root;
+
+            if(curRand == 1) nextNode = root->left;
+            else {
+                if(curRand == 2) nextNode = root->middle;
+                else nextNode = root->right;
+            }
+
+            if(nextNode) {
+                break;
+            }
+        }
+
+        string res = "";
+        buffer[pos] = root->data;
+        if(nextNode == root->left) {
+            res = randomWord(nextNode, buffer, pos);
+        }
+        else {
+            if(nextNode == root->right) {
+                res = randomWord(nextNode, buffer, pos);
+            }
+            else {
+                res = randomWord(nextNode, buffer, pos + 1);
+            }
+        }
+
+        if(res == "") {
+            if(root->EOS) {
+                buffer[++pos] = '\0';
+                res = string(buffer);
+                return res;
+            }
+        }
+        return res;
+    }
+
+    void quizGame() {
+        char buffer[105];
+
+        string res = randomWord(root, buffer);
+
+        cout << res << '\n';
+        // vector <string> listWord;
+
+        // const int numWord = 4;
+
+        // while(listWord.size() < numWord) {
+        //     char* buffer[]
+        //     string S = randomWord(root);
+
+        //     bool isOccur = false;
+        //     for(auto i : listWord) {
+        //         if(S == i) isOccur = true;
+        //     }
+
+        //     if(!isOccur && S != "") listWord.push_back(S), cnt++;
+        // }
+
+        // for(auto i: listWord) {
+        //     cout << i << ' ';
+        // }
+    }   
+
     // to travese all my tree
     void traverseTSTuntil(Node* root , char *buffer , int depth = 0 )
     {
@@ -272,24 +357,30 @@ void selectData() {
 
 int main()
 {
-    // if(fopen("Data.inp", "r"))
-    //     freopen("Data.inp", "r", stdin), freopen("Data.out", "w", stdout);
+    if(fopen("Data.inp", "r"))
+        freopen("Data.inp", "r", stdin), freopen("Data.out", "w", stdout);
 
-    // selectData();
+    srand(time(0));
 
-    // myKeywordTree.remove(myKeywordTree.root, "do");
+    selectData();
 
-    // myKeywordTree.reset(myKeywordTree.root);
+    myKeywordTree.quizGame();
 
-    // myKeywordTree.traverseTST(myKeywordTree.root);
+    exit(0);
 
-    // myKeywordTree.edit(myKeywordTree.root, "go", "di nao");
+    myKeywordTree.remove(myKeywordTree.root, "do");
 
-    // cout << endl << endl;
+    myKeywordTree.reset(myKeywordTree.root);
 
-    // vector <string> res;
-    // res = myKeywordTree.searchDefinition(myKeywordTree.root, "go");
-    // res = myKeywordTree.autoComplete(myKeywordTree.root, "de");
+    myKeywordTree.traverseTST(myKeywordTree.root);
 
-    // for(auto i : res) cout << i << '\n';
+    myKeywordTree.edit(myKeywordTree.root, "go", "di nao");
+
+    cout << endl << endl;
+
+    vector <string> res;
+    res = myKeywordTree.searchDefinition(myKeywordTree.root, "go");
+    res = myKeywordTree.autoComplete(myKeywordTree.root, "de");
+
+    for(auto i : res) cout << i << '\n';
 }
