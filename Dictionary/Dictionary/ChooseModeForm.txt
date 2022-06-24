@@ -1,0 +1,19 @@
+Picture.Picture1 {
+    Position = (210, 200);
+    Size = (278.94, 419);
+
+    Renderer {
+        Texture = "Assets/Img/z2434078923008_214e77d6ecebd2c945bda179a19b522e.jpg" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Picture.Picture2 {
+    Position = (640, 200);
+    Size = (312, 419.975);
+
+    Renderer {
+        Texture = "Assets/Img/z2434082536062_8556f50292ddb06d3eed28a640ae45f4.jpg" Smooth;
+        TransparentTexture = false;
+    }
+}

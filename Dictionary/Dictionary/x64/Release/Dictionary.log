@@ -1,7 +1,7 @@
-﻿  Source.cpp
-  Generating code
-  4 of 4 functions (100.0%) were compiled.
-    3 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Release\Dictionary.exe
+﻿Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual void __cdecl tgui::BackendGuiSFML::mainLoop(class tgui::Color)" (__imp_?mainLoop@BackendGuiSFML@tgui@@UEAAXVColor@2@@Z)
+Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl tgui::SFML_GRAPHICS::Gui::~Gui(void)" (__imp_??1Gui@SFML_GRAPHICS@tgui@@UEAA@XZ)
+Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::SFML_GRAPHICS::Gui::Gui(class sf::RenderWindow &)" (__imp_??0Gui@SFML_GRAPHICS@tgui@@QEAA@AEAVRenderWindow@sf@@@Z)
+Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@tgui@@QEAA@EEEE@Z)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: __cdecl sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QEAA@EEEE@Z)
+D:\Project_CS163\Dictionary\x64\Release\Dictionary.exe : fatal error LNK1120: 4 unresolved externals

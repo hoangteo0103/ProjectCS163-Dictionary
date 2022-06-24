@@ -1,0 +1,72 @@
+Picture.Picture1 {
+    Position = (60, 60);
+    Size = (232, 179.91);
+
+    Renderer {
+        Texture = "Assets/Img/Logo.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+EditBox.EditBox1 {
+    Position = (360, 60);
+    Size = (620, 62);
+    TextSize = 30;
+
+    Renderer {
+        CaretColor = rgb(145, 180, 190);
+        Padding = (14, 4, 14, 4);
+        SelectedTextBackgroundColor = rgb(190, 225, 235);
+        SelectedTextColor = rgb(150, 150, 150);
+        TextColor = rgb(100, 100, 100);
+        Texture = "themes/BabyBlue.png" Part(103, 40, 72, 48) Middle(24, 0, 24, 48) Smooth;
+        TextureDisabled = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+ListBox.ListBox1 {
+    ItemHeight = 50;
+    Items = [History, Favourite, Game];
+    MaximumItems = 0;
+    Position = (60, 290);
+    Size = (230.345, 472);
+    TextAlignment = Center;
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = rgb(210, 210, 210);
+        BorderColor = White;
+        Borders = (2, 2, 2, 2);
+        SelectedBackgroundColor = rgb(190, 225, 235);
+        SelectedTextColor = rgb(150, 150, 150);
+        TextColor = rgb(100, 100, 100);
+        TextureBackground = "Assets/Img/z2434078923008_214e77d6ecebd2c945bda179a19b522e.jpg" Smooth;
+
+        Scrollbar {
+            TextureArrowDown = "themes/BabyBlue.png" Part(20, 2, 16, 16) Smooth;
+            TextureArrowUp = "themes/BabyBlue.png" Part(2, 2, 16, 16) Smooth;
+            TextureThumb = "themes/BabyBlue.png" Part(414, 2, 16, 32) Smooth;
+            TextureTrack = "themes/BabyBlue.png" Part(432, 2, 16, 32) Smooth;
+        }
+    }
+}
+
+Picture.Picture2 {
+    Position = (1030, 60);
+    Size = (52, 42);
+
+    Renderer {
+        Texture = "Assets/Img/SearchIcon.svg" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Group.Group1 {
+    Position = (420, 240);
+    Size = (720, 460);
+
+    Renderer {
+    }
+}
