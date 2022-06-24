@@ -11,7 +11,9 @@ void updateTextSize(tgui::BackendGui& gui)
 
 void UserClicked(tgui::BackendGui& gui)
 {
-    runMenu(gui);
+    TenarySearchTree tree ;
+    tree.selectData("Assets/Data/OCHO.txt");
+    runMenu(gui , tree);
 }
 
 void loadWidgetsMode(tgui::BackendGui& gui)
@@ -26,6 +28,7 @@ bool runChooseMode(BackendGui& gui)
 {
     try
     {
+
         loadWidgetsMode(gui);
         return true;
     }

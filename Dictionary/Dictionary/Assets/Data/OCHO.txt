@@ -1,0 +1,2 @@
+hoang : dep trai
+tuanviet : ocho

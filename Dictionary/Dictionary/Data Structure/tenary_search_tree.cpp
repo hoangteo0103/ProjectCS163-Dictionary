@@ -329,6 +329,9 @@ struct TenarySearchTree {
 
 // to select data from file
 void selectData() {
+    if (fopen("Data/EnglishToVietnamese.txt", "r"))
+        freopen("Data/EnglishToVietnamese.txt", "r", stdin);
+
     string myWord;
     while(getline(cin, myWord)) {
         string keyWord = "", definition = "";
@@ -351,8 +354,7 @@ void selectData() {
 
 int main()
 {
-    if(fopen("Data/EnglishToVietnamese.txt", "r"))
-        freopen("Data/EnglishToVietnamese.txt", "r", stdin);
+    
 
     SetConsoleOutputCP(1251);
     srand(time(0));
