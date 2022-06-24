@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include<windows.h>
 
 using namespace std;
 
@@ -296,26 +297,6 @@ struct TenarySearchTree {
         string res = randomWord(root, buffer);
 
         cout << res << '\n';
-        
-        // vector <string> listWord;
-
-        // const int numWord = 4;
-
-        // while(listWord.size() < numWord) {
-        //     char* buffer[]
-        //     string S = randomWord(root);
-
-        //     bool isOccur = false;
-        //     for(auto i : listWord) {
-        //         if(S == i) isOccur = true;
-        //     }
-
-        //     if(!isOccur && S != "") listWord.push_back(S), cnt++;
-        // }
-
-        // for(auto i: listWord) {
-        //     cout << i << ' ';
-        // }
     }   
 
     // to travese all my tree
@@ -353,25 +334,31 @@ void selectData() {
         string keyWord = "", definition = "";
 
         int i = 0;
-        while(i < myWord.size() && myWord[i] != ':') keyWord += myWord[i++];
+        while(i < myWord.size() - 1) {
+            if(myWord[i] == ' ' && myWord[i + 1] == ':') break;
+            keyWord += myWord[i++];
+        }
 
-        i++;
+        i += 2;
         while(i < myWord.size() && myWord[i] == ' ') i++;
 
         while(i < myWord.size()) definition += myWord[i++];
 
         myKeywordTree.insert(myKeywordTree.root, keyWord, definition);
+        cout << keyWord << ' ' << definition << endl;
     }
 }
 
 int main()
 {
-    if(fopen("Data.inp", "r"))
-        freopen("Data.inp", "r", stdin), freopen("Data.out", "w", stdout);
+    if(fopen("Data/EnglishToVietnamese.txt", "r"))
+        freopen("Data/EnglishToVietnamese.txt", "r", stdin);
 
+    SetConsoleOutputCP(1251);
     srand(time(0));
 
     selectData();
+    exit(0);
 
     myKeywordTree.quizGame();
 
