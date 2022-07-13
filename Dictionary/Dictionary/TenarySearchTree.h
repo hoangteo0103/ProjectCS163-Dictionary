@@ -335,12 +335,12 @@ struct TenarySearchTree {
             vector <string> definitionList;
 
             int i = 0;
-            while (i < myWord.size()) {
-                if (i + 2 < myWord.size() && myWord[i] == ' ' && myWord[i + 1] == ':' && myWord[i + 2] == ' ') break;
+            while (i < myWord.size() - 2) {
+                if (myWord[i] == ' ' && myWord[i + 1] == ':' && myWord[i + 2] == ' ') break;
                 keyWord += myWord[i++];
             }
 
-            i += 3;
+            i += 4;
 
             string tmpStr = "";
             while (i < myWord.size()) {
@@ -353,8 +353,6 @@ struct TenarySearchTree {
                     tmpStr += myWord[i++];
                 }
             }
-
-            definitionList.push_back(tmpStr);
 
             for(auto definition: definitionList)
                 this->insert(this->root, keyWord, definition);
