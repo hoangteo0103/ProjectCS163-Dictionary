@@ -21,22 +21,22 @@ void onSearch(BackendGui& gui , TenarySearchTree tree)
 
 void onBlurred(BackendGui& gui)
 {
-    gui.get<Picture>("SearchButton")->setInheritedOpacity(0.6);
+    gui.get<Button>("SearchButton")->setInheritedOpacity(0.6);
 }
 
 void onUnBlurred(BackendGui& gui)
 {
-    gui.get<Picture>("SearchButton")->setInheritedOpacity(1);
+    gui.get<Button>("SearchButton")->setInheritedOpacity(1);
 }
 
 void loadWidgetsMenu(tgui::BackendGui& gui, TenarySearchTree& tree)
 {
     gui.removeAllWidgets();
-    gui.loadWidgetsFromFile("ImageForm.txt");
+    gui.loadWidgetsFromFile("Assets/Form/MenuForm/MenuForm.txt");
     //gui.get<ListBox>("Navigation")->onItemSelect(&onNavSelected, ref(gui) ); 
-    gui.get<Picture>("SearchButton")->onClick(&onSearch, ref(gui) , tree);
-    gui.get<Picture>("SearchButton")->onMouseEnter(&onBlurred, ref(gui));
-    gui.get<Picture>("SearchButton")->onMouseLeave(&onUnBlurred, ref(gui));
+    gui.get<Button>("SearchButton")->onClick(&onSearch, ref(gui) , tree);
+    gui.get<Button>("SearchButton")->onMouseEnter(&onBlurred, ref(gui));
+    gui.get<Button>("SearchButton")->onMouseLeave(&onUnBlurred, ref(gui));
 
 }
 bool runMenu(BackendGui& gui , TenarySearchTree& tree) {
@@ -44,9 +44,9 @@ bool runMenu(BackendGui& gui , TenarySearchTree& tree) {
     {
         loadWidgetsMenu(gui,tree);
         auto groupWordDefinition = tgui::Group::create();
-       // groupWordDefinition->loadWidgetsFromFile("WordDefinitionForm.txt"); 
-        gui.add(groupWordDefinition , "groupWordDefinition");
-      // groupWordDefinition->setVisible(true);
+        //groupWordDefinition->loadWidgetsFromFile("WordDefinitionForm.txt"); 
+        //gui.add(groupWordDefinition , "groupWordDefinition");
+        // groupWordDefinition->setVisible(true);
         return true;
     }
     catch (const tgui::Exception& e)

@@ -52,9 +52,10 @@ Picture.Picture8 {
     }
 }
 
-EditBox.EditBox1 {
+EditBox.SearchBar {
     Position = (290, 60);
     Size = (710, 64.4694);
+    Text = 122222222222222222222;
     TextSize = 13;
 
     Renderer {
@@ -110,4 +111,34 @@ Button.Button {
     Size = (180, 38.5263);
     Text = Button;
     TextSize = 13;
+}
+
+Button.SearchButton {
+    Position = (930, 70);
+    Size = (46, 38.9231);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "../../Img/SearchIcon.svg" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
 }
