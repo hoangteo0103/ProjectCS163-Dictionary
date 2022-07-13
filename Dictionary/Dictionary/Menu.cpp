@@ -15,8 +15,12 @@ void onSearch(BackendGui& gui , TenarySearchTree tree)
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
 
     vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
-    tgui::String gg = ans[0]; 
-    //gui.get<Group>("groupWordDefinition")->get<Panel>("Panel1")->get<TextArea>("Definition")->setText(gg);
+    if (ans.size())
+    {
+        for (string t : ans)
+            cout << t << endl; 
+    }
+    gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
 }
 
 void onBlurred(BackendGui& gui)
@@ -44,9 +48,9 @@ bool runMenu(BackendGui& gui , TenarySearchTree& tree) {
     {
         loadWidgetsMenu(gui,tree);
         auto groupWordDefinition = tgui::Group::create();
-        //groupWordDefinition->loadWidgetsFromFile("WordDefinitionForm.txt"); 
-        //gui.add(groupWordDefinition , "groupWordDefinition");
-        // groupWordDefinition->setVisible(true);
+        groupWordDefinition->loadWidgetsFromFile("Assets/Form/WordDefinitionForm/WordDefinitionForm.txt"); 
+        gui.add(groupWordDefinition , "groupWordDefinition");
+        groupWordDefinition->setVisible(true);
         return true;
     }
     catch (const tgui::Exception& e)

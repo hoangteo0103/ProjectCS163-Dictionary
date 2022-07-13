@@ -1,0 +1,119 @@
+Picture.Picture8 {
+    Position = (300, 180);
+    Size = (813, 599);
+
+    Renderer {
+        Texture = "border2-removebg-preview.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Button.Word {
+    Position = (330, 200);
+    Size = (220, 22);
+    TextSize = 20;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = None;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Panel.Panel1 {
+    Position = (330, 270);
+    Size = (760, 330);
+
+    Renderer {
+        BackgroundColor = transparent;
+        BorderColor = black;
+        TextureBackground = None;
+    }
+
+    TextArea.TextArea1 {
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (130, 40);
+        Size = (558, 65);
+        Text = "";
+        TextSize = 13;
+
+        Renderer {
+            BackgroundColor = transparent;
+            BorderColor = black;
+            Borders = (1, 1, 1, 1);
+            CaretColor = black;
+            CaretWidth = 1;
+            DefaultTextColor = #A0A0A0;
+            Padding = (0, 0, 0, 0);
+            SelectedTextBackgroundColor = #006EFF;
+            SelectedTextColor = white;
+            TextColor = #3C3C3C;
+            TextureBackground = None;
+        }
+    }
+
+    TextArea.TextArea2 {
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (130, 130);
+        Size = (558, 65);
+        Text = "";
+        TextSize = 13;
+
+        Renderer {
+            BackgroundColor = transparent;
+            BorderColor = black;
+            Borders = (1, 1, 1, 1);
+            CaretColor = black;
+            CaretWidth = 1;
+            DefaultTextColor = #A0A0A0;
+            Padding = (0, 0, 0, 0);
+            SelectedTextBackgroundColor = #006EFF;
+            SelectedTextColor = white;
+            TextColor = #3C3C3C;
+            TextureBackground = None;
+        }
+    }
+
+    TextArea.TextArea3 {
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (130, 220);
+        Size = (558, 65);
+        Text = "";
+        TextSize = 13;
+
+        Renderer {
+            BackgroundColor = transparent;
+            BorderColor = black;
+            Borders = (1, 1, 1, 1);
+            CaretColor = black;
+            CaretWidth = 1;
+            DefaultTextColor = #A0A0A0;
+            Padding = (0, 0, 0, 0);
+            SelectedTextBackgroundColor = #006EFF;
+            SelectedTextColor = white;
+            TextColor = #3C3C3C;
+            TextureBackground = None;
+        }
+    }
+}
