@@ -182,7 +182,7 @@ struct TenarySearchTree {
 
     // to fill my current word (suggest to fill)
     vector <string> fillCurrentWord(Node* root, string pattern) {
-        char buffer[105];
+        char buffer[1005];
 
         vector<string> res;
 
@@ -320,7 +320,7 @@ struct TenarySearchTree {
     // to traverse all my tree
     void traverseTST(Node* root)
     {
-        char buffer[100];
+        char buffer[1000];
         traverseTSTuntil(root, buffer);
     }
 
