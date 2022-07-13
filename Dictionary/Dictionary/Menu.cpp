@@ -15,12 +15,11 @@ void onSearch(BackendGui& gui , TenarySearchTree tree)
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
 
     vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
-    if (ans.size())
-    {
-        for (string t : ans)
-            cout << t << endl; 
-    }
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
+    for (int i = 0; i < ans.size(); i++)
+    {
+
+    }
 }
 
 void onBlurred(BackendGui& gui)

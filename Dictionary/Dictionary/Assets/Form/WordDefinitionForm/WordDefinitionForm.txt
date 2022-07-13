@@ -59,7 +59,7 @@ Panel.Panel1 {
         Renderer {
             BackgroundColor = transparent;
             BorderColor = black;
-            Borders = (1, 1, 1, 1);
+            Borders = (0, 0, 0, 0);
             CaretColor = black;
             CaretWidth = 1;
             DefaultTextColor = #A0A0A0;
@@ -82,7 +82,7 @@ Panel.Panel1 {
         Renderer {
             BackgroundColor = transparent;
             BorderColor = black;
-            Borders = (1, 1, 1, 1);
+            Borders = (0, 0, 0, 0);
             CaretColor = black;
             CaretWidth = 1;
             DefaultTextColor = #A0A0A0;
@@ -105,7 +105,7 @@ Panel.Panel1 {
         Renderer {
             BackgroundColor = transparent;
             BorderColor = black;
-            Borders = (1, 1, 1, 1);
+            Borders = (0, 0, 0, 0);
             CaretColor = black;
             CaretWidth = 1;
             DefaultTextColor = #A0A0A0;

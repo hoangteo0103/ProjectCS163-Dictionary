@@ -336,11 +336,11 @@ struct TenarySearchTree {
 
             int i = 0;
             while (i < myWord.size() - 2) {
-                if (myWord[i] == ' ' && myWord[i + 1] == ':' && myWord[i + 2] == ' ') break;
+                if (myWord[i] == ' ' && myWord[i + 1] == ' ' && myWord[i + 2] == ':' && myWord[i + 3] == ' ' && myWord[i + 4]==' ') break;
                 keyWord += myWord[i++];
             }
 
-            i += 4;
+            i += 5;
 
             string tmpStr = "";
             while (i < myWord.size()) {

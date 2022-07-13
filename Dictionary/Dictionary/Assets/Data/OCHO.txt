@@ -6,3 +6,5 @@ abacus  :  ban tinh; (kien truc); dau cot;
 abaddon  :  am ti; dia nguc; con quy;
 abaft  :  (hang hai) o phia sau banh lai; gan phia banh lai; (hang hai) sau;
 abalone  :  bao ngu;
+abandon  :  tu bo; bo roi;
+abandoned  :  bi bo roi; bi ruong bo; phong dang;
