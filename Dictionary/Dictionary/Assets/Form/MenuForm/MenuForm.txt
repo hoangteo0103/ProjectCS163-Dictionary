@@ -1,3 +1,13 @@
+Picture.Picture2 {
+    Position = (0, -23.3351);
+    Size = (1210, 920);
+
+    Renderer {
+        Texture = "background.jpg" Smooth;
+        TransparentTexture = false;
+    }
+}
+
 Picture.Picture1 {
     Position = (70, 20);
     Size = (172, 144.698);
@@ -10,7 +20,7 @@ Picture.Picture1 {
 
 Picture.Picture7 {
     Position = (60, 180);
-    Size = (198, 429);
+    Size = (208, 599);
 
     Renderer {
         Texture = "border1-removebg-preview.png" Smooth;
@@ -20,7 +30,7 @@ Picture.Picture7 {
 
 Picture.Picture8 {
     Position = (300, 180);
-    Size = (693, 429);
+    Size = (813, 599);
 
     Renderer {
         Texture = "border2-removebg-preview.png" Smooth;
@@ -29,8 +39,8 @@ Picture.Picture8 {
 }
 
 EditBox.SearchBar {
-    Position = (290, 80);
-    Size = (710, 64.4694);
+    Position = (300, 80);
+    Size = (810, 64.4694);
     TextSize = 30;
 
     Renderer {
@@ -44,7 +54,7 @@ EditBox.SearchBar {
         CaretColor = black;
         CaretWidth = 1;
         DefaultTextColor = black;
-        Padding = (60, 0, 50, 0);
+        Padding = (80, 0, 50, 0);
         SelectedTextBackgroundColor = #006EFF;
         SelectedTextColor = white;
         TextColor = #3C3C3C;
@@ -57,8 +67,8 @@ EditBox.SearchBar {
 }
 
 Button.ButtonHistory {
-    Position = (70, 210);
-    Size = (180, 38.5263);
+    Position = (70, 230);
+    Size = (180, 68.5263);
     Text = History;
     TextSize = 13;
 
@@ -88,8 +98,8 @@ Button.ButtonHistory {
 }
 
 Button.ButtonFavourite {
-    Position = (70, 260);
-    Size = (180, 38.5263);
+    Position = (70, 360);
+    Size = (180, 68.5263);
     Text = Favourite;
     TextSize = 13;
 
@@ -119,8 +129,8 @@ Button.ButtonFavourite {
 }
 
 Button.ButtonGame {
-    Position = (70, 330);
-    Size = (180, 38.5263);
+    Position = (70, 500);
+    Size = (180, 68.5263);
     Text = Game;
     TextSize = 13;
 
@@ -150,8 +160,8 @@ Button.ButtonGame {
 }
 
 Button.Button {
-    Position = (70, 390);
-    Size = (180, 38.5263);
+    Position = (70, 620);
+    Size = (180, 68.5263);
     Text = Button;
     TextSize = 13;
 
@@ -181,7 +191,7 @@ Button.Button {
 }
 
 Button.SearchButton {
-    Position = (930, 90);
+    Position = (1030, 90);
     Size = (46, 38.9231);
     TextSize = 13;
 

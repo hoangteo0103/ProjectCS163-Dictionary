@@ -3,7 +3,7 @@
 
 void run()
 {
-	RenderWindow window{ {1300, 800}, "Dictionary" };
+	RenderWindow window{ {1150, 800}, "Dictionary" };
 	Gui gui{ window };
 	TenarySearchTree tree;
 	tree.selectData("Assets/Data/OCHO.txt");
