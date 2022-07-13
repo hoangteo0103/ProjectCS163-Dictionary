@@ -1,11 +1,13 @@
 #include "Core.h"
-#include "Mode.h"
+#include "Menu.h"
 
 void run()
 {
 	RenderWindow window{ {1300, 800}, "Dictionary" };
 	Gui gui{ window };
-	if (runChooseMode(gui))
+	TenarySearchTree tree;
+	tree.selectData("Assets/Data/OCHO.txt");
+	if (runMenu(gui, tree))
 		//cerr << 1 << '\n';
 		gui.mainLoop();
 }

@@ -153,7 +153,6 @@
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Mode.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="TenarySearchTree.cpp" />
     <ClCompile Include="WordDefinitionGroup.cpp" />
@@ -161,7 +160,6 @@
   <ItemGroup>
     <ClInclude Include="Core.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="Mode.h" />
     <ClInclude Include="TenarySearchTree.h" />
     <ClInclude Include="WordDefinitionGroup.h" />
   </ItemGroup>

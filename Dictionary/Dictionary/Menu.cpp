@@ -13,26 +13,40 @@ void onNavSelected(BackendGui& gui , tgui::String selectedItem)
 void onSearch(BackendGui& gui , TenarySearchTree tree)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
+
     vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
     tgui::String gg = ans[0]; 
-    gui.get<Group>("groupWordDefinition")->get<Panel>("Panel1")->get<TextArea>("Definition")->setText(gg);
+    //gui.get<Group>("groupWordDefinition")->get<Panel>("Panel1")->get<TextArea>("Definition")->setText(gg);
+}
+
+void onBlurred(BackendGui& gui)
+{
+    gui.get<Picture>("SearchButton")->setInheritedOpacity(0.6);
+}
+
+void onUnBlurred(BackendGui& gui)
+{
+    gui.get<Picture>("SearchButton")->setInheritedOpacity(1);
 }
 
 void loadWidgetsMenu(tgui::BackendGui& gui, TenarySearchTree& tree)
 {
     gui.removeAllWidgets();
-    gui.loadWidgetsFromFile("MenuForm.txt");
-    gui.get<ListBox>("Navigation")->onItemSelect(&onNavSelected, ref(gui) ); 
+    gui.loadWidgetsFromFile("ImageForm.txt");
+    //gui.get<ListBox>("Navigation")->onItemSelect(&onNavSelected, ref(gui) ); 
     gui.get<Picture>("SearchButton")->onClick(&onSearch, ref(gui) , tree);
+    gui.get<Picture>("SearchButton")->onMouseEnter(&onBlurred, ref(gui));
+    gui.get<Picture>("SearchButton")->onMouseLeave(&onUnBlurred, ref(gui));
+
 }
 bool runMenu(BackendGui& gui , TenarySearchTree& tree) {
     try
     {
         loadWidgetsMenu(gui,tree);
         auto groupWordDefinition = tgui::Group::create();
-        groupWordDefinition->loadWidgetsFromFile("WordDefinitionForm.txt"); 
+       // groupWordDefinition->loadWidgetsFromFile("WordDefinitionForm.txt"); 
         gui.add(groupWordDefinition , "groupWordDefinition");
-        groupWordDefinition->setVisible(true);
+      // groupWordDefinition->setVisible(true);
         return true;
     }
     catch (const tgui::Exception& e)

@@ -1,0 +1,113 @@
+Renderer.1 {
+    BackgroundColor = #F5F5F5;
+    BackgroundColorDisabled = #E6E6E6;
+    BackgroundColorDown = #EBEBEB;
+    BackgroundColorHover = white;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "text-box-removebg-preview.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
+Picture.Picture1 {
+    Position = (70, 20);
+    Size = (172, 144.698);
+
+    Renderer {
+        Texture = "Voi_Con-removebg-preview.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Picture.Picture7 {
+    Position = (60, 180);
+    Size = (198, 429);
+
+    Renderer {
+        Texture = "border1-removebg-preview.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Picture.Picture8 {
+    Position = (300, 180);
+    Size = (693, 429);
+
+    Renderer {
+        Texture = "border2-removebg-preview.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+EditBox.EditBox1 {
+    Position = (290, 60);
+    Size = (710, 64.4694);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        CaretColor = black;
+        CaretWidth = 1;
+        DefaultTextColor = #A0A0A0;
+        Padding = (0, 0, 0, 0);
+        SelectedTextBackgroundColor = #006EFF;
+        SelectedTextColor = white;
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        Texture = "search-box-removebg-preview.png" Smooth;
+        TextureDisabled = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.ButtonHistory {
+    Position = (70, 210);
+    Renderer = &1;
+    Size = (180, 38.5263);
+    Text = History;
+    TextSize = 13;
+}
+
+Button.ButtonFavourite {
+    Position = (70, 260);
+    Renderer = &1;
+    Size = (180, 38.5263);
+    Text = Favourite;
+    TextSize = 13;
+}
+
+Button.ButtonGame {
+    Position = (70, 330);
+    Renderer = &1;
+    Size = (180, 38.5263);
+    Text = Game;
+    TextSize = 13;
+}
+
+Button.Button {
+    Position = (70, 390);
+    Renderer = &1;
+    Size = (180, 38.5263);
+    Text = Button;
+    TextSize = 13;
+}
