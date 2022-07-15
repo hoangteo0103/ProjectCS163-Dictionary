@@ -44,5 +44,11 @@
     <ClInclude Include="TenarySearchTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TexturePack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreloadedData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

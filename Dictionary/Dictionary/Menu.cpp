@@ -1,24 +1,26 @@
 #include "Menu.h"
 #include <iostream>
+#include "TexturePack.h"
+#include "PreloadedData.h"
 using namespace std;
 
-void onNavSelected(BackendGui& gui , tgui::String selectedItem)
+void startup(BackendGui& gui)
 {
-    if (selectedItem == "Home")
-    {
-        gui.get<Group>("groupWordDefinition")->setVisible(true);
-    }
+    gui.get<Group>("groupHome")->setVisible(true);
+    gui.get<Group>("groupWordDefinition")->setVisible(false);
 }
 
 void onSearch(BackendGui& gui , TenarySearchTree tree)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
-
     vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
+    if (ans.empty()) return;
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word)   ;
     for (int i = 0; i < ans.size(); i++)
     {
-
+        string id = "TextArea" + to_string(i + 1 );
+        gui.get<Group>("groupWordDefinition")->get<Panel>("PanelWord")->get<TextArea>(id)->setText(ans[i]);
     }
 }
 
@@ -32,25 +34,51 @@ void onUnBlurred(BackendGui& gui)
     gui.get<Button>("SearchButton")->setInheritedOpacity(1);
 }
 
-void loadWidgetsMenu(tgui::BackendGui& gui, TenarySearchTree& tree)
+void onLike(BackendGui& gui)
 {
-    gui.removeAllWidgets();
+    string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
+    bool ok = isFavourited[word];
+    if (ok == false)
+    {
+        gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(onClickedFavouriteButtonTexture);
+        isFavourited[word] = true;
+    }
+    else
+    {
+        gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(onUnClickedFavouriteButtonTexture);
+        isFavourited[word] = false;
+    }
+}
+
+void loadWidgetsMenu(tgui::BackendGui& gui)
+{
     gui.loadWidgetsFromFile("Assets/Form/MenuForm/MenuForm.txt");
-    //gui.get<ListBox>("Navigation")->onItemSelect(&onNavSelected, ref(gui) ); 
-    gui.get<Button>("SearchButton")->onClick(&onSearch, ref(gui) , tree);
+
+    auto groupWordDefinition = tgui::Group::create();
+    groupWordDefinition->loadWidgetsFromFile("Assets/Form/WordDefinitionForm/WordDefinitionForm.txt");
+    gui.add(groupWordDefinition, "groupWordDefinition");
+
+
+    auto groupHome = tgui::Group::create();
+    groupHome->loadWidgetsFromFile("Assets/Form/HomeForm/HomeForm.txt");
+    gui.add(groupHome, "groupHome");
+}
+
+void setAction(BackendGui& gui, TenarySearchTree& tree)
+{
+    gui.get<Button>("SearchButton")->onClick(&onSearch, ref(gui), tree);
     gui.get<Button>("SearchButton")->onMouseEnter(&onBlurred, ref(gui));
     gui.get<Button>("SearchButton")->onMouseLeave(&onUnBlurred, ref(gui));
-
+    gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui));
 }
 bool runMenu(BackendGui& gui , TenarySearchTree& tree) {
     try
     {
-        loadWidgetsMenu(gui,tree);
-        auto groupWordDefinition = tgui::Group::create();
-        groupWordDefinition->loadWidgetsFromFile("Assets/Form/WordDefinitionForm/WordDefinitionForm.txt"); 
-        gui.add(groupWordDefinition , "groupWordDefinition");
-        groupWordDefinition->setVisible(true);
-        return true;
+        loadTexture();
+        loadWidgetsMenu(gui);
+        startup(gui);
+        setAction(gui, tree);
+        return true;    
     }
     catch (const tgui::Exception& e)
     {

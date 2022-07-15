@@ -38,7 +38,7 @@ Button.Word {
     }
 }
 
-Panel.Panel1 {
+Panel.PanelWord {
     Position = (330, 270);
     Size = (760, 330);
 
@@ -52,9 +52,10 @@ Panel.Panel1 {
         HorizontalScrollbarPolicy = Never;
         MaximumCharacters = 0;
         Position = (130, 40);
+        ReadOnly = true;
         Size = (558, 65);
         Text = "";
-        TextSize = 13;
+        TextSize = 25;
 
         Renderer {
             BackgroundColor = transparent;
@@ -75,9 +76,10 @@ Panel.Panel1 {
         HorizontalScrollbarPolicy = Never;
         MaximumCharacters = 0;
         Position = (130, 130);
+        ReadOnly = true;
         Size = (558, 65);
         Text = "";
-        TextSize = 13;
+        TextSize = 25;
 
         Renderer {
             BackgroundColor = transparent;
@@ -98,9 +100,10 @@ Panel.Panel1 {
         HorizontalScrollbarPolicy = Never;
         MaximumCharacters = 0;
         Position = (130, 220);
+        ReadOnly = true;
         Size = (558, 65);
         Text = "";
-        TextSize = 13;
+        TextSize = 25;
 
         Renderer {
             BackgroundColor = transparent;
@@ -115,5 +118,35 @@ Panel.Panel1 {
             TextColor = #3C3C3C;
             TextureBackground = None;
         }
+    }
+}
+
+Button.LikeButton {
+    Position = (1040, 200);
+    Size = (40, 50);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = transparent;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "../../Img/star-solid.svg" Smooth;
+        TextureDisabled = None;
+        TextureDown = "../../Img/star-solid_clicked.svg" Smooth;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
     }
 }

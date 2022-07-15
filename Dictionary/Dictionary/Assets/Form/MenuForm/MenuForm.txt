@@ -67,7 +67,7 @@ EditBox.SearchBar {
 }
 
 Button.ButtonHistory {
-    Position = (70, 230);
+    Position = (70, 600);
     Size = (180, 68.5263);
     Text = History;
     TextSize = 13;
@@ -87,6 +87,7 @@ Button.ButtonHistory {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
+        TextStyle = Bold;
         Texture = "text-box.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
@@ -118,6 +119,7 @@ Button.ButtonFavourite {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
+        TextStyle = Bold;
         Texture = "text-box.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
@@ -149,6 +151,7 @@ Button.ButtonGame {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
+        TextStyle = Bold;
         Texture = "text-box.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
@@ -159,10 +162,10 @@ Button.ButtonGame {
     }
 }
 
-Button.Button {
-    Position = (70, 620);
+Button.button {
+    Position = (70, 240);
     Size = (180, 68.5263);
-    Text = Button;
+    Text = Home;
     TextSize = 13;
 
     Renderer {
@@ -180,6 +183,7 @@ Button.Button {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
+        TextStyle = Bold;
         Texture = "text-box.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;

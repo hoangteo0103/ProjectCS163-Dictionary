@@ -159,6 +159,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core.h" />
+    <ClInclude Include="PreloadedData.h" />
+    <ClInclude Include="TexturePack.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="TenarySearchTree.h" />
     <ClInclude Include="WordDefinitionGroup.h" />
