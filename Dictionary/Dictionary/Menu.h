@@ -1,8 +1,7 @@
 #pragma once
-#include <TGUI/TGUI.hpp>
-#include <TGUI/Backend/SFML-Graphics.hpp>
-#include "TenarySearchTree.h"
-using namespace sf;
-using namespace tgui;
+
+#include <iostream>
+#include "TexturePack.h"
+#include "PreloadedData.h"
 bool runMenu(BackendGui& gui ,TenarySearchTree& tree );
 

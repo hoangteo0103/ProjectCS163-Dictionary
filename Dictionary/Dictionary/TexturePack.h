@@ -5,11 +5,14 @@
 using namespace sf;
 using namespace tgui;
 
-tgui::Texture onClickedFavouriteButtonTexture , onUnClickedFavouriteButtonTexture;
 
+class {
+public : 
+	tgui::Texture onClickedFavouriteButtonTexture, onUnClickedFavouriteButtonTexture;
 
-void loadTexture()
-{
-	onClickedFavouriteButtonTexture.load("D:/Project_CS163/Dictionary/Dictionary/Assets/Img/star-solid_clicked.svg");
-	onUnClickedFavouriteButtonTexture.load("D:/Project_CS163/Dictionary/Dictionary/Assets/Img/star-solid.svg");
-}
+	void loadTexture()
+	{
+		onClickedFavouriteButtonTexture.load("D:/Project_CS163/Dictionary/Dictionary/Assets/Img/star-solid_clicked.svg");
+		onUnClickedFavouriteButtonTexture.load("D:/Project_CS163/Dictionary/Dictionary/Assets/Img/star-solid.svg");
+	}
+} texture;

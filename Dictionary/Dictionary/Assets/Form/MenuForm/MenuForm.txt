@@ -66,7 +66,7 @@ EditBox.SearchBar {
     }
 }
 
-Button.ButtonHistory {
+Button.HistoryButton {
     Position = (70, 600);
     Size = (180, 68.5263);
     Text = History;
@@ -98,7 +98,7 @@ Button.ButtonHistory {
     }
 }
 
-Button.ButtonFavourite {
+Button.FavouriteButton {
     Position = (70, 360);
     Size = (180, 68.5263);
     Text = Favourite;
@@ -130,7 +130,7 @@ Button.ButtonFavourite {
     }
 }
 
-Button.ButtonGame {
+Button.GameButton {
     Position = (70, 500);
     Size = (180, 68.5263);
     Text = Game;
@@ -162,7 +162,7 @@ Button.ButtonGame {
     }
 }
 
-Button.button {
+Button.HomeButton {
     Position = (70, 240);
     Size = (180, 68.5263);
     Text = Home;

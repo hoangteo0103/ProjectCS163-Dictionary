@@ -1,0 +1,27 @@
+Picture.Picture8 {
+    Position = (300, 180);
+    Size = (813, 599);
+
+    Renderer {
+        Texture = "border2-removebg-preview.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+ScrollablePanel.FavouriteWordListPanel {
+    ContentSize = (0, 0);
+    Position = (360, 220);
+    Size = (700, 500);
+
+    Renderer {
+        BackgroundColor = rgb(230, 230, 230);
+        TextureBackground = None;
+
+        Scrollbar {
+            TextureArrowDown = "themes/BabyBlue.png" Part(20, 2, 16, 16) Smooth;
+            TextureArrowUp = "themes/BabyBlue.png" Part(2, 2, 16, 16) Smooth;
+            TextureThumb = "themes/BabyBlue.png" Part(414, 2, 16, 32) Smooth;
+            TextureTrack = "themes/BabyBlue.png" Part(432, 2, 16, 32) Smooth;
+        }
+    }
+}

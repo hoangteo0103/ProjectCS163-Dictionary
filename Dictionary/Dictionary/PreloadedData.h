@@ -9,16 +9,19 @@
 using namespace sf;
 using namespace tgui;
 
-vector<string> favouriteList; 
-map<string, bool> isFavourited;
+class  {
+public :
+	map<string, bool> isFavourited;
 
-void loadFavouriteList()
-{
-	ifstream fin("D:/Project_CS163/Dictionary/Dictionary/Assets/FavouriteWord");
-	string word;
-	while (fin >> word)
+	void loadFavouriteList()
 	{
-		favouriteList.push_back(word);
-		isFavourited[word] = true;
+		ifstream fin("D:/Project_CS163/Dictionary/Dictionary/Assets/FavouriteWord");
+		string word;
+		while (fin >> word)
+		{
+			isFavourited[word] = true;
+		}
 	}
-}
+
+} favData;
+
