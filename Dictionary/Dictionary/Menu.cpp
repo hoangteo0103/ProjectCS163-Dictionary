@@ -7,7 +7,7 @@ void startup(BackendGui& gui)
     gui.get<Group>("groupFavourite")->setVisible(false);
 }
 
-void onSwitchForm(BackendGui& gui, int id)
+void onSwitchForm(BackendGui& gui, int id )
 {
 
     gui.get<Group>("groupHome")->setVisible(id == 1);
@@ -15,11 +15,8 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupWordDefinition")->setVisible(id == 5);
 }
 
-void onSearch(BackendGui& gui , TenarySearchTree tree)
+void onSwitchToDefinition(BackendGui& gui, string word , TenarySearchTree tree)
 {
-    string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
-    vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
-    if (ans.empty()) return;
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
     bool ok = favData.isFavourited[word];
     if (ok == false)
@@ -30,12 +27,21 @@ void onSearch(BackendGui& gui , TenarySearchTree tree)
     {
         gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(texture.onClickedFavouriteButtonTexture);
     }
+    onSwitchForm(gui, 5);
+    vector<string> ans = tree.searchDefinition(tree.root, word, 0);
     for (int i = 0; i < ans.size(); i++)
     {
-        string id = "TextArea" + to_string(i + 1 );
-        gui.get<Group>("groupWordDefinition")->get<Panel>("PanelWord")->get<TextArea>(id)->setText(ans[i]);
+        string index = "TextArea" + to_string(i + 1);
+        gui.get<Group>("groupWordDefinition")->get<TextArea>(index)->setText(ans[i]);
     }
-    onSwitchForm(gui, 5);
+}
+
+void onSearch(BackendGui& gui , TenarySearchTree tree)
+{
+    string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
+    vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
+    if (ans.empty()) return;
+    onSwitchToDefinition(gui, word , tree);
 }
 
 void onBlurred(BackendGui& gui)
@@ -48,7 +54,7 @@ void onUnBlurred(BackendGui& gui)
     gui.get<Button>("SearchButton")->setInheritedOpacity(1);
 }
 
-void onLike(BackendGui& gui)
+void onLike(BackendGui& gui, TenarySearchTree tree)
 {
     string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
     bool ok = favData.isFavourited[word];
@@ -74,6 +80,7 @@ void onLike(BackendGui& gui)
         dm->setPosition(0 + 150, 0 + index * 150);
         dm->setText(t.first);
         index++;
+        dm->onClick(&onSwitchToDefinition, ref(gui), t.first , tree);
         gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->add(dm);
     }
 }
@@ -97,12 +104,12 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
 
 }
 
-void setAction(BackendGui& gui, TenarySearchTree& tree) 
+void setAction(BackendGui& gui, TenarySearchTree tree) 
 {
     gui.get<Button>("SearchButton")->onClick(&onSearch, ref(gui), tree);
     gui.get<Button>("SearchButton")->onMouseEnter(&onBlurred, ref(gui));
     gui.get<Button>("SearchButton")->onMouseLeave(&onUnBlurred, ref(gui));
-    gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui));
+    gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui)  , tree);
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm,ref(gui), 1);
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm,ref(gui), 2);
 }
@@ -115,17 +122,6 @@ bool runMenu(BackendGui& gui , TenarySearchTree& tree) {
         loadWidgetsMenu(gui);
         startup(gui);
         setAction(gui, tree);
-        int index = 0;
-        for (auto t : favData.isFavourited)
-        {
-            auto dm = tgui::Button::create();
-            dm->setHeight(100);
-            dm->setWidth(100);
-            dm->setPosition(0 + 150, 0 + index * 150);
-            dm->setText(t.first);
-            index++;
-            gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->add(dm);
-        }
         return true;    
     }
     catch (const tgui::Exception& e)
