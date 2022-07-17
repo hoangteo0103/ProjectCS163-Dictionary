@@ -1,10 +1,12 @@
 #include "Menu.h"
 
+// Menu Form
 void startup(BackendGui& gui)
 {
     gui.get<Group>("groupHome")->setVisible(true);
     gui.get<Group>("groupWordDefinition")->setVisible(false);
     gui.get<Group>("groupFavourite")->setVisible(false);
+    gui.get<Group>("groupChooseLangague")->setVisible(false);
 }
 
 void onSwitchForm(BackendGui& gui, int id )
@@ -12,10 +14,12 @@ void onSwitchForm(BackendGui& gui, int id )
 
     gui.get<Group>("groupHome")->setVisible(id == 1);
     gui.get<Group>("groupFavourite")->setVisible(id == 2);
+    gui.get<Group>("groupChooseLangague")->setVisible(id == 3);
     gui.get<Group>("groupWordDefinition")->setVisible(id == 5);
 }
 
-void onSwitchToDefinition(BackendGui& gui, string word , TenarySearchTree tree)
+
+void onSwitchToDefinition(BackendGui& gui, string word, TenarySearchTree tree)
 {
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
     bool ok = favData.isFavourited[word];
@@ -36,12 +40,12 @@ void onSwitchToDefinition(BackendGui& gui, string word , TenarySearchTree tree)
     }
 }
 
-void onSearch(BackendGui& gui , TenarySearchTree tree)
+void onSearch(BackendGui& gui, TenarySearchTree tree)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
-    vector<string> ans =  tree.searchDefinition(tree.root , word , 0);
+    vector<string> ans = tree.searchDefinition(tree.root, word, 0);
     if (ans.empty()) return;
-    onSwitchToDefinition(gui, word , tree);
+    onSwitchToDefinition(gui, word, tree);
 }
 
 void onBlurred(BackendGui& gui)
@@ -53,6 +57,8 @@ void onUnBlurred(BackendGui& gui)
 {
     gui.get<Button>("SearchButton")->setInheritedOpacity(1);
 }
+
+// Word Definition Form
 
 void onLike(BackendGui& gui, TenarySearchTree tree)
 {
@@ -80,10 +86,18 @@ void onLike(BackendGui& gui, TenarySearchTree tree)
         dm->setPosition(0 + 150, 0 + index * 150);
         dm->setText(t.first);
         index++;
-        dm->onClick(&onSwitchToDefinition, ref(gui), t.first , tree);
+        dm->onClick(&onSwitchToDefinition, ref(gui), t.first, tree);
         gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->add(dm);
     }
 }
+
+
+
+void onSwitchToChooseLang(BackendGui& gui)
+{
+    onSwitchForm(gui, 3); 
+}
+
 
 void loadWidgetsMenu(tgui::BackendGui& gui)
 {
@@ -102,6 +116,10 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     groupFavourite->loadWidgetsFromFile("Assets/Form/FavouriteForm/FavouriteForm.txt");
     gui.add(groupFavourite, "groupFavourite");    
 
+    auto groupChooseLangague = tgui::Group::create();
+    groupChooseLangague->loadWidgetsFromFile("Assets/Form/ChooseLangagueForm/ChooseLangagueForm.txt");
+    gui.add(groupChooseLangague, "groupChooseLangague");
+
 }
 
 void setAction(BackendGui& gui, TenarySearchTree tree) 
@@ -112,6 +130,7 @@ void setAction(BackendGui& gui, TenarySearchTree tree)
     gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui)  , tree);
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm,ref(gui), 1);
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm,ref(gui), 2);
+    gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchToChooseLang, ref(gui));
 }
 
 

@@ -39,7 +39,7 @@ Picture.Picture8 {
 }
 
 EditBox.SearchBar {
-    Position = (300, 80);
+    Position = (280, 80);
     Size = (810, 64.4694);
     TextSize = 30;
 
@@ -195,8 +195,40 @@ Button.HomeButton {
 }
 
 Button.SearchButton {
-    Position = (1030, 90);
-    Size = (46, 38.9231);
+    Position = (1100, 90);
+    Size = (56, 47.3846);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        RoundedBorderRadius = 50;
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "../../Img/SearchIcon.svg" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.ChooseLangagueButton {
+    Position = (900, 85.5173);
+    Size = (158, 54.4828);
+    Text = EnToVN;
     TextSize = 13;
 
     Renderer {
@@ -214,7 +246,7 @@ Button.SearchButton {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "../../Img/SearchIcon.svg" Smooth;
+        Texture = "combobox-border.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
