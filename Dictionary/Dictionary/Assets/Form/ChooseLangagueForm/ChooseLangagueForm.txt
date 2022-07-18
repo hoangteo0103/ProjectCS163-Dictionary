@@ -22,12 +22,41 @@ Renderer.1 {
     TextureHover = None;
 }
 
+Button.Veil {
+    Size = (1150, 901.666);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BackgroundColorDisabled = transparent;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = transparent;
+        BorderColor = transparent;
+        BorderColorDisabled = transparent;
+        BorderColorDown = black;
+        BorderColorFocused = transparent;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = None;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
 ChildWindow.ChooseLangagueWindow {
     Position = (920, 0);
     Size = (230, 890);
     Title = "Choose a dictionary";
     TitleAlignment = Center;
-    TitleButtons = Close;
+    TitleButtons = None;
     TitleTextSize = 13;
 
     Renderer {
@@ -66,33 +95,10 @@ ChildWindow.ChooseLangagueWindow {
 
     Button.EnToVn {
         Position = (20, 20);
+        Renderer = &1;
         Size = (190, 42);
         Text = "English to Vietnamemese";
         TextSize = 13;
-
-        Renderer {
-            BackgroundColor = #F5F5F5;
-            BackgroundColorDisabled = #E6E6E6;
-            BackgroundColorDown = #EBEBEB;
-            BackgroundColorHover = white;
-            BorderColor = #3C3C3C;
-            BorderColorDisabled = #7D7D7D;
-            BorderColorDown = black;
-            BorderColorFocused = #1E1EB4;
-            BorderColorHover = black;
-            Borders = (1, 1, 1, 1);
-            TextColor = #3C3C3C;
-            TextColorDisabled = #7D7D7D;
-            TextColorDown = black;
-            TextColorHover = black;
-            Texture = None;
-            TextureDisabled = None;
-            TextureDown = None;
-            TextureDownFocused = None;
-            TextureDownHover = None;
-            TextureFocused = None;
-            TextureHover = None;
-        }
     }
 
     Button.VnToEn {
@@ -111,11 +117,11 @@ ChildWindow.ChooseLangagueWindow {
         TextSize = 13;
     }
 
-    Button.Emotion {
-        Position = (20, 320);
+    Button.Emotional {
+        Position = (20, 310);
         Renderer = &1;
         Size = (190, 42);
-        Text = Emotion;
+        Text = Emotional;
         TextSize = 13;
     }
 }

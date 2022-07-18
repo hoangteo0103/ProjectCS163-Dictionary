@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 using namespace std;
 struct Node {
     // data
@@ -325,12 +326,12 @@ struct TenarySearchTree {
     }
 
     void selectData(string filePath) {
-        if (fopen(filePath.c_str(), "r"))
-            freopen(filePath.c_str(), "r", stdin);
+        ifstream fin;
+        fin.open(filePath.c_str());
 
 
         string myWord;
-        while (getline(cin, myWord)) {
+        while (getline(fin, myWord)) {
             string keyWord = "";
             vector <string> definitionList;
 

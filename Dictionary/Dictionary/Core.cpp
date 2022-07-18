@@ -7,7 +7,7 @@ void run()
 	RenderWindow window{ {1150, 800}, "Dictionary" };
 	Gui gui{ window };
 	TenarySearchTree tree;
-	tree.selectData("Assets/Data/EntoVn.txt");
+	tree.selectData("Assets/Data/VnToEn.txt");
 	if (runMenu(gui, tree))
 		gui.mainLoop();
 	ofstream fout("D:/Project_CS163/Dictionary/Dictionary/Assets/FavouriteWord");

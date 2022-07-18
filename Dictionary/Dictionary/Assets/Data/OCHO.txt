@@ -1,11 +1,1 @@
-appetizing  :  lam cho an ngon mieng; ngon lanh;
-applaud  :  vo tay hoan nghenh; vo tay tan thuong; khen ngoi;
-applauder  :  nguoi vo tay; nguoi hay khen; nguoi tan thanh (mot chinh sach...);
-applause  :  tieng vo tay khen ngoi; su hoan nghenh; su tan thuong;
-apple  :  qua tao; (xem) adam; moi bat hoa;
-apple-brandy  :  ruou tao;
-apple-butter  :  nuoc xot tao; tuong tao;
-apple-cart  :  xe bo cho tao; lam hong ke hoach cua ai;
-apple-cheecked  :  co ma qua tao (tron va ung hong);
-apple-cheese  :  ba tao ep;
-apple-core  :  hach tao; loi tao;
+hoang  :  dep trai;
