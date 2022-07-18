@@ -1,6 +1,7 @@
 #include "Menu.h"
 
 // Menu Form
+unordered_set<string> History_list; 
 void startup(BackendGui& gui)
 {
     gui.get<Group>("groupHome")->setVisible(true);

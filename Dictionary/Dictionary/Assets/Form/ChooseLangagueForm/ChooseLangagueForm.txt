@@ -1,3 +1,27 @@
+Renderer.1 {
+    BackgroundColor = #F5F5F5;
+    BackgroundColorDisabled = #E6E6E6;
+    BackgroundColorDown = #EBEBEB;
+    BackgroundColorHover = white;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (1, 1, 1, 1);
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = None;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
 ChildWindow.ChooseLangagueWindow {
     Position = (920, 0);
     Size = (230, 890);
@@ -40,24 +64,58 @@ ChildWindow.ChooseLangagueWindow {
         }
     }
 
-    ListBox.LangagueList {
-        ItemHeight = 20;
-        MaximumItems = 0;
-        Size = (230, 0);
+    Button.EnToVn {
+        Position = (20, 20);
+        Size = (190, 42);
+        Text = "English to Vietnamemese";
         TextSize = 13;
 
         Renderer {
             BackgroundColor = #F5F5F5;
+            BackgroundColorDisabled = #E6E6E6;
+            BackgroundColorDown = #EBEBEB;
             BackgroundColorHover = white;
-            BorderColor = black;
+            BorderColor = #3C3C3C;
+            BorderColorDisabled = #7D7D7D;
+            BorderColorDown = black;
+            BorderColorFocused = #1E1EB4;
+            BorderColorHover = black;
             Borders = (1, 1, 1, 1);
-            Padding = (0, 0, 0, 0);
-            SelectedBackgroundColor = #006EFF;
-            SelectedBackgroundColorHover = #1E96FF;
-            SelectedTextColor = white;
             TextColor = #3C3C3C;
+            TextColorDisabled = #7D7D7D;
+            TextColorDown = black;
             TextColorHover = black;
-            TextureBackground = None;
+            Texture = None;
+            TextureDisabled = None;
+            TextureDown = None;
+            TextureDownFocused = None;
+            TextureDownHover = None;
+            TextureFocused = None;
+            TextureHover = None;
         }
+    }
+
+    Button.VnToEn {
+        Position = (20, 110);
+        Renderer = &1;
+        Size = (190, 42);
+        Text = "Vietnamese to English";
+        TextSize = 13;
+    }
+
+    Button.Slang {
+        Position = (20, 210);
+        Renderer = &1;
+        Size = (190, 42);
+        Text = "Slang in English";
+        TextSize = 13;
+    }
+
+    Button.Emotion {
+        Position = (20, 320);
+        Renderer = &1;
+        Size = (190, 42);
+        Text = Emotion;
+        TextSize = 13;
     }
 }
