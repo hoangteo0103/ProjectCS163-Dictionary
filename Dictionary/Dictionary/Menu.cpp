@@ -96,6 +96,13 @@ void onLike(BackendGui& gui, TenarySearchTree tree)
 void onSwitchToChooseLang(BackendGui& gui)
 {
     onSwitchForm(gui, 3); 
+    gui.get<Group>("groupChooseLangague")->removeAllWidgets();
+    gui.get<Group>("groupChooseLangague")->loadWidgetsFromFile("Assets/Form/ChooseLangagueForm/ChooseLangagueForm.txt");
+}
+
+void onSwithtoHome(BackendGui& gui)
+{
+    onSwitchForm(gui, 1);
 }
 
 
@@ -131,6 +138,7 @@ void setAction(BackendGui& gui, TenarySearchTree tree)
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm,ref(gui), 1);
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm,ref(gui), 2);
     gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchToChooseLang, ref(gui));
+    gui.get<Group>("groupChooseLangague")->get<ChildWindow>("ChooseLangagueWindow")->onClose(&onSwithtoHome, ref(gui));
 }
 
 

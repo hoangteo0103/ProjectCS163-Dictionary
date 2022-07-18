@@ -1,5 +1,5 @@
 Picture.Picture2 {
-    Position = (0, -23.3351);
+    Position = (0, -3.3351);
     Size = (1210, 920);
 
     Renderer {
