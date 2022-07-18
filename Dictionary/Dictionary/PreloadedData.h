@@ -12,7 +12,7 @@ using namespace tgui;
 class  {
 public :
 	map<string, bool> isFavourited;
-
+	map<string, bool > historyList;
 	void loadFavouriteList()
 	{
 		ifstream fin("D:/Project_CS163/Dictionary/Dictionary/Assets/FavouriteWord");

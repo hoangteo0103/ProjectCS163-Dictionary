@@ -1,5 +1,4 @@
-﻿  Menu.cpp
+﻿  Core.cpp
 D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(243,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(254,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(55,61): warning C4305: 'argument': truncation from 'double' to 'float'
   Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe

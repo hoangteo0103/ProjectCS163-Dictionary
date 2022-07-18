@@ -1,13 +1,14 @@
 #include "Menu.h"
 
 // Menu Form
-unordered_set<string> History_list;
 void startup(BackendGui& gui)
 {
     gui.get<Group>("groupHome")->setVisible(true);
     gui.get<Group>("groupWordDefinition")->setVisible(false);
     gui.get<Group>("groupFavourite")->setVisible(false);
     gui.get<Group>("groupChooseLangague")->setVisible(false);
+    gui.get<Group>("groupHistory")->setVisible(false);
+
 }
 
 void onSwitchForm(BackendGui& gui, int id)
@@ -16,6 +17,7 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupHome")->setVisible(id == 1);
     gui.get<Group>("groupFavourite")->setVisible(id == 2);
     gui.get<Group>("groupChooseLangague")->setVisible(id == 3);
+    gui.get<Group>("groupHistory")->setVisible(id == 4);
     gui.get<Group>("groupWordDefinition")->setVisible(id == 5);
 }
 
@@ -45,9 +47,19 @@ void onSearch(BackendGui& gui, TenarySearchTree tree)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
-    cout << tree.root->data << endl;
     if (ans.empty()) return;
     onSwitchToDefinition(gui, word, tree);
+    int index = favData.historyList.size();
+    favData.historyList[word] = true;
+    auto dm = tgui::Button::create();
+    dm->setHeight(100);
+    dm->setWidth(100);
+    dm->setPosition(0 + 150, 0 + index * 150);
+    dm->setText(word);
+    index++;
+    dm->onClick(&onSwitchToDefinition, ref(gui), word, tree);
+    gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(dm);
+
 }
 
 void onBlurred(BackendGui& gui)
@@ -159,6 +171,9 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     groupChooseLangague->loadWidgetsFromFile("Assets/Form/ChooseLangagueForm/ChooseLangagueForm.txt");
     gui.add(groupChooseLangague, "groupChooseLangague");
 
+    auto groupHistory = tgui::Group::create();
+    groupHistory->loadWidgetsFromFile("Assets/Form/HistoryForm/HistoryForm.txt");
+    gui.add(groupHistory, "groupHistory");
 }
 
 void setAction(BackendGui& gui, TenarySearchTree& tree)
@@ -184,6 +199,10 @@ void setAction(BackendGui& gui, TenarySearchTree& tree)
     gui.get<Group>("groupChooseLangague")->get<Button>("VnToEn")->onClick(&onChangeDataset, ref(gui), ref(tree), 2);
     gui.get<Group>("groupChooseLangague")->get<Button>("Slang")->onClick(&onChangeDataset, ref(gui),ref(tree), 3);
     gui.get<Group>("groupChooseLangague")->get<Button>("Emotional")->onClick(&onChangeDataset, ref(gui), ref(tree), 4);
+
+    // History
+    gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
+
 }
 
 

@@ -29,7 +29,8 @@ Button.Veil {
     Renderer {
         BackgroundColor = transparent;
         BackgroundColorDisabled = transparent;
-        BackgroundColorDown = #EBEBEB;
+        BackgroundColorDown = transparent;
+        BackgroundColorFocused = transparent;
         BackgroundColorHover = transparent;
         BorderColor = transparent;
         BorderColorDisabled = transparent;
