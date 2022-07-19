@@ -141,9 +141,9 @@ Button.LikeButton {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "../../Img/star-solid.svg" Smooth;
+        Texture = "star-solid.svg" Smooth;
         TextureDisabled = None;
-        TextureDown = "../../Img/star-solid_clicked.svg" Smooth;
+        TextureDown = "star-solid_clicked.svg" Smooth;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;

@@ -70,7 +70,7 @@ Button.HistoryButton {
     Position = (70, 600);
     Size = (180, 68.5263);
     Text = History;
-    TextSize = 13;
+    TextSize = 20;
 
     Renderer {
         BackgroundColor = #F5F5F5;
@@ -102,7 +102,7 @@ Button.FavouriteButton {
     Position = (70, 360);
     Size = (180, 68.5263);
     Text = Favourite;
-    TextSize = 13;
+    TextSize = 20;
 
     Renderer {
         BackgroundColor = #F5F5F5;
@@ -134,7 +134,7 @@ Button.GameButton {
     Position = (70, 500);
     Size = (180, 68.5263);
     Text = Game;
-    TextSize = 13;
+    TextSize = 20;
 
     Renderer {
         BackgroundColor = #F5F5F5;
@@ -166,7 +166,7 @@ Button.HomeButton {
     Position = (70, 240);
     Size = (180, 68.5263);
     Text = Home;
-    TextSize = 13;
+    TextSize = 20;
 
     Renderer {
         BackgroundColor = #F5F5F5;
@@ -195,7 +195,7 @@ Button.HomeButton {
 }
 
 Button.SearchButton {
-    Position = (1100, 90);
+    Position = (1090, 90);
     Size = (56, 47.3846);
     TextSize = 13;
 
