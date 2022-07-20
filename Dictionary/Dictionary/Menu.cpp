@@ -12,6 +12,7 @@ void startup(BackendGui& gui)
     gui.get<Group>("groupFavourite")->setVisible(false);
     gui.get<Group>("groupChooseLangague")->setVisible(false);
     gui.get<Group>("groupHistory")->setVisible(false);
+    gui.get<Group>("groupAdd")->setVisible(false);
 
 }
 
@@ -23,11 +24,14 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupChooseLangague")->setVisible(id == 3);
     gui.get<Group>("groupHistory")->setVisible(id == 4);
     gui.get<Group>("groupWordDefinition")->setVisible(id == 5);
+    gui.get<Group>("groupAdd")->setVisible(id == 6);
 }
 
 
 void onSwitchToDefinition(BackendGui& gui, string word)
 {
+    vector<string> ans = tree.searchDefinition(tree.root, word, 0);
+    if (ans.empty()) return; 
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
     bool ok = favData.isFavourited[word];
     if (ok == false)
@@ -39,7 +43,12 @@ void onSwitchToDefinition(BackendGui& gui, string word)
         gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(texture.onClickedFavouriteButtonTexture);
     }
     onSwitchForm(gui, 5);
-    vector<string> ans = tree.searchDefinition(tree.root, word, 0);
+
+    for (int i = 0; i < 3; i++)
+    {
+        string index = "TextArea" + to_string(i + 1);
+        gui.get<Group>("groupWordDefinition")->get<TextArea>(index)->setText("");
+    }
     for (int i = 0; i < ans.size(); i++)
     {
         string index = "TextArea" + to_string(i + 1);
@@ -110,17 +119,6 @@ void onLike(BackendGui& gui)
 }
 
 
-
-void onSwitchToChooseLang(BackendGui& gui)
-{
-    onSwitchForm(gui, 3);
-}
-
-void onSwitchtoHome(BackendGui& gui)
-{
-    onSwitchForm(gui, 1);
-}
-
 void onChangeDataset(BackendGui& gui,  int index)
 {
     string button;
@@ -174,6 +172,11 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     auto groupHistory = tgui::Group::create();
     groupHistory->loadWidgetsFromFile("Assets/Form/HistoryForm/HistoryForm.txt");
     gui.add(groupHistory, "groupHistory");
+
+
+    auto groupAdd = tgui::Group::create();
+    groupAdd->loadWidgetsFromFile("Assets/Form/AddForm/AddForm.txt");
+    gui.add(groupAdd, "groupAdd");
 }
 
 void setAction(BackendGui& gui)
@@ -191,7 +194,7 @@ void setAction(BackendGui& gui)
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm, ref(gui), 1);
     // Favourite
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm, ref(gui), 2);
-    gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchToChooseLang, ref(gui));
+    gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchForm, ref(gui),3);
 
     // Choose Langague
 
@@ -202,6 +205,10 @@ void setAction(BackendGui& gui)
 
     // History
     gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
+
+    // Add New Word
+
+    gui.get<Button>("AddWordButton")->onClick(&onSwitchForm, ref(gui), 6);
 
 }
 

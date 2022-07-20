@@ -256,7 +256,7 @@ Button.ChooseLangagueButton {
     }
 }
 
-Button.Button1 {
+Button.AddWordButton {
     Position = (70, 680);
     Size = (180, 68.5263);
     Text = "Add new word";
