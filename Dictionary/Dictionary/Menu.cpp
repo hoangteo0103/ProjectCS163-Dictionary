@@ -60,6 +60,7 @@ void onSearch(BackendGui& gui)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
+    cout << "DM" << tree.genRandomWord();
     if (ans.empty()) return;
     onSwitchToDefinition(gui, word);
     int index = favData.historyList.size();
@@ -72,6 +73,7 @@ void onSearch(BackendGui& gui)
     index++;
     dm->onClick(&onSwitchToDefinition, ref(gui), word);
     gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(dm);
+
 
 }
 

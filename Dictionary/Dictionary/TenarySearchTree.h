@@ -290,6 +290,15 @@ struct TenarySearchTree {
         return res;
     }
 
+    string genRandomWord()
+    {
+        char buffer[105];
+
+        string res = randomWord(root, buffer);
+
+        return res;
+    }
+
     void quizGame() {
         char buffer[105];
 
