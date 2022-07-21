@@ -88,6 +88,7 @@ struct TenarySearchTree {
         {
             return false;
         }
+
         if (root->data > word[pos])
             return searchTST(root->left, word, pos);
         else if (root->data < word[pos])
@@ -101,6 +102,11 @@ struct TenarySearchTree {
         }
     }
 
+    char convertUpperCaseToLowerCase(char c)
+    {
+        return (c >= 'A' && c <= 'Z') ? char(int(c) + 32) : c;
+    }
+
     // return a vector contains all definition of my searching word
     vector <string> searchDefinition(Node* root, string word, int pos = 0) {
         if (root == nullptr) {
@@ -108,6 +114,7 @@ struct TenarySearchTree {
             res.clear();
             return res;
         }
+        word[pos] = convertUpperCaseToLowerCase(word[pos]);
 
         if (root->data > word[pos])
             return searchDefinition(root->left, word, pos);
