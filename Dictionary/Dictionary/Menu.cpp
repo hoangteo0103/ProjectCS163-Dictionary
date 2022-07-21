@@ -15,10 +15,12 @@ void startup(BackendGui& gui)
     gui.get<Group>("groupAdd")->setVisible(false);
 
 }
+void loadRandomWord(BackendGui& gui);
 
 void onSwitchForm(BackendGui& gui, int id)
 {
 
+    if (id == 1) loadRandomWord(gui);
     gui.get<Group>("groupHome")->setVisible(id == 1);
     gui.get<Group>("groupFavourite")->setVisible(id == 2);
     gui.get<Group>("groupChooseLangague")->setVisible(id == 3);
@@ -186,6 +188,30 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     gui.add(groupAdd, "groupAdd");
 }
 
+void loadRandomWord(BackendGui& gui)
+{
+    map<string, bool > mp;
+    string st = tree.genRandomWord();
+    gui.get<Group>("groupHome")->get<Button>("WordDay1")->setText(st);
+    mp[st] = true;
+    while(mp[st])
+        st = tree.genRandomWord();
+    gui.get<Group>("groupHome")->get<Button>("WordDay2")->setText(st);
+    mp[st] = true;
+    while (mp[st])
+        st = tree.genRandomWord();
+    gui.get<Group>("groupHome")->get<Button>("WordDay3")->setText(st);
+    mp[st] = true;
+    while (mp[st])
+        st = tree.genRandomWord();
+    gui.get<Group>("groupHome")->get<Button>("WordDay4")->setText(st);
+
+    gui.get<Group>("groupHome")->get<Button>("WordDay1")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay1")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay2")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay2")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay3")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay3")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay4")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay4")->getText().toStdString());
+}
+
 void setAction(BackendGui& gui)
 {
 
@@ -199,6 +225,7 @@ void setAction(BackendGui& gui)
 
     // Home
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm, ref(gui), 1);
+    loadRandomWord(gui);
     // Favourite
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm, ref(gui), 2);
     gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchForm, ref(gui),3);
@@ -212,10 +239,6 @@ void setAction(BackendGui& gui)
 
     // History
     gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
-    gui.get<Group>("groupHome")->get<Button>("WordDay1")->onClick(&onSwitchToDefinition, ref(gui),gui.get<Group>("groupHome")->get<Button>("WordDay1")->getText().toStdString());
-    gui.get<Group>("groupHome")->get<Button>("WordDay2")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay2")->getText().toStdString());
-    gui.get<Group>("groupHome")->get<Button>("WordDay3")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay3")->getText().toStdString());
-    gui.get<Group>("groupHome")->get<Button>("WordDay4")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay4")->getText().toStdString());
 
     // Add New Word
 
