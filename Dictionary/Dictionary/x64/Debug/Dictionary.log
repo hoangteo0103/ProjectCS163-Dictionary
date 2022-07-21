@@ -1,23 +1,7 @@
-﻿  Core.cpp
-D:\project\Dictionary\Dictionary\TenarySearchTree.h(250,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\TenarySearchTree.h(261,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  Menu.cpp
-D:\project\Dictionary\Dictionary\TenarySearchTree.h(250,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\TenarySearchTree.h(261,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\Menu.cpp(66,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\Menu.cpp(82,61): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\project\Dictionary\include\TGUI\Signal.hpp(310,20): error C2672: 'tgui::SignalTyped<tgui::Vector2f>::connect': no matching overloaded function found
-D:\project\Dictionary\Dictionary\Menu.cpp(215): message : see reference to function template instantiation 'unsigned int tgui::SignalTyped<tgui::Vector2f>::operator ()<void(__cdecl *)(tgui::BackendGui &,std::string),std::string>(const Func &,const std::string &)' being compiled
-          with
-          [
-              Func=void (__cdecl *)(tgui::BackendGui &,std::string)
-          ]
-D:\project\Dictionary\Dictionary\Menu.cpp(215): message : see reference to function template instantiation 'unsigned int tgui::SignalTyped<tgui::Vector2f>::operator ()<void(__cdecl *)(tgui::BackendGui &,std::string),std::string>(const Func &,const std::string &)' being compiled
-          with
-          [
-              Func=void (__cdecl *)(tgui::BackendGui &,std::string)
-          ]
-D:\project\Dictionary\include\TGUI\Signal.hpp(310,20): error C2783: 'unsigned int tgui::SignalTyped<tgui::Vector2f>::connect(const Func &,const BoundArgs &...)': could not deduce template argument for '__formal'
-D:\project\Dictionary\include\TGUI\Signal.hpp(323): message : see declaration of 'tgui::SignalTyped<tgui::Vector2f>::connect'
-  WordDefinitionGroup.cpp
-  Generating Code...
+﻿  Menu.cpp
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(250,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(261,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(66,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(82,61): warning C4305: 'argument': truncation from 'double' to 'float'
+  LINK : D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe not found or not built by the last incremental link; performing full link
+  Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe

@@ -212,10 +212,10 @@ void setAction(BackendGui& gui)
 
     // History
     gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
-    gui.get<Group>("groupHome")->get<Button>("WordDay1")->onClick(&onSwitchToDefinition, gui.get<Group>("groupHome")->get<Button>("WordDay1")->getText().toStdString());
-    gui.get<Group>("groupHome")->get<Button>("WordDay2")->onClick(&onSwitchToDefinition, gui.get<Group>("groupHome")->get<Button>("WordDay2")->getText().toStdString());
-    gui.get<Group>("groupHome")->get<Button>("WordDay3")->onClick(&onSwitchToDefinition, gui.get<Group>("groupHome")->get<Button>("WordDay3")->getText().toStdString());
-    gui.get<Group>("groupHome")->get<Button>("WordDay4")->onClick(&onSwitchToDefinition, gui.get<Group>("groupHome")->get<Button>("WordDay4")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay1")->onClick(&onSwitchToDefinition, ref(gui),gui.get<Group>("groupHome")->get<Button>("WordDay1")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay2")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay2")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay3")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay3")->getText().toStdString());
+    gui.get<Group>("groupHome")->get<Button>("WordDay4")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay4")->getText().toStdString());
 
     // Add New Word
 
