@@ -56735,7 +56735,7 @@ washing-house  : house) ; cho giat quan ao; (tu My;
 washing-machine  :  may giat;
 washing-stand  : hand-stand) ; gia rua mat;
 washing-up  :  viec rua bat (sau bua com) ((cung) wash-up);
-  washy  :  loang; nhat; vo vi;
+washy  :  loang; nhat; vo vi;
 wasn't  : 
 wasp  :  (dong vat hoc) ong bap cay;
 wasp-waist  :  lung ong;

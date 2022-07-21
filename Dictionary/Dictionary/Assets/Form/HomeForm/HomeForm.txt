@@ -77,28 +77,28 @@ Panel.Panel1 {
             TextureBackground = None;
         }
 
-        Button.Button1 {
+        Button.WordDay1 {
             Position = (30, 170);
             Renderer = &1;
             Size = (270, 129);
             TextSize = 13;
         }
 
-        Button.Button2 {
+        Button.WordDay3 {
             Position = (300, 170);
             Renderer = &1;
             Size = (270, 130);
             TextSize = 13;
         }
 
-        Button.Button3 {
+        Button.WordDay4 {
             Position = (30, 40);
             Renderer = &1;
             Size = (270, 130);
             TextSize = 13;
         }
 
-        Button.Button4 {
+        Button.WordDay2 {
             Position = (300, 40);
             Renderer = &1;
             Size = (270, 130);
