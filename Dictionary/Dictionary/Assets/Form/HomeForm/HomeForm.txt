@@ -22,19 +22,29 @@ Renderer.1 {
     TextureHover = None;
 }
 
-Picture.Picture8 {
-    Position = (300, 180);
-    Size = (813, 599);
+Picture.Picture1 {
+    Position = (0, -0.444397);
+    Size = (1150, 900);
 
     Renderer {
-        Texture = "border2-removebg-preview.png" Smooth;
+        Texture = "background.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Picture.Picture8 {
+    Position = (120, 126.186);
+    Size = (1030, 772.813);
+
+    Renderer {
+        Texture = "MenuScreen.png" Smooth;
         TransparentTexture = false;
     }
 }
 
 Panel.Panel1 {
-    Position = (340, 220);
-    Size = (740, 510);
+    Position = (250, 300);
+    Size = (740, 500);
 
     Renderer {
         BackgroundColor = transparent;
@@ -42,34 +52,8 @@ Panel.Panel1 {
         TextureBackground = None;
     }
 
-    TextArea.TextArea1 {
-        HorizontalScrollbarPolicy = Never;
-        MaximumCharacters = 0;
-        Size = (498, 155);
-        Text = "Welcome to our app";
-        TextSize = 30;
-
-        Renderer {
-            BackgroundColor = rgb(210, 210, 210);
-            BorderColor = White;
-            Borders = (2, 2, 2, 2);
-            CaretColor = rgb(145, 180, 190);
-            SelectedTextBackgroundColor = rgb(190, 225, 235);
-            SelectedTextColor = rgb(150, 150, 150);
-            TextColor = rgb(100, 100, 100);
-            TextureBackground = None;
-
-            Scrollbar {
-                TextureArrowDown = "themes/BabyBlue.png" Part(20, 2, 16, 16) Smooth;
-                TextureArrowUp = "themes/BabyBlue.png" Part(2, 2, 16, 16) Smooth;
-                TextureThumb = "themes/BabyBlue.png" Part(414, 2, 16, 32) Smooth;
-                TextureTrack = "themes/BabyBlue.png" Part(432, 2, 16, 32) Smooth;
-            }
-        }
-    }
-
     Panel.WordOfTheDay {
-        Position = (40, 170.741);
+        Position = (50, 70.741);
         Size = (630, 303.704);
 
         Renderer {

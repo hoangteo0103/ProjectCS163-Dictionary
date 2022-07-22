@@ -1,47 +1,18 @@
 Picture.Picture2 {
-    Position = (0, -3.3351);
-    Size = (1210, 920);
+    Position = (0, -1.77942);
+    Size = (1150, 907.779);
 
     Renderer {
-        Texture = "background.jpg" Smooth;
-        TransparentTexture = false;
-    }
-}
-
-Picture.Picture1 {
-    Position = (70, 20);
-    Size = (172, 144.698);
-
-    Renderer {
-        Texture = "Voi_Con-removebg-preview.png" Smooth;
-        TransparentTexture = false;
-    }
-}
-
-Picture.Picture7 {
-    Position = (60, 180);
-    Size = (208, 599);
-
-    Renderer {
-        Texture = "border1-removebg-preview.png" Smooth;
-        TransparentTexture = false;
-    }
-}
-
-Picture.Picture8 {
-    Position = (300, 180);
-    Size = (813, 599);
-
-    Renderer {
-        Texture = "border2-removebg-preview.png" Smooth;
+        Texture = "background.png" Smooth;
         TransparentTexture = false;
     }
 }
 
 EditBox.SearchBar {
-    Position = (280, 80);
-    Size = (810, 64.4694);
-    TextSize = 30;
+    DefaultText = "Look up your word";
+    Position = (340, 31.2341);
+    Size = (521, 65);
+    TextSize = 25;
 
     Renderer {
         BackgroundColor = #F5F5F5;
@@ -54,54 +25,52 @@ EditBox.SearchBar {
         CaretColor = black;
         CaretWidth = 1;
         DefaultTextColor = black;
-        Padding = (80, 0, 50, 0);
+        Padding = (20, 0, 50, 0);
         SelectedTextBackgroundColor = #006EFF;
         SelectedTextColor = white;
         TextColor = #3C3C3C;
         TextColorDisabled = #7D7D7D;
-        Texture = "search-box.png" Smooth;
+        Texture = "searchbar-unhovered.png" Smooth;
         TextureDisabled = None;
         TextureFocused = None;
-        TextureHover = "search-box-hover.png" Smooth;
-    }
-}
-
-Button.HistoryButton {
-    Position = (70, 570);
-    Size = (180, 68.5263);
-    Text = History;
-    TextSize = 20;
-
-    Renderer {
-        BackgroundColor = #F5F5F5;
-        BackgroundColorDisabled = #E6E6E6;
-        BackgroundColorDown = #EBEBEB;
-        BackgroundColorHover = white;
-        BorderColor = #3C3C3C;
-        BorderColorDisabled = #7D7D7D;
-        BorderColorDown = black;
-        BorderColorFocused = #1E1EB4;
-        BorderColorHover = black;
-        Borders = (0, 0, 0, 0);
-        TextColor = #3C3C3C;
-        TextColorDisabled = #7D7D7D;
-        TextColorDown = black;
-        TextColorHover = black;
-        TextStyle = Bold;
-        Texture = "text-box.png" Smooth;
-        TextureDisabled = None;
-        TextureDown = None;
-        TextureDownFocused = None;
-        TextureDownHover = None;
-        TextureFocused = None;
-        TextureHover = "text-box-hover.png" Smooth;
+        TextureHover = None;
     }
 }
 
 Button.FavouriteButton {
-    Position = (70, 360);
-    Size = (180, 68.5263);
-    Text = Favourite;
+    Position = (35, 350);
+    Size = (50, 50);
+    TextSize = 60;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        TextStyle = Bold;
+        Texture = "favourite-button-unclicked.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "favourite-button-clicked.png" Smooth;
+    }
+}
+
+Button.HistoryButton {
+    Position = (34, 488);
+    Size = (51, 51);
     TextSize = 20;
 
     Renderer {
@@ -120,20 +89,19 @@ Button.FavouriteButton {
         TextColorDown = black;
         TextColorHover = black;
         TextStyle = Bold;
-        Texture = "text-box.png" Smooth;
+        Texture = "history-button-unclicked.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;
-        TextureHover = "text-box-hover.png" Smooth;
+        TextureHover = "history-button-clicked.png" Smooth;
     }
 }
 
 Button.GameButton {
-    Position = (70, 470);
-    Size = (180, 68.5263);
-    Text = Game;
+    Position = (35, 626);
+    Size = (52, 52);
     TextSize = 20;
 
     Renderer {
@@ -152,20 +120,19 @@ Button.GameButton {
         TextColorDown = black;
         TextColorHover = black;
         TextStyle = Bold;
-        Texture = "text-box.png" Smooth;
+        Texture = "game-button-unclicked.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;
-        TextureHover = "text-box-hover.png" Smooth;
+        TextureHover = "game-button-clicked.png" Smooth;
     }
 }
 
 Button.HomeButton {
-    Position = (70, 240);
-    Size = (180, 68.5263);
-    Text = Home;
+    Position = (35, 198.07);
+    Size = (50, 50);
     TextSize = 20;
 
     Renderer {
@@ -184,19 +151,19 @@ Button.HomeButton {
         TextColorDown = black;
         TextColorHover = black;
         TextStyle = Bold;
-        Texture = "text-box.png" Smooth;
+        Texture = "home-button-unclicked.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;
-        TextureHover = "text-box-hover.png" Smooth;
+        TextureHover = "home-button-clicked.png" Smooth;
     }
 }
 
 Button.SearchButton {
-    Position = (1090, 90);
-    Size = (56, 47.3846);
+    Position = (800, 45.3846);
+    Size = (45, 35);
     TextSize = 13;
 
     Renderer {
@@ -215,7 +182,7 @@ Button.SearchButton {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "../../Img/SearchIcon.svg" Smooth;
+        Texture = "search-button-unhovered.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
@@ -226,8 +193,8 @@ Button.SearchButton {
 }
 
 Button.ChooseLangagueButton {
-    Position = (900, 85.5173);
-    Size = (158, 54.4828);
+    Position = (920, 35.5173);
+    Size = (208, 55);
     Text = EnToVN;
     TextSize = 13;
 
@@ -246,7 +213,7 @@ Button.ChooseLangagueButton {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "combobox-border.png" Smooth;
+        Texture = "chooselangague-button-unclicked.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
@@ -257,9 +224,8 @@ Button.ChooseLangagueButton {
 }
 
 Button.AddWordButton {
-    Position = (70, 680);
-    Size = (180, 68.5263);
-    Text = "Add new word";
+    Position = (35, 760);
+    Size = (51, 51);
     TextSize = 15;
 
     Renderer {
@@ -278,12 +244,12 @@ Button.AddWordButton {
         TextColorDown = black;
         TextColorHover = black;
         TextStyle = Bold;
-        Texture = "text-box.png" Smooth;
+        Texture = "addword-button-unclicked.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;
-        TextureHover = "text-box-hover.png" Smooth;
+        TextureHover = "addword-button-clicked.png" Smooth;
     }
 }

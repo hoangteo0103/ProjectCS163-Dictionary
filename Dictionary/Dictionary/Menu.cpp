@@ -158,7 +158,7 @@ void loadWordOfTheDay(BackendGui& gui)
 
 void loadWidgetsMenu(tgui::BackendGui& gui)
 {
-    gui.loadWidgetsFromFile("Assets/Form/MenuForm - Copy/MenuForm.txt");
+    gui.loadWidgetsFromFile("Assets/Form/MenuForm/MenuForm.txt");
 
     auto groupWordDefinition = tgui::Group::create();
     groupWordDefinition->loadWidgetsFromFile("Assets/Form/WordDefinitionForm/WordDefinitionForm.txt");
