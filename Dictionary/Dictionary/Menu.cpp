@@ -121,6 +121,17 @@ void onLike(BackendGui& gui)
     }
 }
 
+void onRemove(BackendGui& gui)
+{
+    string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
+    tree.remove(tree.root, word, 0);
+    for (int i = 0; i < 3; i++)
+    {
+        string index = "TextArea" + to_string(i + 1);
+        gui.get<Group>("groupWordDefinition")->get<TextArea>(index)->setText("");
+    }
+
+}
 
 void onChangeDataset(BackendGui& gui,  int index)
 {
@@ -221,6 +232,7 @@ void setAction(BackendGui& gui)
     
     // Word Definition
     gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui));
+    gui.get<Group>("groupWordDefinition")->get<Button>("RemoveButton")->onClick(&onRemove, ref(gui));
 
     // Home
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm, ref(gui), 1);
