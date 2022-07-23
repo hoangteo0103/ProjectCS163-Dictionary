@@ -125,6 +125,7 @@ void onRemove(BackendGui& gui)
 {
     string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
     tree.remove(tree.root, word, 0);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText("");
     for (int i = 0; i < 3; i++)
     {
         string index = "TextArea" + to_string(i + 1);
