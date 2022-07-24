@@ -238,12 +238,12 @@ void setAction(BackendGui& gui)
     // Home
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm, ref(gui), 1);
     loadRandomWord(gui);
+    
     // Favourite
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm, ref(gui), 2);
     gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchForm, ref(gui),3);
 
     // Choose Langague
-
     gui.get<Group>("groupChooseLangague")->get<Button>("EnToVn")->onClick(&onChangeDataset, ref(gui), 1);
     gui.get<Group>("groupChooseLangague")->get<Button>("VnToEn")->onClick(&onChangeDataset, ref(gui), 2);
     gui.get<Group>("groupChooseLangague")->get<Button>("Slang")->onClick(&onChangeDataset, ref(gui), 3);
@@ -253,7 +253,6 @@ void setAction(BackendGui& gui)
     gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
 
     // Add New Word
-
     gui.get<Button>("AddWordButton")->onClick(&onSwitchForm, ref(gui), 6);
 
 }

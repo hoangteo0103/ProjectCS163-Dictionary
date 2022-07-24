@@ -12,7 +12,7 @@ public :
 
 	void loadTexture()
 	{
-		onClickedFavouriteButtonTexture.load("Assets/Img/star-solid_clicked.svg");
-		onUnClickedFavouriteButtonTexture.load("Assets/Img/star-solid.svg");
+		onClickedFavouriteButtonTexture.load("Assets/Form/WordDefinitionForm1/star-button-unclicked.png");
+		onUnClickedFavouriteButtonTexture.load("Assets/Form/WordDefinitionForm1/star-button-clicked.png");
 	}
 } texture;
