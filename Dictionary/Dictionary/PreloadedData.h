@@ -15,7 +15,7 @@ public :
 	map<string, bool > historyList;
 	void loadFavouriteList()
 	{
-		ifstream fin("D:/Project_CS163/Dictionary/Dictionary/Assets/FavouriteWord");
+		ifstream fin("Assets/FavouriteWord");
 		string word;
 		while (fin >> word)
 		{

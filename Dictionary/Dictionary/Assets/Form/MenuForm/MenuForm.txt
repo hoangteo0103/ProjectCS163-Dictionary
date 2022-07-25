@@ -25,7 +25,7 @@ EditBox.SearchBar {
         CaretColor = black;
         CaretWidth = 1;
         DefaultTextColor = black;
-        Font = "D:\\Project_CS163\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+        Font = "Assets\\Font\\Lato_Semibold.ttf";
         Padding = (20, 0, 50, 0);
         SelectedTextBackgroundColor = #006EFF;
         SelectedTextColor = white;
@@ -178,7 +178,7 @@ Button.SearchButton {
         BorderColorFocused = #1E1EB4;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
-        Font = "D:\\Project_CS163\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
         RoundedBorderRadius = 50;
         TextColor = #3C3C3C;
         TextColorDisabled = #7D7D7D;
@@ -211,7 +211,7 @@ Button.ChooseLangagueButton {
         BorderColorFocused = #1E1EB4;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
-        Font = "D:\\Project_CS163\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Bold.ttf";
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
         TextColor = white;
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
