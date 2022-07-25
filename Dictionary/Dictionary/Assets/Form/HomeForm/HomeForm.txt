@@ -34,28 +34,28 @@ Picture.Picture8 {
 }
 
 Button.WordDay1 {
-    Position = (250, 410);
+    Position = (250, 460);
     Renderer = &1;
     Size = (140, 212);
     TextSize = 13;
 }
 
 Button.WordDay2 {
-    Position = (440, 410);
+    Position = (440, 460);
     Renderer = &1;
     Size = (140, 212);
     TextSize = 13;
 }
 
 Button.WordDay3 {
-    Position = (850, 410);
+    Position = (850, 460);
     Renderer = &1;
     Size = (140, 212);
     TextSize = 13;
 }
 
 Button.WordDay4 {
-    Position = (640, 410);
+    Position = (640, 460);
     Renderer = &1;
     Size = (140, 212);
     TextSize = 13;

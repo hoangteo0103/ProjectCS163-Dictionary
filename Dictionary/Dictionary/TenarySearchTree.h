@@ -181,7 +181,9 @@ struct TenarySearchTree {
             buffer[depth + 1] = '\0';
             string resStr = pattern;
             resStr += string(buffer);
-            res.push_back(resStr);
+            if (res.size() < numFillWord)
+                res.push_back(resStr);
+            else return;
         }
 
         traverseToFillWord(root->middle, res, buffer, pattern, depth + 1);
@@ -214,13 +216,15 @@ struct TenarySearchTree {
                 root = root->left;
             }
             else {
-                if (root->data > pattern[pos]) root = root->right;
+                if (root->data < pattern[pos]) root = root->right;
                 else {
                     root = root->middle;
                     pos++;
                 }
             }
         }
+
+        if (!root) return res;
 
         res = fillCurrentWord(root, pattern);
         return res;
