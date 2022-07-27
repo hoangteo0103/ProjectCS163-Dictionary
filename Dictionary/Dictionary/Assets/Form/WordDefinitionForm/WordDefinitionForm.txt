@@ -1,29 +1,85 @@
+Renderer.1 {
+    BackgroundColor = transparent;
+    BackgroundColorDisabled = transparent;
+    BackgroundColorDown = transparent;
+    BackgroundColorHover = transparent;
+    BorderColor = transparent;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "D:\\Project_CS163\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = white;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "definition.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
 Picture.Picture8 {
-    Position = (300, 180);
-    Size = (813, 599);
+    Position = (120, 136.186);
+    Size = (1030, 878);
 
     Renderer {
-        Texture = "border2-removebg-preview.png" Smooth;
+        Texture = "WordScreen.png" Smooth;
         TransparentTexture = false;
     }
 }
 
+Button.LikeButton {
+    Position = (1030, 160);
+    Size = (90, 90);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = None;
+        BorderColorFocused = None;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "star-button-clicked.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "star-button-unclicked.png" Smooth;
+    }
+}
+
 Button.Word {
-    Position = (330, 200);
-    Size = (220, 22);
-    TextSize = 20;
+    Position = (190, 190);
+    Size = (200, 42);
+    TextSize = 40;
 
     Renderer {
         BackgroundColor = transparent;
-        BackgroundColorDisabled = #E6E6E6;
-        BackgroundColorDown = #EBEBEB;
-        BackgroundColorHover = white;
+        BackgroundColorDisabled = transparent;
+        BackgroundColorDown = transparent;
+        BackgroundColorHover = transparent;
         BorderColor = #3C3C3C;
         BorderColorDisabled = #7D7D7D;
-        BorderColorDown = black;
+        BorderColorDown = transparent;
         BorderColorFocused = #1E1EB4;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
+        Font = "D:\\Project_CS163\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Bold.ttf";
         TextColor = #3C3C3C;
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
@@ -38,134 +94,57 @@ Button.Word {
     }
 }
 
-Panel.PanelWord {
-    Position = (330, 270);
-    Size = (760, 330);
+Button.RemoveButton {
+    Position = (910, 190);
+    Size = (98, 51.0345);
+    Text = Remove;
+    TextSize = 25;
 
     Renderer {
         BackgroundColor = transparent;
-        BorderColor = black;
-        TextureBackground = None;
-    }
-
-    TextArea.TextArea1 {
-        HorizontalScrollbarPolicy = Never;
-        MaximumCharacters = 0;
-        Position = (130, 40);
-        ReadOnly = true;
-        Size = (558, 65);
-        Text = "";
-        TextSize = 25;
-
-        Renderer {
-            BackgroundColor = transparent;
-            BorderColor = black;
-            Borders = (0, 0, 0, 0);
-            CaretColor = black;
-            CaretWidth = 1;
-            DefaultTextColor = #A0A0A0;
-            Padding = (0, 0, 0, 0);
-            SelectedTextBackgroundColor = #006EFF;
-            SelectedTextColor = white;
-            TextColor = #3C3C3C;
-            TextureBackground = None;
-        }
-    }
-
-    TextArea.TextArea2 {
-        HorizontalScrollbarPolicy = Never;
-        MaximumCharacters = 0;
-        Position = (130, 130);
-        ReadOnly = true;
-        Size = (558, 65);
-        Text = "";
-        TextSize = 25;
-
-        Renderer {
-            BackgroundColor = transparent;
-            BorderColor = black;
-            Borders = (0, 0, 0, 0);
-            CaretColor = black;
-            CaretWidth = 1;
-            DefaultTextColor = #A0A0A0;
-            Padding = (0, 0, 0, 0);
-            SelectedTextBackgroundColor = #006EFF;
-            SelectedTextColor = white;
-            TextColor = #3C3C3C;
-            TextureBackground = None;
-        }
-    }
-
-    TextArea.TextArea3 {
-        HorizontalScrollbarPolicy = Never;
-        MaximumCharacters = 0;
-        Position = (130, 220);
-        ReadOnly = true;
-        Size = (558, 65);
-        Text = "";
-        TextSize = 25;
-
-        Renderer {
-            BackgroundColor = transparent;
-            BorderColor = black;
-            Borders = (0, 0, 0, 0);
-            CaretColor = black;
-            CaretWidth = 1;
-            DefaultTextColor = #A0A0A0;
-            Padding = (0, 0, 0, 0);
-            SelectedTextBackgroundColor = #006EFF;
-            SelectedTextColor = white;
-            TextColor = #3C3C3C;
-            TextureBackground = None;
-        }
-    }
-}
-
-Button.LikeButton {
-    Position = (1040, 200);
-    Size = (40, 50);
-    TextSize = 13;
-
-    Renderer {
-        BackgroundColor = transparent;
-        BackgroundColorDisabled = #E6E6E6;
-        BackgroundColorDown = #EBEBEB;
+        BackgroundColorDisabled = transparent;
+        BackgroundColorDown = transparent;
         BackgroundColorHover = transparent;
         BorderColor = #3C3C3C;
-        BorderColorDisabled = #7D7D7D;
+        BorderColorDisabled = transparent;
         BorderColorDown = black;
         BorderColorFocused = #1E1EB4;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
+        Font = "D:\\Project_CS163\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Bold.ttf";
         TextColor = #3C3C3C;
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "star-solid.svg" Smooth;
+        Texture = "remove-button-unhovered.png" Smooth;
         TextureDisabled = None;
-        TextureDown = "star-solid_clicked.svg" Smooth;
+        TextureDown = None;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;
-        TextureHover = None;
+        TextureHover = "remove-button-hovered.png" Smooth;
     }
 }
 
-Button.RemoveButton {
-    Position = (920, 210);
-    Size = (60, 40);
-    Text = REMOVE;
-    TextSize = 13;
+Button.Def1 {
+    Position = (240, 300);
+    Renderer = &1;
+    Size = (810, 135.667);
+    TextSize = 40;
+}
 
-    Renderer {
-        TextColor = rgb(190, 190, 190);
-        TextColorHover = rgb(250, 250, 250);
-        Texture = "themes/Black.png" Part(50, 22, 45, 50) Middle(10, 0) Smooth;
-        TextureDisabled = None;
-        TextureDown = "themes/Black.png" Part(0, 74, 45, 50) Middle(10, 0) Smooth;
-        TextureDownFocused = None;
-        TextureDownHover = None;
-        TextureFocused = "themes/Black.png" Part(47, 74, 45, 50) Middle(10, 0) Smooth;
-        TextureHover = "themes/Black.png" Part(0, 126, 45, 50) Middle(10, 0) Smooth;
-    }
+Button.Def2 {
+    Position = (240, 480);
+    Renderer = &1;
+    Size = (810, 135.667);
+    TextSize = 40;
+    Visible = false;
+}
+
+Button.Def3 {
+    Position = (240, 650);
+    Renderer = &1;
+    Size = (810, 135.667);
+    TextSize = 40;
+    Visible = false;
 }

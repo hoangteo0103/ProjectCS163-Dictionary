@@ -50,13 +50,15 @@ void onSwitchToDefinition(BackendGui& gui, string word)
 
     for (int i = 0; i < 3; i++)
     {
-        string index = "TextArea" + to_string(i + 1);
-        gui.get<Group>("groupWordDefinition")->get<TextArea>(index)->setText("");
+        string index = "Def" + to_string(i + 1);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(false);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
     }
     for (int i = 0; i < ans.size(); i++)
     {
-        string index = "TextArea" + to_string(i + 1);
-        gui.get<Group>("groupWordDefinition")->get<TextArea>(index)->setText(ans[i]);
+        string index = "Def" + to_string(i + 1);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(true);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText(ans[i]);
     }
 }
 
@@ -131,8 +133,8 @@ void onRemove(BackendGui& gui)
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText("");
     for (int i = 0; i < 3; i++)
     {
-        string index = "TextArea" + to_string(i + 1);
-        gui.get<Group>("groupWordDefinition")->get<TextArea>(index)->setText("");
+        string index = "Def" + to_string(i + 1);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
     }
 
 }
