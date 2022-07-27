@@ -1,8 +1,1 @@
-﻿  Menu.cpp
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(254,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(265,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(82,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(98,61): warning C4305: 'argument': truncation from 'double' to 'float'
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(304,23): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-  LINK : E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\x64\Debug\Dictionary.exe not found or not built by the last incremental link; performing full link
-  Dictionary.vcxproj -> E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\x64\Debug\Dictionary.exe
+﻿  Dictionary.vcxproj -> D:\project\Dictionary\x64\Debug\Dictionary.exe

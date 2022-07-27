@@ -56,7 +56,7 @@ Button.WordDay2 {
         BorderColorFocused = None;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
-        Font = "E:\\HCMUS SEMESTER 3\\DATA STRUCTURES\\TASK\\DictionaryProject\\Dictionary\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
         RoundedBorderRadius = 20;
         TextColor = white;
         TextColorDisabled = #7D7D7D;
@@ -88,7 +88,7 @@ Button.WordDay3 {
         BorderColorFocused = None;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
-        Font = "E:\\HCMUS SEMESTER 3\\DATA STRUCTURES\\TASK\\DictionaryProject\\Dictionary\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
         RoundedBorderRadius = 20;
         TextColor = white;
         TextColorDisabled = #7D7D7D;
@@ -120,7 +120,7 @@ Button.WordDay4 {
         BorderColorFocused = None;
         BorderColorHover = black;
         Borders = (0, 0, 0, 0);
-        Font = "E:\\HCMUS SEMESTER 3\\DATA STRUCTURES\\TASK\\DictionaryProject\\Dictionary\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
         RoundedBorderRadius = 20;
         TextColor = white;
         TextColorDisabled = #7D7D7D;
