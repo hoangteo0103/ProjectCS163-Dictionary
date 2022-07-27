@@ -53,13 +53,13 @@ Button.LikeButton {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "star-button-clicked.png" Smooth;
+        Texture = "star-button-unclicked.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
         TextureDownHover = None;
         TextureFocused = None;
-        TextureHover = "star-button-unclicked.png" Smooth;
+        TextureHover = "star-button-clicked.png" Smooth;
     }
 }
 

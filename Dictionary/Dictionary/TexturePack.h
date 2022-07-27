@@ -12,7 +12,7 @@ public :
 
 	void loadTexture()
 	{
-		onClickedFavouriteButtonTexture.load("Assets/Form/WordDefinitionForm1/star-button-unclicked.png");
-		onUnClickedFavouriteButtonTexture.load("Assets/Form/WordDefinitionForm1/star-button-clicked.png");
+		onClickedFavouriteButtonTexture.load("Assets/Form/WordDefinitionForm/star-button-clicked.png");
+		onUnClickedFavouriteButtonTexture.load("Assets/Form/WordDefinitionForm/star-button-unclicked.png");
 	}
 } texture;
