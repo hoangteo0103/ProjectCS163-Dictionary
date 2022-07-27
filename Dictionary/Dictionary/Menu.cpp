@@ -63,9 +63,18 @@ void onSwitchToDefinition(BackendGui& gui, string word)
     }
 }
 
+void convertStringToLowercase(string& s)
+{
+    for (int i = 0; i < (int)s.size(); i++)
+    {
+        if (s[i] >= 'A' && s[i] <= 'Z') s[i] = char(int(s[i]) + 32);
+    }
+}
+
 void onSearch(BackendGui& gui)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
+    convertStringToLowercase(word);
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
 
     if (ans.empty()) return;
