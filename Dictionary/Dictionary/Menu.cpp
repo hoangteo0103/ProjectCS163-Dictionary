@@ -17,11 +17,12 @@ void startup(BackendGui& gui)
 
 }
 void loadRandomWord(BackendGui& gui);
+void gamePlay(BackendGui& gui);
 
 void onSwitchForm(BackendGui& gui, int id)
 {
-
     if (id == 1) loadRandomWord(gui);
+    if (id == 7) gamePlay(gui);
     gui.get<Group>("groupHome")->setVisible(id == 1);
     gui.get<Group>("groupFavourite")->setVisible(id == 2);
     gui.get<Group>("groupChooseLangague")->setVisible(id == 3);
@@ -230,6 +231,97 @@ void loadRandomWord(BackendGui& gui)
     gui.get<Group>("groupHome")->get<Button>("WordDay2")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay2")->getText().toStdString());
     gui.get<Group>("groupHome")->get<Button>("WordDay3")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay3")->getText().toStdString());
     gui.get<Group>("groupHome")->get<Button>("WordDay4")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay4")->getText().toStdString());
+}
+
+long long random(int L, int R) {
+    long long t = RAND_MAX + 1;
+
+    return L + (t * t * t * rand() + t * t * rand() + t * rand() + rand()) % (R - L + 1);
+}
+
+void isGameChoose(BackendGui& gui, int pos, int answer) {
+    sf::Texture texture;
+    texture.loadFromFile("Assets/Form/AfterGameClick/CorrectCell.png");
+
+    if (pos == answer) {
+        cout << "Correct\n";
+    }
+    else cout << "Wrong\n";
+}
+
+void gamePlay(BackendGui& gui)
+{
+    char buffer[205];
+
+    string res = treeEn.randomWord(treeEn.root, buffer);
+
+    //cout << res << endl << endl;
+
+    vector <string> lstDef;
+    lstDef = treeEn.searchDefinition(treeEn.root, res);
+
+    if (lstDef.size() == 0) {
+        cout << "No find word\n";
+        return;
+    }
+
+    vector <string> listGameWord;
+    listGameWord.push_back(lstDef[0]);
+
+    for (int i = 1; i <= 3; i++) {
+        string S;
+
+        while (1) {
+            char tmpBuffer[205];
+            S = treeVn.randomWord(treeVn.root, tmpBuffer);
+
+            bool curState = true;
+
+            for (auto it : listGameWord)
+                if (it == S) curState = false;
+
+            if (curState) break;
+        }
+
+        listGameWord.push_back(S);
+    }
+
+    int state[5], answer;
+
+    for (int i = 0; i < 4; i++) {
+        int t;
+
+        while (1) {
+            t = random(0, 3);
+
+            bool curState = true;
+            for (int j = 0; j < i; j++) {
+                if (state[j] == t) curState = false;
+            }
+
+            if (curState) break;
+        }
+
+        state[i] = t;
+        if (t == 0) answer = i + 1;
+    }
+
+    /*for (int i = 0; i < 4; i++)
+        cout << listGameWord[state[i]] << '\n';
+
+    cout << endl;
+    cout << answer << endl;
+    */
+
+    for (int i = 0; i < 4; i++) {
+        string curCell = "GameCell" + to_string(i + 1);
+        gui.get<Group>("groupGame")->get<Button>(curCell)->setText(listGameWord[state[i]]);
+    }
+
+    for (int i = 0; i < 4; i++) {
+        string curCell = "GameCell" + to_string(i + 1);
+        gui.get<Group>("groupGame")->get<Button>(curCell)->onClick(&isGameChoose, ref(gui), i + 1, answer);
+    }
 }
 
 void setAction(BackendGui& gui)
