@@ -9,7 +9,7 @@ Renderer.1 {
     BorderColorFocused = #1E1EB4;
     BorderColorHover = black;
     Borders = (0, 0, 0, 0);
-    Font = "E:\\HCMUS SEMESTER 3\\DATA STRUCTURES\\TASK\\DictionaryProject\\Dictionary\\Dictionary\\Dictionary\\Assets\\Font\\Lato_Semibold.ttf";
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
     TextColor = white;
     TextColorDisabled = #7D7D7D;
     TextColorDown = black;
