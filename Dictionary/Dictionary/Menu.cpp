@@ -13,6 +13,7 @@ void startup(BackendGui& gui)
     gui.get<Group>("groupChooseLangague")->setVisible(false);
     gui.get<Group>("groupHistory")->setVisible(false);
     gui.get<Group>("groupAdd")->setVisible(false);
+    gui.get<Group>("groupGame")->setVisible(false);
 
 }
 void loadRandomWord(BackendGui& gui);
@@ -27,6 +28,7 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupHistory")->setVisible(id == 4);
     gui.get<Group>("groupWordDefinition")->setVisible(id == 5);
     gui.get<Group>("groupAdd")->setVisible(id == 6);
+    gui.get<Group>("groupGame")->setVisible(id == 7);
 }
 
 
@@ -198,6 +200,10 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     auto groupAdd = tgui::Group::create();
     groupAdd->loadWidgetsFromFile("Assets/Form/AddForm/AddForm.txt");
     gui.add(groupAdd, "groupAdd");
+
+    auto groupGame = tgui::Group::create();
+    groupGame->loadWidgetsFromFile("Assets/Form/GameForm/GameForm.txt");
+    gui.add(groupGame, "groupGame");
 }
 
 void loadRandomWord(BackendGui& gui)
@@ -252,6 +258,9 @@ void setAction(BackendGui& gui)
 
     // History
     gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
+
+    // Game
+    gui.get<Button>("GameButton")->onClick(&onSwitchForm, ref(gui), 7);
 
     // Add New Word
     gui.get<Button>("AddWordButton")->onClick(&onSwitchForm, ref(gui), 6);

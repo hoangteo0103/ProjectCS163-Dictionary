@@ -25,7 +25,7 @@ EditBox.SearchBar {
         CaretColor = black;
         CaretWidth = 1;
         DefaultTextColor = black;
-        Font = "Assets\\Font\\Lato_Semibold.ttf";
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
         Padding = (20, 0, 50, 0);
         SelectedTextBackgroundColor = #006EFF;
         SelectedTextColor = white;

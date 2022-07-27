@@ -1,0 +1,9 @@
+Picture.Picture8 {
+    Position = (120, 126.186);
+    Size = (1288, 879);
+
+    Renderer {
+        Texture = "GameScreen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
