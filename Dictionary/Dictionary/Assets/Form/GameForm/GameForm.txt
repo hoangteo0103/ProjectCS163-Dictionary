@@ -14,7 +14,57 @@ Renderer.1 {
     TextColorDisabled = #7D7D7D;
     TextColorDown = black;
     TextColorHover = black;
+    Texture = "CorrectCell.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = "HoverCell.png" Smooth;
+}
+
+Renderer.2 {
+    BackgroundColor = #F5F5F5;
+    BackgroundColorDisabled = #E6E6E6;
+    BackgroundColorDown = #EBEBEB;
+    BackgroundColorHover = white;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = white;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
     Texture = "Cell.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = "HoverCell.png" Smooth;
+}
+
+Renderer.3 {
+    BackgroundColor = #F5F5F5;
+    BackgroundColorDisabled = #E6E6E6;
+    BackgroundColorDown = #EBEBEB;
+    BackgroundColorHover = white;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = white;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "WrongCell.png" Smooth;
     TextureDisabled = None;
     TextureDown = None;
     TextureDownFocused = None;
@@ -35,7 +85,7 @@ Picture.Picture8 {
 
 Button.GameCell1 {
     Position = (220, 500);
-    Renderer = &1;
+    Renderer = &2;
     Size = (300, 90);
     Text = Button;
     TextSize = 25;
@@ -43,7 +93,7 @@ Button.GameCell1 {
 
 Button.GameCell2 {
     Position = (720, 500);
-    Renderer = &1;
+    Renderer = &2;
     Size = (300, 90);
     Text = Button;
     TextSize = 25;
@@ -51,7 +101,7 @@ Button.GameCell2 {
 
 Button.GameCell3 {
     Position = (220, 670);
-    Renderer = &1;
+    Renderer = &2;
     Size = (300, 90);
     Text = Button;
     TextSize = 25;
@@ -59,16 +109,88 @@ Button.GameCell3 {
 
 Button.GameCell4 {
     Position = (720, 670);
-    Renderer = &1;
+    Renderer = &2;
     Size = (300, 90);
     Text = Button;
     TextSize = 25;
 }
 
-Button.GameCell5 {
+Button.KeyWord {
     Position = (470, 360);
+    Renderer = &2;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+}
+
+Button.CorrectCell1 {
+    Position = (220, 500);
     Renderer = &1;
     Size = (300, 90);
     Text = Button;
     TextSize = 25;
+    Visible = false;
+}
+
+Button.CorrectCell2 {
+    Position = (720, 500);
+    Renderer = &1;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.CorrectCell3 {
+    Position = (220, 670);
+    Renderer = &1;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.CorrectCell4 {
+    Position = (720, 670);
+    Renderer = &1;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.WrongCell1 {
+    Position = (220, 500);
+    Renderer = &3;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.WrongCell2 {
+    Position = (220, 670);
+    Renderer = &3;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.WrongCell3 {
+    Position = (720, 500);
+    Renderer = &3;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.WrongCell4 {
+    Position = (720, 670);
+    Renderer = &3;
+    Size = (300, 90);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
 }
