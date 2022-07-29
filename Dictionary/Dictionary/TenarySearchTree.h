@@ -241,6 +241,7 @@ struct TenarySearchTree {
         return L + (t * t * t * rand() + t * t * rand() + t * rand() + rand()) % (R - L + 1);
     }
 
+    // to random word
     string randomWord(Node* root, char* buffer, int pos = 0) {
         if (!root) return "";
 
@@ -251,7 +252,7 @@ struct TenarySearchTree {
             return res;
         }
 
-        int isChoose = random(0, 5);
+        int isChoose = random(0, 10);
         if (root->EOS && isChoose == 0) {
             buffer[pos] = root->data;
             buffer[++pos] = '\0';
@@ -262,13 +263,13 @@ struct TenarySearchTree {
         Node* nextNode;
 
         while (1) {
-            int curRand = random(1, 3);
+            int curRand = random(1, 100);
 
             nextNode = root;
 
-            if (curRand == 1) nextNode = root->left;
+            if (curRand < 5) nextNode = root->left;
             else {
-                if (curRand == 2) nextNode = root->middle;
+                if (curRand < 20) nextNode = root->middle;
                 else nextNode = root->right;
             }
 
@@ -304,6 +305,7 @@ struct TenarySearchTree {
     string genRandomWord()
     {
         char buffer[105];
+        memset(buffer, 0, sizeof(buffer));
 
         string res = randomWord(root, buffer);
 
