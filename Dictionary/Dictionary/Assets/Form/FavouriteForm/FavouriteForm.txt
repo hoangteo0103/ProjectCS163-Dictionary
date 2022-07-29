@@ -1,27 +1,20 @@
-Picture.Picture8 {
-    Position = (300, 180);
-    Size = (813, 599);
+Picture.Picture1 {
+    Position = (120, 130);
+    Size = (1030, 777);
 
     Renderer {
-        Texture = "border2-removebg-preview.png" Smooth;
+        Texture = "Favourite Screen.png" Smooth;
         TransparentTexture = false;
     }
 }
 
-ScrollablePanel.FavouriteWordListPanel {
-    ContentSize = (0, 0);
-    Position = (360, 220);
-    Size = (700, 500);
+Panel.FavouriteWordListPanel {
+    Position = (210, 350);
+    Size = (830, 460);
 
     Renderer {
-        BackgroundColor = rgb(230, 230, 230);
+        BackgroundColor = white;
+        BorderColor = black;
         TextureBackground = None;
-
-        Scrollbar {
-            TextureArrowDown = "themes/BabyBlue.png" Part(20, 2, 16, 16) Smooth;
-            TextureArrowUp = "themes/BabyBlue.png" Part(2, 2, 16, 16) Smooth;
-            TextureThumb = "themes/BabyBlue.png" Part(414, 2, 16, 32) Smooth;
-            TextureTrack = "themes/BabyBlue.png" Part(432, 2, 16, 32) Smooth;
-        }
     }
 }

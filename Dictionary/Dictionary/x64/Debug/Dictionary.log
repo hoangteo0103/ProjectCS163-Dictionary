@@ -1,7 +1,7 @@
 ﻿  Menu.cpp
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(255,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(266,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(83,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(99,61): warning C4305: 'argument': truncation from 'double' to 'float'
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(307,23): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-  Dictionary.vcxproj -> E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\x64\Debug\Dictionary.exe
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(255,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(266,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(83,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(99,61): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(307,23): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe
