@@ -1,4 +1,4 @@
-﻿aasvogel  :  (dong vat hoc) con ken ken (Nam Phi);
+aasvogel  :  (dong vat hoc) con ken ken (Nam Phi);
 aba  :  ao aba (ao ngoai giong hinh cai tui nguoi a-Rap);
 abaci  :  ban tinh; (kien truc); dau cot;
 aback  :  lui lai; tro lai phia sau; (hang hai) bi thoi ep vao cot buom (buom);
@@ -1117,7 +1117,7 @@ ait  :  cu lao; hon dao nho (giua dong song);
 aitchbone  :  xuong dui (bo);
 ajar  :  mo he; dong ho; khep ho (cua);
 ajog  :  di nuoc kieu nho (ngua);
-ajutage : 
+ajutage : hic hic
 akene  :  (thuc vat hoc) qua be;
 akimbo  :  chong nanh;
 akin  :  than thuoc; ba con; co ho;
@@ -1140,7 +1140,7 @@ albata  :  hop kim mayso;
 albatross  :  chim hai au lon;
 albeit  :  (tu co;nghia co) mac du; du;
 albert  :  day dong ho anbe ((cung)[albert chain]) (lay ten cua ong hoang an-be; chong nu hoang Vich-to-ri-a);
-albescent  : 
+albescent  : xy
 albinism  :  (y hoc) chung bach tang;
 albino  :  nguoi bach tang; thu bach tang; cay bach tang;
 albion  :  (tho ca) nuoc anh;

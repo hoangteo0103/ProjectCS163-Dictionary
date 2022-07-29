@@ -348,16 +348,16 @@ struct TenarySearchTree {
     void selectData(string filePath) {
         ifstream fin;
         fin.open(filePath.c_str());
-
-
+           
         string myWord;
+
         while (getline(fin, myWord)) {
             string keyWord = "";
             vector <string> definitionList;
 
             int i = 0;
             while (i < myWord.size() - 2) {
-                if (myWord[i] == ' ' && myWord[i + 1] == ' ' && myWord[i + 2] == ':' && myWord[i + 3] == ' ' && myWord[i + 4]==' ') break;
+                if (myWord[i] == ' ' && myWord[i + 1] == ' ' && myWord[i + 2] == ':' && myWord[i + 3] == ' ' && myWord[i + 4]== ' ') break;
                 keyWord += myWord[i++];
             }
 
@@ -375,8 +375,9 @@ struct TenarySearchTree {
                 }
             }
 
-            for(auto definition: definitionList)
-                this->insert(this->root, keyWord, definition);
+            if(keyWord != "")
+                for(auto definition: definitionList)
+                    this->insert(this->root, keyWord, definition);
         }
     }
 };
