@@ -82,12 +82,12 @@ void onSearch(BackendGui& gui)
     onSwitchToDefinition(gui, word);
     int index = favData.historyList.size();
     favData.historyList[word] = true;
-    auto dm = tgui::Button::create();
-    dm->setHeight(100);
-    dm->setWidth(100);
-    dm->setPosition(0 + 150, 0 + index * 150);
+    auto dm = tgui::Button::copy(gui.get<Group>("groupHistory")->get<Button>("HistoryListPanelButton"));
+    dm->setVisible(true);
+    dm->setHeight(75);
+    dm->setWidth(840);
+    dm->setPosition(0, 0 + index * 86);
     dm->setText(word);
-    index++;
     dm->onClick(&onSwitchToDefinition, ref(gui), word);
     gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(dm);
 
@@ -206,7 +206,7 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     gui.add(groupChooseLangague, "groupChooseLangague");
 
     auto groupHistory = tgui::Group::create();
-    groupHistory->loadWidgetsFromFile("Assets/Form/HistoryForm/HistoryForm.txt");
+    groupHistory->loadWidgetsFromFile("Assets/Form/HistoryForm1/HistoryForm.txt");
     gui.add(groupHistory, "groupHistory");
 
     auto groupAdd = tgui::Group::create();
