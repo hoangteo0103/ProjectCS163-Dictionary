@@ -126,10 +126,11 @@ void onLike(BackendGui& gui)
     for (auto t : favData.isFavourited)
     {
         if (!t.second) continue;
-        auto dm = tgui::Button::create();
-        dm->setHeight(100);
-        dm->setWidth(100);
-        dm->setPosition(0 + 150, 0 + index * 150);
+        auto dm = tgui::Button::copy(gui.get<Group>("groupFavourite")->get<Button>("FavouriteListWordButton"));
+        dm->setVisible(true);
+        dm->setHeight(75);
+        dm->setWidth(840);
+        dm->setPosition(0 , 0 + index * 86);
         dm->setText(t.first);
         index++;
         dm->onClick(&onSwitchToDefinition, ref(gui), t.first);
