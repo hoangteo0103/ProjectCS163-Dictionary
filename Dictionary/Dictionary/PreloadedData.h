@@ -22,6 +22,5 @@ public :
 			isFavourited[word] = true;
 		}
 	}
-
 } favData;
 

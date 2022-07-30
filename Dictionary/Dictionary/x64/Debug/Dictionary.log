@@ -1,7 +1,10 @@
-﻿  Menu.cpp
+﻿  Core.cpp
 D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(255,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(266,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(83,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(99,61): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(308,23): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  Menu.cpp
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(255,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(266,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(82,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(98,61): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
   Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe
