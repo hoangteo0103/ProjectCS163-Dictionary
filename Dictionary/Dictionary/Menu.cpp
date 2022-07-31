@@ -1,5 +1,5 @@
 #include "Menu.h"
-
+#include "WordGame.h"
 // Menu Form
 
 
@@ -30,6 +30,8 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupWordDefinition")->setVisible(id == 5);
     gui.get<Group>("groupAdd")->setVisible(id == 6);
     gui.get<Group>("groupGame")->setVisible(id == 7);
+    gui.get<Group>("groupIngame")->setVisible(false);
+
 }
 
 
@@ -288,6 +290,7 @@ bool runMenu(BackendGui& gui) {
         texture.loadTexture();
         loadWidgetsMenu(gui);
         startup(gui);
+        Game.startupGame(gui);
         treeEn.selectData("Assets/Data/EnToVn.txt");
         treeVn.selectData("Assets/Data/VnToEn.txt");
         treeSlang.selectData("Assets/Data/Slang.txt");
