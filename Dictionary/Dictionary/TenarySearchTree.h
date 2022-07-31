@@ -3,6 +3,9 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include<random>
+using namespace std;
+
 using namespace std;
 struct Node {
     // data
@@ -235,10 +238,13 @@ struct TenarySearchTree {
         for (auto i : listHistoryWord) cout << i << '\n';
     }
 
+
     long long random(int L, int R) {
+        auto seed = chrono::high_resolution_clock::now().time_since_epoch().count();
+        std::mt19937 mt(seed);
         long long t = RAND_MAX + 1;
 
-        return L + (t * t * t * rand() + t * t * rand() + t * rand() + rand()) % (R - L + 1);
+        return L + (t * t * t * mt() + t * t * mt() + t * mt() + mt()) % (R - L + 1);
     }
 
     // to random word

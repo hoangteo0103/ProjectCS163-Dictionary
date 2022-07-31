@@ -177,6 +177,7 @@ void onChangeDataset(BackendGui& gui,  int index)
         break;
     }
     gui.get<Button>("ChooseLangagueButton")->setText(button);
+    Game.setupButton(gui, tree);
     onSwitchForm(gui, 1);
 }
 
@@ -290,12 +291,12 @@ bool runMenu(BackendGui& gui) {
         texture.loadTexture();
         loadWidgetsMenu(gui);
         startup(gui);
-        Game.startupGame(gui);
         treeEn.selectData("Assets/Data/EnToVn.txt");
         treeVn.selectData("Assets/Data/VnToEn.txt");
         treeSlang.selectData("Assets/Data/Slang.txt");
         treeEmo.selectData("Assets/Data/Emotional.txt");
         tree = treeEn;
+        Game.startupGame(gui, tree);
         setAction(gui);
         return true;
     }

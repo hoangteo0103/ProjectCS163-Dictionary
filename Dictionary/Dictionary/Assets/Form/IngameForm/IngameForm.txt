@@ -7,9 +7,34 @@ Renderer.1 {
     TextureBackground = None;
 }
 
+Renderer.2 {
+    BackgroundColor = None;
+    BackgroundColorDisabled = None;
+    BackgroundColorDown = None;
+    BackgroundColorHover = None;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "answer-button-unhovered.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = "answer-button-hovered.png" Smooth;
+}
+
 Picture.Picture8 {
     Position = (120, 126.186);
-    Size = (1030, 780);
+    Size = (1029, 780);
 
     Renderer {
         Texture = "In Game Screen.png" Smooth;
@@ -100,4 +125,68 @@ Label.WrongNumber {
         TextColor = #F80F0F;
         TextureBackground = None;
     }
+}
+
+Button."Word Label" {
+    Position = (500, 430);
+    Size = (218, 64);
+    Text = Apple;
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+        TextColor = white;
+        TextColorDisabled = None;
+        TextColorDown = None;
+        TextColorHover = None;
+        Texture = "Word-Label.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.Answer1 {
+    Position = (240, 580);
+    Renderer = &2;
+    Size = (258, 101.724);
+    Text = Button;
+    TextSize = 25;
+}
+
+Button.Answer2 {
+    Position = (770, 580);
+    Renderer = &2;
+    Size = (258, 101.724);
+    Text = Button;
+    TextSize = 25;
+}
+
+Button.Answer3 {
+    Position = (240, 730);
+    Renderer = &2;
+    Size = (258, 101.724);
+    Text = Button;
+    TextSize = 25;
+}
+
+Button.Answer4 {
+    Position = (770, 730);
+    Renderer = &2;
+    Size = (258, 101.724);
+    Text = Button;
+    TextSize = 25;
 }
