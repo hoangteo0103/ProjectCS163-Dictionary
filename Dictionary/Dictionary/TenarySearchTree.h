@@ -239,12 +239,10 @@ struct TenarySearchTree {
     }
 
 
-    long long random(int L, int R) {
+    long long random(long long L, long long R) {
         auto seed = chrono::high_resolution_clock::now().time_since_epoch().count();
         std::mt19937 mt(seed);
-        long long t = RAND_MAX + 1;
-
-        return L + (t * t * t * mt() + t * t * mt() + t * mt() + mt()) % (R - L + 1);
+        return L + mt() % (R - L + 1LL);
     }
 
     // to random word

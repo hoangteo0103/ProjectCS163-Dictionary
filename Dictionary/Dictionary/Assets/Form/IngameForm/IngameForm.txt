@@ -7,29 +7,14 @@ Renderer.1 {
     TextureBackground = None;
 }
 
-Renderer.2 {
-    BackgroundColor = None;
-    BackgroundColorDisabled = None;
-    BackgroundColorDown = None;
-    BackgroundColorHover = None;
-    BorderColor = #3C3C3C;
-    BorderColorDisabled = #7D7D7D;
-    BorderColorDown = black;
-    BorderColorFocused = #1E1EB4;
-    BorderColorHover = black;
-    Borders = (0, 0, 0, 0);
-    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
-    TextColor = #3C3C3C;
-    TextColorDisabled = #7D7D7D;
-    TextColorDown = black;
-    TextColorHover = black;
-    Texture = "answer-button-unhovered.png" Smooth;
-    TextureDisabled = None;
-    TextureDown = None;
-    TextureDownFocused = None;
-    TextureDownHover = None;
-    TextureFocused = None;
-    TextureHover = "answer-button-hovered.png" Smooth;
+Picture.Veil {
+    Position = (120, 130);
+    Size = (770, 770);
+    Visible = false;
+
+    Renderer {
+        Texture = None;
+    }
 }
 
 Picture.Picture8 {
@@ -87,7 +72,7 @@ Label.GameRoundNumberLabel {
 }
 
 Label.Label2 {
-    Position = (996, 303);
+    Position = (988, 303);
     Renderer = &1;
     ScrollbarPolicy = Never;
     Size = (24.9756, 71);
@@ -96,7 +81,8 @@ Label.Label2 {
 }
 
 Label.RightNumber {
-    Position = (894, 322);
+    Position = (879, 322);
+    ScrollbarPolicy = Never;
     Size = (101.8, 32);
     Text = "1 Right";
     TextSize = 25;
@@ -112,7 +98,8 @@ Label.RightNumber {
 }
 
 Label.WrongNumber {
-    Position = (1022, 322);
+    Position = (1012, 322);
+    ScrollbarPolicy = Never;
     Size = (120.8, 32);
     Text = "2 Wrong";
     TextSize = 25;
@@ -161,32 +148,194 @@ Button."Word Label" {
 
 Button.Answer1 {
     Position = (240, 580);
-    Renderer = &2;
     Size = (258, 101.724);
     Text = Button;
     TextSize = 25;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "answer-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "answer-button-hovered.png" Smooth;
+    }
 }
 
 Button.Answer2 {
     Position = (770, 580);
-    Renderer = &2;
     Size = (258, 101.724);
     Text = Button;
     TextSize = 25;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "answer-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "answer-button-hovered.png" Smooth;
+    }
 }
 
 Button.Answer3 {
     Position = (240, 730);
-    Renderer = &2;
     Size = (258, 101.724);
     Text = Button;
     TextSize = 25;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "answer-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "answer-button-hovered.png" Smooth;
+    }
 }
 
 Button.Answer4 {
     Position = (770, 730);
-    Renderer = &2;
     Size = (258, 101.724);
     Text = Button;
     TextSize = 25;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "answer-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "answer-button-hovered.png" Smooth;
+    }
+}
+
+Button.Noti {
+    Position = (540, 530);
+    Size = (130, 22);
+    Text = Button;
+    TextSize = 13;
+    Visible = false;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = None;
+        BorderColorDown = None;
+        BorderColorDownFocused = None;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Regular.ttf";
+        TextColor = white;
+        TextColorDisabled = None;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "noti-button.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.NextButton {
+    Position = (520, 810);
+    Size = (180, 66);
+    TextSize = 13;
+    Visible = false;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = None;
+        TextColorDown = None;
+        TextColorDownFocused = None;
+        TextColorHover = black;
+        Texture = "NextButton.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
 }
