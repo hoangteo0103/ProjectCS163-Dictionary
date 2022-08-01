@@ -75,21 +75,18 @@ public :
 		{
 			string name = "Answer" + to_string(i);
 			gui.get<Group>("groupIngame")->get<Button>(name)->setText(listAns[i - 1]);
-			gui.get<Group>("groupIngame")->get<Button>(name)->showWithEffect(tgui::ShowEffectType::Fade, 100);
 			gui.get<Group>("groupIngame")->get<Button>(name)->getRenderer()->setTexture(onNormalTexture);
 			gui.get<Group>("groupIngame")->get<Button>(name)->getRenderer()->setTextureHover(onNormalHoverTexture);
+			gui.get<Group>("groupIngame")->get<Button>(name)->showWithEffect(tgui::ShowEffectType::Fade, 1000);
 			if (i != indexAns)
 				gui.get<Group>("groupIngame")->get<Button>(name)->onClick(&onWrongAns, ref(gui) , i , indexAns, tree , mode );
 			else gui.get<Group>("groupIngame")->get<Button>(name)->onClick(&onRightAns, ref(gui) , i , tree ,mode);
 		}
-
 	}
 	void beginGame(BackendGui& gui, TenarySearchTree tree, int mode)
 	{
 		numRound = numRight = numWrong = 0;
-		gui.get<Label>("GameRoundNumberLabel")->setText("0/50");
-		gui.get<Label>("RightNumber")->setText("0 Right");
-		gui.get<Label>("WrongNumber")->setText("0 Wrong");  
+		updateGameScreen(gui);
 		loadWord(gui, tree, mode);
 	}
 	void loadWidgetGame(BackendGui& gui)
@@ -131,7 +128,7 @@ void updateGameScreen(BackendGui& gui)
 
 void onNextRound(BackendGui& gui, TenarySearchTree tree, int mode)
 {
-	Game.loadWord(gui, tree, mode);
+	Game.loadWord(ref(gui), tree, mode);
 }
 
 void onChangeGameMode(BackendGui& gui, TenarySearchTree tree , int mode)
@@ -140,7 +137,7 @@ void onChangeGameMode(BackendGui& gui, TenarySearchTree tree , int mode)
 	gui.get<Group>("groupIngame")->setVisible(true);
 	gui.get<Label>("GameModeLabel")->setText(to_string(mode));
 	gui.get<Label>("GameRuleLabel")->setText(gamerule[mode - 1]);
-	Game.beginGame(gui , tree ,  mode);
+	Game.beginGame(ref(gui), tree ,  mode);
 }
 
 void onWrongAns(BackendGui& gui , int id, int indexAns, TenarySearchTree tree, int mode)
@@ -160,9 +157,9 @@ void onWrongAns(BackendGui& gui , int id, int indexAns, TenarySearchTree tree, i
 
 	gui.get<Group>("groupIngame")->get<Button>("NextButton")->moveToFront();
 	gui.get<Group>("groupIngame")->get<Button>("NextButton")->setVisible(true);
-	gui.get<Group>("groupIngame")->get<Button>("NextButton")->onClick(&onNextRound , ref(gui) ,tree ,mode);
 	Game.numRound++;
 	Game.numWrong++;
+	gui.get<Group>("groupIngame")->get<Button>("NextButton")->onClick(&onNextRound, ref(gui), tree, mode);
 
 }
 void onRightAns(BackendGui& gui, int id, TenarySearchTree tree, int mode)
@@ -175,6 +172,6 @@ void onRightAns(BackendGui& gui, int id, TenarySearchTree tree, int mode)
 	gui.get<Group>("groupIngame")->get<Button>("Noti")->hideWithEffect(tgui::ShowEffectType::Fade , 500);
 	Game.numRound++;
 	Game.numRight++;
-	Game.loadWord(gui, tree, mode);
+	Game.loadWord(ref(gui), tree, mode);
 	
 }
