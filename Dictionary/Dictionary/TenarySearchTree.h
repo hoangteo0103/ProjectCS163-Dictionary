@@ -33,7 +33,7 @@ struct Node {
 };
 struct TenarySearchTree {
     // number suggestion word
-    static const int numFillWord = 10;
+    static const int numFillWord = 6;
     // number word in searching history
     static const int numHistoryWord = 10;
 

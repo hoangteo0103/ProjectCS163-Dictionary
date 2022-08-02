@@ -7,6 +7,7 @@ TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo;
 
 void startup(BackendGui& gui)
 {
+    gui.add(tgui::Group::create(), "suggestWordGroup");
     gui.get<Group>("groupHome")->setVisible(true);
     gui.get<Group>("groupWordDefinition")->setVisible(false);
     gui.get<Group>("groupFavourite")->setVisible(false);
@@ -73,8 +74,40 @@ void convertStringToLowercase(string& s)
     }
 }
 
+void clickSuggestWord(BackendGui& gui, string word, vector<tgui::Button::Ptr> &wordList)
+{
+    cout << "---" << word << "---" << endl;
+}
+
+void suggestWord(BackendGui& gui)
+{
+    gui.get<Group>("suggestWordGroup")->removeAllWidgets();
+    string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
+    if ((int)word.size() == 0) return;
+    convertStringToLowercase(word);
+    vector<string> res = tree.autoComplete(tree.root, word);
+    
+    cout << endl;
+    vector<tgui::Button::Ptr> wordList;
+    for (int i = 0; i < res.size(); i++)
+    {
+        cout << res[i] << endl;
+        tgui::Button::Ptr box = tgui::Button::create();
+        gui.get<Group>("suggestWordGroup")->add(box);
+        box->setHeight(60);
+        box->setWidth(gui.get<EditBox>("SearchBar")->getFullSize().x);
+        box->setText(res[i]);
+        box->setTextSize(gui.get<EditBox>("SearchBar")->getTextSize());
+        box->setPosition(gui.get<EditBox>("SearchBar")->getPosition().x, gui.get<EditBox>("SearchBar")->getPosition().y + box->getFullSize().y * (i + 1));
+        box->setVisible(true);
+        box->onClick(&clickSuggestWord, ref(gui), (string)box->getText(), ref(wordList));
+        wordList.push_back(box);
+    }
+}
+
 void onSearch(BackendGui& gui)
 {
+    suggestWord(gui);
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
     convertStringToLowercase(word);
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
@@ -91,8 +124,6 @@ void onSearch(BackendGui& gui)
     dm->setText(word);
     dm->onClick(&onSwitchToDefinition, ref(gui), word);
     gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(dm);
-
-
 }
 
 void onBlurred(BackendGui& gui)
