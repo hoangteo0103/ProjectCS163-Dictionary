@@ -351,6 +351,16 @@ struct TenarySearchTree {
         traverseTSTuntil(root, buffer);
     }
 
+    void saveHistoryListToFile(string filePath) {
+        ofstream fout(filePath.c_str());
+
+        for (auto i : listHistoryWord) {
+            fout << i << '\n';
+        }
+
+        fout.close();
+    }
+
     void selectData(string filePath) {
         ifstream fin;
         fin.open(filePath.c_str());

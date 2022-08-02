@@ -91,8 +91,6 @@ void onSearch(BackendGui& gui)
     dm->setText(word);
     dm->onClick(&onSwitchToDefinition, ref(gui), word);
     gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(dm);
-
-
 }
 
 void onBlurred(BackendGui& gui)
