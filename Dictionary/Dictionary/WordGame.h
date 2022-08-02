@@ -31,7 +31,9 @@ class gg{
 public :
 	int numRound = 0, numRight = 0, numWrong = 0;
 	void loadWord(BackendGui& gui, TenarySearchTree tree , int mode)
+
 	{
+		gui.get<Group>("groupIngame")->get<Picture>("Veil")->setVisible(false);
 		seed = random(1, 100000);
 		updateGameScreen(gui);
 		string wordGame = tree.genRandomWord();

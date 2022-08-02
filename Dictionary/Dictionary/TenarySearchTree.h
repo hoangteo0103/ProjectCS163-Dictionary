@@ -360,7 +360,6 @@ struct TenarySearchTree {
         while (getline(fin, myWord)) {
             string keyWord = "";
             vector <string> definitionList;
-
             int i = 0;
             while (i < myWord.size() - 2) {
                 if (myWord[i] == ' ' && myWord[i + 1] == ' ' && myWord[i + 2] == ':' && myWord[i + 3] == ' ' && myWord[i + 4]== ' ') break;
