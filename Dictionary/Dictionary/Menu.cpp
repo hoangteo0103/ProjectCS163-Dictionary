@@ -55,13 +55,18 @@ void onSwitchToDefinition(BackendGui& gui, string word)
     for (int i = 0; i < 3; i++)
     {
         string index = "Def" + to_string(i + 1);
+        string InputIndex = "NewDef" + to_string(i + 1);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(false);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
     }
     for (int i = 0; i < ans.size(); i++)
     {
         string index = "Def" + to_string(i + 1);
+        string EditIndex = "Edit" + to_string(i + 1);
+        string SaveIndex = "Save" + to_string(i + 1);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(true);
+        gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(true);
+        gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(true);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText(ans[i]);
     }
 }
@@ -179,6 +184,38 @@ void onRemove(BackendGui& gui)
     }
 
 }
+void onEdit(BackendGui& gui,int index)
+{
+    if (1 <= index && index <= 3)
+    {
+        string InputIndex = "NewDef" + to_string(index);
+        gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(true);
+    }
+    else
+    {
+         string InputIndex = "NewDef" + to_string(index - 3);
+         string Newdef = gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->getText().toStdString();
+         if (Newdef == "") return;
+         string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
+         convertStringToLowercase(word);
+         convertStringToLowercase(Newdef);
+         vector<string> ans = tree.searchDefinition(tree.root, word, 0);
+         if (ans.size() == 0)
+         {
+             cout << "ERROR!!";
+             return;
+         }
+         ans[index - 4] = Newdef;
+         tree.remove(tree.root, word, 0);
+         for (int i = 0; i < ans.size(); i++)
+             tree.insert(tree.root, word, ans[i]);
+         gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setText("");
+         gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
+         onSwitchToDefinition(gui, word);
+         
+    }
+
+}
 
 void onChangeDataset(BackendGui& gui,  int index)
 {
@@ -289,6 +326,12 @@ void setAction(BackendGui& gui)
     // Word Definition
     gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui));
     gui.get<Group>("groupWordDefinition")->get<Button>("RemoveButton")->onClick(&onRemove, ref(gui));
+    gui.get<Group>("groupWordDefinition")->get<Button>("Edit1")->onClick(&onEdit, ref(gui),1);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Edit2")->onClick(&onEdit, ref(gui), 2);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Edit3")->onClick(&onEdit, ref(gui), 3);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Save1")->onClick(&onEdit, ref(gui), 4);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Save2")->onClick(&onEdit, ref(gui), 5);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Save3")->onClick(&onEdit, ref(gui), 6);
 
     // Home
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm, ref(gui), 1);
