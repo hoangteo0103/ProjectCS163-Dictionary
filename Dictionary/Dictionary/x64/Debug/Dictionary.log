@@ -13,6 +13,6 @@ D:\Project_CS163\Project_CS163\Dictionary\Dictionary\WordGame.h(17,18): warning 
           ]
 D:\Project_CS163\Project_CS163\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
 D:\Project_CS163\Project_CS163\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\Menu.cpp(90,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\Menu.cpp(133,61): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Project_CS163\Project_CS163\Dictionary\Dictionary\Menu.cpp(96,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Project_CS163\Dictionary\Dictionary\Menu.cpp(139,61): warning C4305: 'argument': truncation from 'double' to 'float'
   Dictionary.vcxproj -> D:\Project_CS163\Project_CS163\Dictionary\x64\Debug\Dictionary.exe

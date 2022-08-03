@@ -55,19 +55,25 @@ void onSwitchToDefinition(BackendGui& gui, string word)
     for (int i = 0; i < 3; i++)
     {
         string index = "Def" + to_string(i + 1);
-        string InputIndex = "NewDef" + to_string(i + 1);
+        string EditIndex = "Edit" + to_string(i + 1);
+        string SaveIndex = "Save" + to_string(i + 1);
+
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(false);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
+        gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(false);
+        gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
     }
     for (int i = 0; i < ans.size(); i++)
     {
         string index = "Def" + to_string(i + 1);
         string EditIndex = "Edit" + to_string(i + 1);
         string SaveIndex = "Save" + to_string(i + 1);
+
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(true);
         gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(true);
         gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(true);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText(ans[i]);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setTextSize(20);
     }
 }
 
