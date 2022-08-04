@@ -184,20 +184,32 @@ struct TenarySearchTree {
     void traverseToFillWord(Node* root, vector <string>& res, char* buffer, string pattern, int depth = 0) {
         if (!root) return;
 
-        traverseToFillWord(root->left, res, buffer, pattern, depth);
-
         buffer[depth] = root->data;
 
         if (root->EOS) {
             buffer[depth + 1] = '\0';
-            string resStr = pattern;
+            string resStr = "";
+            int len = pattern.size() - 1;
+            for (int i = 0; i < len; i++) {
+                resStr += pattern[i];
+            }
+
             resStr += string(buffer);
             if (res.size() < numFillWord)
                 res.push_back(resStr);
             else return;
         }
 
+        if (res.size() >= numFillWord) return;
+
+        traverseToFillWord(root->left, res, buffer, pattern, depth);
+
+        if (res.size() >= numFillWord) return;
+
         traverseToFillWord(root->middle, res, buffer, pattern, depth + 1);
+
+        if (res.size() >= numFillWord) return;
+
         traverseToFillWord(root->right, res, buffer, pattern, depth);
     }
 
@@ -209,8 +221,6 @@ struct TenarySearchTree {
 
         traverseToFillWord(root, res, buffer, pattern);
 
-        if (root->EOS == 1)
-            res.push_back(pattern);
         return res;
     }
 
@@ -229,6 +239,7 @@ struct TenarySearchTree {
             else {
                 if (root->data < pattern[pos]) root = root->right;
                 else {
+                    if (pos + 1 == pattern.size()) break;
                     root = root->middle;
                     pos++;
                 }
