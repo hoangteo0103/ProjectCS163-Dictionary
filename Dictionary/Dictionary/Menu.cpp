@@ -369,10 +369,21 @@ bool runMenu(BackendGui& gui) {
         texture.loadTexture();
         loadWidgetsMenu(gui);
         startup(gui);
-        treeEn.selectData("Assets/Data/EnToVn.txt");
-        treeVn.selectData("Assets/Data/VnToEn.txt");
-        treeSlang.selectData("Assets/Data/Slang.txt");
-        treeEmo.selectData("Assets/Data/Emotional.txt");
+        //treeEn.selectData("Assets/Data/EnToVn.txt");
+        //treeVn.selectData("Assets/Data/VnToEn.txt");
+        //treeSlang.selectData("Assets/Data/Slang.txt");
+        //treeEmo.selectData("Assets/Data/Emotional.txt");
+          
+        //treeEn.saveTreeToTxt("Assets/TreeFormat/EnToVn.txt");
+        //treeVn.saveTreeToTxt("Assets/TreeFormat/VnToEn.txt");
+        //treeSlang.saveTreeToTxt("Assets/TreeFormat/Slang.txt");
+        //treeEmo.saveTreeToTxt("Assets/TreeFormat/Emotional.txt");
+
+        treeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
+        treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
+        treeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
+        treeEmo.loadTreeFromTxt("Assets/TreeFormat/Emotional.txt");
+
         tree = treeEn;
         Game.startupGame(gui, tree);
         setAction(gui);
