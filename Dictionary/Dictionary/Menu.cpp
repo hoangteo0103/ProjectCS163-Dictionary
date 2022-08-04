@@ -320,7 +320,10 @@ long long random(int L, int R) {
 
     return L + (t * t * t * rand() + t * t * rand() + t * rand() + rand()) % (R - L + 1);
 }
-
+void onOutMouse(BackendGui& gui)
+{
+    gui.get<Group>("suggestWordGroup")->removeAllWidgets();
+}
 void setAction(BackendGui& gui)
 {
     // Menu
@@ -328,7 +331,7 @@ void setAction(BackendGui& gui)
     gui.get<Button>("SearchButton")->onMouseEnter(&onBlurred, ref(gui));
     gui.get<Button>("SearchButton")->onMouseLeave(&onUnBlurred, ref(gui));
     gui.get<EditBox>("SearchBar")->onTextChange(&suggestWord, ref(gui));
-
+    gui.get<EditBox>("SearchBar")->onUnfocus(&onOutMouse , ref(gui));
     // Word Definition
     gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui));
     gui.get<Group>("groupWordDefinition")->get<Button>("RemoveButton")->onClick(&onRemove, ref(gui));
