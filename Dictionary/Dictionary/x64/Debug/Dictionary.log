@@ -1,18 +1,27 @@
-﻿  Menu.cpp
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(244,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+﻿  Core.cpp
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(252,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(259,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(270,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\WordGame.h(17,18): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(267,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(278,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Menu.cpp
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(252,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\Menu.cpp(96,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Project_CS163\Project_CS163\Dictionary\Dictionary\Menu.cpp(139,61): warning C4305: 'argument': truncation from 'double' to 'float'
-  Dictionary.vcxproj -> D:\Project_CS163\Project_CS163\Dictionary\x64\Debug\Dictionary.exe
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(267,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(278,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\WordGame.h(17,18): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(96,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(139,61): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+  Dictionary.vcxproj -> E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\x64\Debug\Dictionary.exe

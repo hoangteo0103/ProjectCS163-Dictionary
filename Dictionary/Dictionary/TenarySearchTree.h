@@ -14,6 +14,12 @@ struct Node {
     Node* left, * middle, * right;
     vector <string> listDef;
 
+    Node() {
+        this->EOS = 0;
+        this->left = this->middle = this->right = NULL;
+        listDef.clear();
+    }
+
     // Constructor new node
     Node(char data)
     {
@@ -26,7 +32,9 @@ struct Node {
     // destruction
     void destroy() {
         this->EOS = 0;
-        delete this->left, this->right, this->middle;
+        delete this->left;
+        delete this->right;
+        delete this->middle;
         this->left = this->middle = this->right = NULL;
         listDef.clear();
     }
@@ -384,6 +392,174 @@ struct TenarySearchTree {
                 for(auto definition: definitionList)
                     this->insert(this->root, keyWord, definition);
         }
+    }
+
+    void saveHistoryListToFile(string filePath) {
+        ofstream fout(filePath.c_str());
+
+        for (auto i : listHistoryWord) {
+            fout << i << '\n';
+        }
+
+        fout.close();
+    }
+
+    struct TreeFormat {
+        int nextState = -1;
+        Node* nextNode = nullptr;
+    };
+
+    vector <TreeFormat> listTreeNode;
+    int posTreeNode;
+
+    void traverseTreeToSave(Node* root, int depth = 0) {
+        if (root) {
+            if (root->left) {
+                TreeFormat tmp;
+                tmp.nextState = 0;
+                tmp.nextNode = root->left;
+                listTreeNode.push_back(tmp);
+                traverseTreeToSave(root->left, depth);
+            }
+
+            if (root->middle) {
+                TreeFormat tmp;
+                tmp.nextState = 1;
+                tmp.nextNode = root->middle;
+                listTreeNode.push_back(tmp);
+                traverseTreeToSave(root->middle, depth + 1);
+            }
+
+            if (root->right) {
+                TreeFormat tmp;
+                tmp.nextState = 2;
+                tmp.nextNode = root->right;
+                listTreeNode.push_back(tmp);
+                traverseTreeToSave(root->right, depth);
+            }
+
+            TreeFormat tmp;
+            tmp.nextState = -1;
+
+            listTreeNode.push_back(tmp);
+        }
+    }
+
+    void saveTreeToTxt(string filePath) {
+        ofstream fout(filePath);
+
+        listTreeNode.clear();
+
+        if (root) {
+            fout << "# " << 5 << ' ' << root->data << ' ' << root->EOS << ' ' << root->listDef.size() << '\n';
+            for (auto i : root->listDef) fout << i << '\n';
+        }
+
+        traverseTreeToSave(root);
+
+        for (auto i : listTreeNode) {
+            fout << "# " << i.nextState << ' ';
+            if (i.nextState == -1) {
+                fout << '\n';
+                continue;
+            }
+            Node* nextNode = i.nextNode;
+            fout << nextNode->data << ' ' << nextNode->EOS << ' ' << nextNode->listDef.size() << '\n';
+            for (auto it : nextNode->listDef) fout << it << '\n';
+        }
+
+        fout.close();
+    }
+
+    void traverseToLoad(Node*& root) {
+        if (posTreeNode >= listTreeNode.size()) return;
+
+        if (posTreeNode == 0) {
+            root = listTreeNode[posTreeNode].nextNode;
+            posTreeNode++;
+            traverseToLoad(root);
+        }
+        else {
+            for (int i = 1; i <= 4; i++) {
+                if (listTreeNode[posTreeNode].nextState == -1) {
+                    // cout << "* " << posTreeNode << endl;
+                    posTreeNode++;
+                    return;
+                }
+
+                if (listTreeNode[posTreeNode].nextState == 0) {
+                    root->left = listTreeNode[posTreeNode].nextNode;
+                    posTreeNode++;
+                    traverseToLoad(root->left);
+                }
+                else {
+                    if (listTreeNode[posTreeNode].nextState == 1) {
+                        root->middle = listTreeNode[posTreeNode].nextNode;
+                        posTreeNode++;
+                        traverseToLoad(root->middle);
+                    }
+                    else {
+                        if (listTreeNode[posTreeNode].nextState == 2) {
+                            root->right = listTreeNode[posTreeNode].nextNode;
+                            posTreeNode++;
+                            traverseToLoad(root->right);
+                        }
+                    }
+                }
+            }
+
+            // cout << "# " << root->data << ' ' << posTreeNode << endl;
+        }
+    }
+
+    void loadTreeFromTxt(string filePath) {
+        ifstream fin(filePath.c_str());
+
+        listTreeNode.clear();
+        char isNode;
+        int cnt = 0;
+
+        while (fin >> isNode) {
+            ++cnt;
+            int nextState;
+
+            fin >> nextState;
+
+            TreeFormat tmp;
+            tmp.nextState = nextState;
+
+            if (nextState == -1) {
+                // cout << isNode << ' ' << nextState << endl;           
+                listTreeNode.push_back(tmp);
+            }
+            else {
+                int numDef;
+                tmp.nextNode = new Node;
+                fin.get();
+                fin.get(tmp.nextNode->data);
+
+                fin >> tmp.nextNode->EOS >> numDef;
+
+                if (numDef > 0) {
+                    fin.get();
+
+                    for (int i = 1; i <= numDef; i++) {
+                        string curStr; getline(fin, curStr);
+
+                        tmp.nextNode->listDef.push_back(curStr);
+                    }
+                }
+
+                listTreeNode.push_back(tmp);
+            }
+        }
+
+        if (listTreeNode.size() != 0) {
+            posTreeNode = 0;
+            traverseToLoad(root);
+        }
+
+        fin.close();
     }
 };
 

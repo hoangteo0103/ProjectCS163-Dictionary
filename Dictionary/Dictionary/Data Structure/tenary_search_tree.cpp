@@ -10,6 +10,12 @@ struct Node {
     Node *left , *middle , *right ;
     vector <string> listDef;
 
+    Node() {
+        this->EOS = 0;
+        this->left = this->middle = this->right = NULL;
+        listDef.clear();
+    }
+
     // Constructor new node
     Node(char data)
     {
@@ -22,7 +28,9 @@ struct Node {
     // destruction
     void destroy() {
         this->EOS = 0;
-        delete this->left, this->right, this->middle;
+        delete this->left;
+        delete this->right;
+        delete this->middle;
         this->left = this->middle = this->right = NULL;
         listDef.clear();
     }
@@ -325,6 +333,9 @@ struct TenarySearchTree {
         char buffer[100];
         traverseTSTuntil(root , buffer ) ;
     }
+
+
+
 } myKeywordTree;
 
 // to select data from file
