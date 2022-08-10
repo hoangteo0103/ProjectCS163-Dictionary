@@ -22,8 +22,6 @@ void startup(BackendGui& gui)
 
 void loadRandomWord(BackendGui& gui);
 
-void gamePlay(BackendGui& gui);
-
 void onSwitchForm(BackendGui& gui, int id)
 {
     if (id == 1) loadRandomWord(gui);
@@ -35,7 +33,6 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupAdd")->setVisible(id == 6);
     gui.get<Group>("groupGame")->setVisible(id == 7);
     gui.get<Group>("groupIngame")->setVisible(false);
-
 }
 
 
@@ -95,17 +92,11 @@ void onSearch(BackendGui& gui)
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
 
     if (ans.empty()) return;
+    tree.addWordToHistoryList(word);
+
     onSwitchToDefinition(gui, word);
     int index = favData.historyList.size();
     favData.historyList[word] = true;
-    auto dm = tgui::Button::copy(gui.get<Group>("groupHistory")->get<Button>("HistoryListPanelButton"));
-    dm->setVisible(true);
-    dm->setHeight(75);
-    dm->setWidth(840);
-    dm->setPosition(0, 0 + index * 86);
-    dm->setText(word);
-    dm->onClick(&onSwitchToDefinition, ref(gui), word);
-    gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(dm);
 }
 
 void clickSuggestWord(BackendGui& gui, string word)
@@ -302,6 +293,25 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     gui.add(groupGame, "groupGame");
 }
 
+void viewHistoryWord(BackendGui& gui) {
+    //cout << "Here\n";
+    int len = tree.listHistoryWord.size();
+    for (int i = 1; i <= len; i++) {
+        string word = tree.listHistoryWord[len - i];
+        //cout << i << ' ' << word << endl;
+        auto cur = tgui::Button::copy(gui.get<Group>("groupHistory")->get<Button>("HistoryListPanelButton"));
+        cur->setVisible(true);
+        cur->setHeight(75);
+        cur->setWidth(840);
+        cur->setPosition(0, 0 + (i - 1) * 86);
+        cur->setText(word);
+
+        gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->add(cur);
+
+        cur->onClick(&onSwitchToDefinition, ref(gui), word);
+    }
+}
+
 void loadRandomWord(BackendGui& gui)
 {
     map<string, bool > mp;
@@ -369,6 +379,7 @@ void setAction(BackendGui& gui)
 
     // History
     gui.get<Button>("HistoryButton")->onClick(&onSwitchForm, ref(gui), 4);
+    gui.get<Button>("HistoryButton")->onClick(&viewHistoryWord, ref(gui));
 
     // Game
     gui.get<Button>("GameButton")->onClick(&onSwitchForm, ref(gui), 7);

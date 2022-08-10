@@ -1,28 +1,5 @@
-Renderer.1 {
-    BackgroundColor = #F5F5F5;
-    BackgroundColorDisabled = #E6E6E6;
-    BackgroundColorDown = #EBEBEB;
-    BackgroundColorHover = white;
-    BorderColor = #3C3C3C;
-    BorderColorDisabled = #7D7D7D;
-    BorderColorDown = black;
-    BorderColorFocused = #1E1EB4;
-    BorderColorHover = black;
-    Borders = (1, 1, 1, 1);
-    TextColor = #3C3C3C;
-    TextColorDisabled = #7D7D7D;
-    TextColorDown = black;
-    TextColorHover = black;
-    Texture = None;
-    TextureDisabled = None;
-    TextureDown = None;
-    TextureDownFocused = None;
-    TextureDownHover = None;
-    TextureFocused = None;
-    TextureHover = None;
-}
-
 Button.Veil {
+    Position = (10, 0);
     Size = (1150, 901.666);
     TextSize = 13;
 
@@ -52,77 +29,152 @@ Button.Veil {
     }
 }
 
-ChildWindow.ChooseLangagueWindow {
-    Position = (920, 0);
-    Size = (230, 890);
-    Title = "Choose a dictionary";
-    TitleAlignment = Center;
-    TitleButtons = None;
-    TitleTextSize = 13;
+Button.Background {
+    Position = (870, 0);
+    Size = (280, 902);
+    TextSize = 13;
 
     Renderer {
-        BackgroundColor = #E6E6E6;
-        BorderBelowTitleBar = 1;
-        BorderColor = black;
-        Borders = (1, 1, 1, 1);
-        DistanceToSide = 3;
-        PaddingBetweenButtons = 1;
-        ShowTextOnTitleButtons = true;
-        TextureBackground = None;
-        TextureTitleBar = None;
-        TitleBarColor = white;
-        TitleColor = #3C3C3C;
-
-        CloseButton {
-            BackgroundColor = #F5F5F5;
-            BackgroundColorDown = #EBEBEB;
-            BackgroundColorHover = white;
-            BorderColor = #3C3C3C;
-            BorderColorDown = black;
-            BorderColorHover = black;
-            Borders = (1, 1, 1, 1);
-            TextColor = #3C3C3C;
-            TextColorDown = black;
-            TextColorHover = black;
-            Texture = None;
-            TextureDisabled = None;
-            TextureDown = None;
-            TextureDownFocused = None;
-            TextureDownHover = None;
-            TextureFocused = None;
-            TextureHover = None;
-        }
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "ChooseLanguageBackground.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
     }
+}
 
-    Button.EnToVn {
-        Position = (20, 20);
-        Renderer = &1;
-        Size = (190, 42);
-        Text = "English to Vietnamemese";
-        TextSize = 13;
+Button.EnToVn {
+    Position = (910, 170);
+    Size = (210, 72);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "EnToVn.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
     }
+}
 
-    Button.VnToEn {
-        Position = (20, 110);
-        Renderer = &1;
-        Size = (190, 42);
-        Text = "Vietnamese to English";
-        TextSize = 13;
+Button.Slang {
+    Position = (910, 470);
+    Size = (210, 72);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "Slang.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
     }
+}
 
-    Button.Slang {
-        Position = (20, 210);
-        Renderer = &1;
-        Size = (190, 42);
-        Text = "Slang in English";
-        TextSize = 13;
+Button.VnToEn {
+    Position = (910, 320);
+    Size = (210, 72);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "VnToEn.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
     }
+}
 
-    Button.Emotional {
-        Position = (20, 310);
-        Renderer = &1;
-        Size = (190, 42);
-        Text = Emotional;
-        TextSize = 13;
+Button.Emotional {
+    Position = (910, 620);
+    Size = (210, 72);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "Emotion.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
     }
 }

@@ -118,6 +118,15 @@ struct TenarySearchTree {
         return (c >= 'A' && c <= 'Z') ? char(int(c) + 32) : c;
     }
 
+    void addWordToHistoryList(string word) {
+        if (listHistoryWord.size() < numHistoryWord)
+            listHistoryWord.push_back(word);
+        else {
+            listHistoryWord.erase(listHistoryWord.begin());
+            listHistoryWord.push_back(word);
+        }
+    }
+
     // return a vector contains all definition of my searching word
     vector <string> searchDefinition(Node* root, string word, int pos = 0) {
         if (root == nullptr) {
@@ -134,12 +143,14 @@ struct TenarySearchTree {
                 return searchDefinition(root->right, word, pos);
             else {
                 if (pos + 1 == int(word.size())) {
-                    if (listHistoryWord.size() < numHistoryWord)
-                        listHistoryWord.push_back(word);
-                    else {
-                        listHistoryWord.erase(listHistoryWord.begin());
-                        listHistoryWord.push_back(word);
-                    }
+                    /*
+                        if (listHistoryWord.size() < numHistoryWord)
+                            listHistoryWord.push_back(word);
+                        else {
+                            listHistoryWord.erase(listHistoryWord.begin());
+                            listHistoryWord.push_back(word);
+                        }
+                    */
                     return root->listDef;
                 }
                 return searchDefinition(root->middle, word, pos + 1);
@@ -254,6 +265,7 @@ struct TenarySearchTree {
 
     // to view the word in my history of searching
     void viewListHistoryWord() {
+        cout << listHistoryWord.size() << endl;
         for (auto i : listHistoryWord) cout << i << '\n';
     }
 
