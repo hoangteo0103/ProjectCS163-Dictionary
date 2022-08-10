@@ -4,6 +4,9 @@
 
 
 TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo;
+TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo;
+int curTreeState;
+
 
 void startup(BackendGui& gui)
 {
@@ -226,6 +229,14 @@ void onEdit(BackendGui& gui,int index)
 void onChangeDataset(BackendGui& gui,  int index)
 {
     string button;
+
+    if (curTreeState == 1) treeEn = tree;
+    if (curTreeState == 2) treeVn = tree;
+    if (curTreeState == 3) treeSlang = tree;
+    if (curTreeState == 4) treeEmo = tree;
+
+    curTreeState = index;
+
     switch (index)
     {
     case 1 :
@@ -382,12 +393,19 @@ bool runMenu(BackendGui& gui) {
         //treeSlang.saveTreeToTxt("Assets/TreeFormat/Slang.txt");
         //treeEmo.saveTreeToTxt("Assets/TreeFormat/Emotional.txt");
 
-        treeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
-        treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
-        treeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
-        treeEmo.loadTreeFromTxt("Assets/TreeFormat/Emotional.txt");
+        oriTreeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
+        oriTreeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
+        oriTreeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
+        oriTreeEmo.loadTreeFromTxt("Assets/TreeFormat/Emotional.txt");
+
+        treeEn = oriTreeEn;
+        treeVn = oriTreeVn;
+        treeSlang = oriTreeSlang;
+        treeEmo = oriTreeEmo;
 
         tree = treeEn;
+        curTreeState = 1;
+
         Game.startupGame(gui, tree);
         setAction(gui);
         return true;
