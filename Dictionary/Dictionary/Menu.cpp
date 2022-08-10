@@ -63,7 +63,8 @@ void onSwitchToDefinition(BackendGui& gui, string word)
         gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(false);
         gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
     }
-    for (int i = 0; i < ans.size(); i++)
+
+    for (int i = 0; i < 3; i++)
     {
         string index = "Def" + to_string(i + 1);
         string EditIndex = "Edit" + to_string(i + 1);
@@ -95,6 +96,7 @@ void onSearch(BackendGui& gui)
     tree.addWordToHistoryList(word);
 
     onSwitchToDefinition(gui, word);
+    cout << word << endl;
     int index = favData.historyList.size();
     favData.historyList[word] = true;
 }
