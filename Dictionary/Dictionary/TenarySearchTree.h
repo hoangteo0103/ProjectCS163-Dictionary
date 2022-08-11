@@ -460,6 +460,16 @@ struct TenarySearchTree {
         fout.close();
     }
 
+    void saveFavouriteListToFile(string filePath) {
+        ofstream fout(filePath.c_str());
+
+        for (auto i : listFavouriteWord) {
+            fout << i << '\n';
+        }
+
+        fout.close();
+    }
+
     struct TreeFormat {
         int nextState = -1;
         Node* nextNode = nullptr;
