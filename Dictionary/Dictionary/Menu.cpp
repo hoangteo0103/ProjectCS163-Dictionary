@@ -436,15 +436,15 @@ bool runMenu(BackendGui& gui) {
         //treeSlang.saveTreeToTxt("Assets/TreeFormat/Slang.txt");
         //treeEmo.saveTreeToTxt("Assets/TreeFormat/Emotional.txt");
 
-        oriTreeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
-        oriTreeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
-        oriTreeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
-        oriTreeEmo.loadTreeFromTxt("Assets/TreeFormat/Emotional.txt");
+        oriTreeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
+        oriTreeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
+        oriTreeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
+        oriTreeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
 
-        treeEn = oriTreeEn;
-        treeVn = oriTreeVn;
-        treeSlang = oriTreeSlang;
-        treeEmo = oriTreeEmo;
+        treeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
+        treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
+        treeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
+        treeEmo.loadTreeFromTxt("Assets/TreeFormat/Emotional.txt");
 
         tree = treeEn;
         curTreeState = 1;
