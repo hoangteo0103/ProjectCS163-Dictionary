@@ -23,7 +23,7 @@ Renderer.1 {
 }
 
 Picture.Picture1 {
-    Position = (150, 50);
+    Position = (120, 120);
     Size = (1366, 879);
 
     Renderer {
