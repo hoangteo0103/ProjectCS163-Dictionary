@@ -6,9 +6,22 @@ TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo;
 TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo;
 int curTreeState;
 
+void quitAndSave(BackendGui& gui)
+{
+    cout << "quit and save" << endl;
+}
 
 void startup(BackendGui& gui)
 {
+    // creater quit button
+    gui.add(tgui::Button::create(), "quitButton");
+    gui.get<Button>("quitButton")->setSize(50, 30);
+    gui.get<Button>("quitButton")->setPosition(35, 840);
+    gui.get<Button>("quitButton")->setVisible(true);
+    gui.get<Button>("quitButton")->setText("Quit");
+    gui.get<Button>("quitButton")->onClick(&quitAndSave, ref(gui));
+
+
     gui.add(tgui::Group::create(), "suggestWordGroup");
     gui.get<Group>("groupHome")->setVisible(true);
     gui.get<Group>("groupWordDefinition")->setVisible(false);
