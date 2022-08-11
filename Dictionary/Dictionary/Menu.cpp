@@ -2,8 +2,8 @@
 #include "WordGame.h"
 // Menu Form
 
-TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo;
-TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo;
+TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo , treeDef;
+TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo , oriTreeDef;
 int curTreeState;
 
 void quitAndSave(BackendGui& gui)
@@ -543,7 +543,9 @@ bool runMenu(BackendGui& gui) {
         oriTreeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
         oriTreeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
         oriTreeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
-
+        
+        oriTreeDef.loadTreeFromTxt("Assets/OriginalTreeFormat/DefEnToVn.txt");
+        
         treeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
         treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
         treeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
