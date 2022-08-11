@@ -49,6 +49,7 @@ void startup(BackendGui& gui)
     gui.get<Group>("groupHistory")->setVisible(false);
     gui.get<Group>("groupAdd")->setVisible(false);
     gui.get<Group>("groupGame")->setVisible(false);
+    gui.get<Group>("groupReset")->setVisible(false);
 }
 
 void loadRandomWord(BackendGui& gui);
@@ -64,6 +65,7 @@ void onSwitchForm(BackendGui& gui, int id)
     gui.get<Group>("groupAdd")->setVisible(id == 6);
     gui.get<Group>("groupGame")->setVisible(id == 7);
     gui.get<Group>("groupIngame")->setVisible(false);
+    gui.get<Group>("groupReset")->setVisible(id == 9);
 }
 
 
@@ -96,6 +98,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
 
     for (int i = 0; i < min(ansSize, 3); i++)
     {
+        string InputIndex = "NewDef" + to_string(i + 1);
         string index = "Def" + to_string(i + 1);
         string EditIndex = "Edit" + to_string(i + 1);
         string SaveIndex = "Save" + to_string(i + 1);
@@ -104,6 +107,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
         gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(false);
         gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
+        gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
     }
 
     for (int i = 0; i < min(ansSize, 3); i++)
@@ -210,6 +214,19 @@ void onRemove(BackendGui& gui)
         string index = "Def" + to_string(i + 1);
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
     }
+    for (int i = 0; i < 3; i++)
+        {
+            string InputIndex = "NewDef" + to_string(i + 1);
+            string index = "Def" + to_string(i + 1);
+            string EditIndex = "Edit" + to_string(i + 1);
+            string SaveIndex = "Save" + to_string(i + 1);
+
+            gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(false);
+            gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
+            gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(false);
+            gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
+            gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
+        }
 
 }
 void onEdit(BackendGui& gui,int index)
@@ -243,6 +260,21 @@ void onEdit(BackendGui& gui,int index)
          
     }
 
+}
+void onReset(BackendGui& gui)
+{
+    treeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
+    treeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
+    treeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
+    treeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
+
+    if (curTreeState == 1) tree = treeEn ;
+    if (curTreeState == 2)  tree = treeVn ;
+    if (curTreeState == 3)  tree = treeSlang;
+    if (curTreeState == 4)  tree = treeEmo;
+
+    onSwitchForm( ref(gui), 1);
+    loadRandomWord(gui);
 }
 
 void onChangeDataset(BackendGui& gui,  int index)
@@ -332,6 +364,11 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     auto groupGame = tgui::Group::create();
     groupGame->loadWidgetsFromFile("Assets/Form/GameForm/GameForm.txt");
     gui.add(groupGame, "groupGame");
+
+    auto groupReset = tgui::Group::create();
+    groupReset->loadWidgetsFromFile("Assets/Form/ResetForm/ResetForm.txt");
+    gui.add(groupReset, "groupReset");
+
 }
 
 void resetHistory(BackendGui& gui) {
@@ -425,6 +462,13 @@ void setAddWordAction(BackendGui& gui)
     gui.get<Group>("groupAdd")->get<Button>("Add Word Button")->onClick(&onAddNewWord, ref(gui));
 }
 
+void setResetAction(BackendGui& gui)
+{
+    gui.get<Group>("groupReset")->get<Button>("YesButton")->onClick(&onReset, ref(gui));
+    gui.get<Group>("groupReset")->get<Button>("NoButton")->onClick(&onSwitchForm, ref(gui), 1);
+    loadRandomWord(gui);
+}
+
 void setAction(BackendGui& gui)
 {
     // Menu
@@ -471,6 +515,11 @@ void setAction(BackendGui& gui)
     // Add New Word
     gui.get<Button>("AddWordButton")->onClick(&onSwitchForm, ref(gui), 6);
     setAddWordAction(gui);
+
+    // reset
+    gui.get<Button>("ResetButton")->onClick(&onSwitchForm, ref(gui), 9);
+    setResetAction(gui);
+
 }
 
 bool runMenu(BackendGui& gui) {

@@ -1,0 +1,49 @@
+Renderer.1 {
+    BackgroundColor = None;
+    BackgroundColorDisabled = None;
+    BackgroundColorDown = None;
+    BackgroundColorHover = None;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    TextColor = None;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "../AddForm/AddButton.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
+Picture.Picture1 {
+    Position = (150, 50);
+    Size = (1366, 879);
+
+    Renderer {
+        Texture = "Reset Screen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Button.YesButton {
+    Position = (380, 490);
+    Renderer = &1;
+    Size = (271, 85.1309);
+    Text = YES;
+    TextSize = 30;
+}
+
+Button.NoButton {
+    Position = (930, 490);
+    Renderer = &1;
+    Size = (271, 85.1309);
+    Text = NO;
+    TextSize = 30;
+}

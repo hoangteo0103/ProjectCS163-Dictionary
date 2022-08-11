@@ -14,8 +14,8 @@ D:\Project_CS163\Dictionary\Dictionary\WordGame.h(17,18): warning C4244: 'argume
           ]
 D:\Project_CS163\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(95,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(176,61): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(347,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(373,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(97,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(180,61): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(384,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(410,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe
