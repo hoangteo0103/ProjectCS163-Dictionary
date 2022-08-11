@@ -44,9 +44,10 @@ struct TenarySearchTree {
     static const int numFillWord = 6;
     // number word in searching history
     static const int numHistoryWord = 10;
+    static const int numFavouriteWord = 100;
 
     Node* root = nullptr;
-    vector <string> listHistoryWord;
+    vector <string> listHistoryWord, listFavouriteWord;
 
     // to insert a new word
     void insert(Node*& root, string word, string definition, int pos = 0) {
@@ -124,6 +125,30 @@ struct TenarySearchTree {
         else {
             listHistoryWord.erase(listHistoryWord.begin());
             listHistoryWord.push_back(word);
+        }
+    }
+
+    bool isInFavouriteList(string word) {
+        for (auto i : listFavouriteWord) if (i == word) return true;
+
+        return false;
+    }
+
+    void addWordToFavouriteList(string word) {
+        if (listFavouriteWord.size() < numFavouriteWord) {
+            listFavouriteWord.push_back(word);
+        }
+        else {
+            listFavouriteWord.erase(listHistoryWord.begin());
+            listFavouriteWord.push_back(word);
+        }
+    }
+
+    void removeWordFromFavouriteList(string word) {
+        int cnt = 0;
+        for (auto i : listFavouriteWord) {
+            if (i == word) listFavouriteWord.erase(listFavouriteWord.begin() + cnt);
+            ++cnt;
         }
     }
 

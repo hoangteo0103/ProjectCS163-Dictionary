@@ -2,7 +2,6 @@
 #include "WordGame.h"
 // Menu Form
 
-
 TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo;
 TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo;
 int curTreeState;
@@ -41,7 +40,15 @@ void onSwitchToDefinition(BackendGui& gui, string word)
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
     if (ans.empty()) return; 
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
-    bool ok = favData.isFavourited[word];
+
+    /*
+    cout << "#\n";
+    cout << tree.listFavouriteWord.size() << '\n';
+    for (auto i : tree.listFavouriteWord) cout << i << ' ';
+    cout << endl << endl;
+    */
+    
+    bool ok = tree.isInFavouriteList(word);
     if (ok == false)
     {
         gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(texture.onUnClickedFavouriteButtonTexture);
@@ -50,6 +57,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
     {
         gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(texture.onClickedFavouriteButtonTexture);
     }
+
     onSwitchForm(gui, 5);
 
     for (int i = 0; i < 3; i++)
@@ -96,9 +104,6 @@ void onSearch(BackendGui& gui)
     tree.addWordToHistoryList(word);
 
     onSwitchToDefinition(gui, word);
-    cout << word << endl;
-    int index = favData.historyList.size();
-    favData.historyList[word] = true;
 }
 
 void clickSuggestWord(BackendGui& gui, string word)
@@ -145,32 +150,17 @@ void onUnBlurred(BackendGui& gui)
 void onLike(BackendGui& gui)
 {
     string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
-    bool ok = favData.isFavourited[word];
+    bool ok = tree.isInFavouriteList(word);
+
     if (ok == false)
     {
         gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(texture.onClickedFavouriteButtonTexture);
-        favData.isFavourited[word] = true;
+        tree.addWordToFavouriteList(word);
     }
     else
     {
         gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->getRenderer()->setTexture(texture.onUnClickedFavouriteButtonTexture);
-        favData.isFavourited[word] = false;
-    }
-
-    int index = 0;
-    gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->removeAllWidgets();
-    for (auto t : favData.isFavourited)
-    {
-        if (!t.second) continue;
-        auto dm = tgui::Button::copy(gui.get<Group>("groupFavourite")->get<Button>("FavouriteListWordButton"));
-        dm->setVisible(true);
-        dm->setHeight(75);
-        dm->setWidth(840);
-        dm->setPosition(0 , 0 + index * 86);
-        dm->setText(t.first);
-        index++;
-        dm->onClick(&onSwitchToDefinition, ref(gui), t.first);
-        gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->add(dm);
+        tree.removeWordFromFavouriteList(word);
     }
 }
 
@@ -314,6 +304,25 @@ void viewHistoryWord(BackendGui& gui) {
     }
 }
 
+void viewFavouriteList(BackendGui& gui) {
+    gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->removeAllWidgets();
+        
+    int len = tree.listFavouriteWord.size();
+
+    for(int i = 0; i < len; i++)
+    {
+        string word = tree.listFavouriteWord[len - i - 1];
+        auto cur = tgui::Button::copy(gui.get<Group>("groupFavourite")->get<Button>("FavouriteListWordButton"));
+        cur->setVisible(true);
+        cur->setHeight(75);
+        cur->setWidth(840);
+        cur->setPosition(0, 0 + i * 86);
+        cur->setText(word);
+        cur->onClick(&onSwitchToDefinition, ref(gui), word);
+        gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->add(cur);
+    }
+}
+
 void loadRandomWord(BackendGui& gui)
 {
     map<string, bool > mp;
@@ -371,6 +380,10 @@ void setAction(BackendGui& gui)
     
     // Favourite
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm, ref(gui), 2);
+    gui.get<Button>("FavouriteButton")->onClick(&viewFavouriteList, ref(gui));
+    
+
+    //Change Language
     gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchForm, ref(gui),3);
 
     // Choose Langague
