@@ -1,25 +1,26 @@
 Renderer.1 {
-    BackgroundColor = None;
-    BackgroundColorDisabled = None;
-    BackgroundColorDown = None;
-    BackgroundColorHover = None;
+    BackgroundColor = transparent;
+    BackgroundColorDisabled = transparent;
+    BackgroundColorDown = transparent;
+    BackgroundColorHover = transparent;
     BorderColor = #3C3C3C;
-    BorderColorDisabled = #7D7D7D;
+    BorderColorDisabled = transparent;
     BorderColorDown = black;
     BorderColorFocused = #1E1EB4;
     BorderColorHover = black;
     Borders = (0, 0, 0, 0);
-    TextColor = None;
+    Font = "../WordDefinitionForm/..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = #3C3C3C;
     TextColorDisabled = #7D7D7D;
     TextColorDown = black;
     TextColorHover = black;
-    Texture = "../AddForm/AddButton.png" Smooth;
+    Texture = "../WordDefinitionForm/remove-button-unhovered.png" Smooth;
     TextureDisabled = None;
     TextureDown = None;
     TextureDownFocused = None;
     TextureDownHover = None;
     TextureFocused = None;
-    TextureHover = None;
+    TextureHover = "../WordDefinitionForm/remove-button-hovered.png" Smooth;
 }
 
 Picture.Picture1 {
@@ -33,17 +34,17 @@ Picture.Picture1 {
 }
 
 Button.YesButton {
-    Position = (380, 490);
+    Position = (380, 483.866);
     Renderer = &1;
-    Size = (271, 85.1309);
+    Size = (268, 103.621);
     Text = YES;
     TextSize = 30;
 }
 
 Button.NoButton {
-    Position = (930, 490);
+    Position = (930, 483.866);
     Renderer = &1;
-    Size = (271, 85.1309);
+    Size = (268, 103.621);
     Text = NO;
     TextSize = 30;
 }
