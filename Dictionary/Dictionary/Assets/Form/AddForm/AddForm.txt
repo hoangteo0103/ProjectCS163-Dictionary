@@ -166,9 +166,8 @@ EditBox.Def3Input {
 }
 
 Button."Add Word Button" {
-    Position = (520, 770);
-    Size = (191, 60);
-    Text = Add;
+    Position = (520, 760);
+    Size = (191, 70);
     TextSize = 13;
 
     Renderer {
@@ -186,7 +185,7 @@ Button."Add Word Button" {
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = "AddButton.png" Smooth;
+        Texture = "AddWord.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;

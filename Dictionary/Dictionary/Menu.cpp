@@ -14,23 +14,20 @@ void quitAndSave(BackendGui& gui)
     if (curTreeState == 3) treeSlang = tree;
     if (curTreeState == 4) treeEmo = tree;
 
-    tree.saveTreeToTxt("currentData/tree/tree.txt");
-    treeEn.saveTreeToTxt("currentData/tree/treeEn.txt");
-    treeVn.saveTreeToTxt("currentData/tree/treeVn.txt");
-    treeSlang.saveTreeToTxt("currentData/tree/treeSlang.txt");
-    treeEmo.saveTreeToTxt("currentData/tree/treeEmo.txt");
+    treeEn.saveTreeToTxt("Assets/TreeFormat/EnToVn.txt");
+    treeVn.saveTreeToTxt("Assets/TreeFormat/VnToEn.txt");
+    treeSlang.saveTreeToTxt("Assets/TreeFormat/Slang.txt");
+    treeEmo.saveTreeToTxt("Assets/TreeFormat/Emotional.txt");
 
-    tree.saveFavouriteListToFile("currentData/favouriteList/tree.txt");
-    treeEn.saveFavouriteListToFile("currentData/favouriteList/treeEn.txt");
-    treeVn.saveFavouriteListToFile("currentData/favouriteList/treeVn.txt");
-    treeSlang.saveFavouriteListToFile("currentData/favouriteList/treeSlang.txt");
-    treeEmo.saveFavouriteListToFile("currentData/favouriteList/treeEmo.txt");
+    treeEn.saveFavouriteListToFile("Assets/FavouriteWord/treeEn.txt");
+    treeVn.saveFavouriteListToFile("Assets/FavouriteWord/treeVn.txt");
+    treeSlang.saveFavouriteListToFile("Assets/FavouriteWord/treeSlang.txt");
+    treeEmo.saveFavouriteListToFile("Assets/FavouriteWord/treeEmo.txt");
 
-    tree.saveHistoryListToFile("currentData/historyList/tree.txt");
-    treeEn.saveHistoryListToFile("currentData/historyList/treeEn.txt");
-    treeVn.saveHistoryListToFile("currentData/historyList/treeVn.txt");
-    treeSlang.saveHistoryListToFile("currentData/historyList/treeSlang.txt");
-    treeEmo.saveHistoryListToFile("currentData/historyList/treeEmo.txt");
+    treeEn.saveHistoryListToFile("Assets/HistoryList/treeEn.txt");
+    treeVn.saveHistoryListToFile("Assets/HistoryList/treeVn.txt");
+    treeSlang.saveHistoryListToFile("Assets/HistoryList/treeSlang.txt");
+    treeEmo.saveHistoryListToFile("Assets/HistoryList/treeEmo.txt");
     exit(0);
 
 }
@@ -547,6 +544,16 @@ bool runMenu(BackendGui& gui) {
         treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
         treeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
         treeEmo.loadTreeFromTxt("Assets/TreeFormat/Emotional.txt");
+
+        treeEn.loadFavouriteListFromTxt("Assets/FavouriteWord/treeEn.txt");
+        treeVn.loadFavouriteListFromTxt("Assets/FavouriteWord/treeVn.txt");
+        treeSlang.loadFavouriteListFromTxt("Assets/FavouriteWord/treeSlang.txt");
+        treeEmo.loadFavouriteListFromTxt("Assets/FavouriteWord/treeEmo.txt");
+
+        treeEn.loadHistoryListFromTxt("Assets/HistoryList/treeEn.txt");
+        treeVn.loadHistoryListFromTxt("Assets/HistoryList/treeVn.txt");
+        treeSlang.loadHistoryListFromTxt("Assets/HistoryList/treeSlang.txt");
+        treeEmo.loadHistoryListFromTxt("Assets/HistoryList/treeEmo.txt");
 
         tree = treeEn;
         curTreeState = 1;

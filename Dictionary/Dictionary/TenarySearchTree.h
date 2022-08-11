@@ -655,7 +655,7 @@ struct TenarySearchTree {
         ifstream fin(filePath.c_str());
         listFavouriteWord.clear();
         string s;
-        while (fin >> s)
+        while (getline(fin, s))
         {
             listFavouriteWord.push_back(s);
         }
@@ -667,7 +667,7 @@ struct TenarySearchTree {
         ifstream fin(filePath.c_str());
         listHistoryWord.clear();
         string s;
-        while (fin >> s)
+        while (getline(fin, s))
         {
             listHistoryWord.push_back(s);
         }
