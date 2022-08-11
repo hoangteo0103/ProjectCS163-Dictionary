@@ -4,6 +4,7 @@
 void run()
 {
 	RenderWindow window{ {1150, 900}, "Dictionary" };
+
 	Gui gui{ window };
 	if (runMenu(gui))
 		gui.mainLoop();

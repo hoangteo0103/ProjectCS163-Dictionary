@@ -1,4 +1,13 @@
-﻿  Menu.cpp
+﻿  Core.cpp
+D:\project\Dictionary\Dictionary\TenarySearchTree.h(236,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\project\Dictionary\Dictionary\TenarySearchTree.h(308,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\project\Dictionary\Dictionary\TenarySearchTree.h(323,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\project\Dictionary\Dictionary\TenarySearchTree.h(334,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Menu.cpp
 D:\project\Dictionary\Dictionary\TenarySearchTree.h(236,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\project\Dictionary\Dictionary\TenarySearchTree.h(308,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
           with
@@ -14,8 +23,10 @@ D:\project\Dictionary\Dictionary\WordGame.h(17,18): warning C4244: 'argument': c
           ]
 D:\project\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
 D:\project\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\Menu.cpp(98,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\Menu.cpp(179,61): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\project\Dictionary\Dictionary\Menu.cpp(337,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\project\Dictionary\Dictionary\Menu.cpp(363,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\project\Dictionary\Dictionary\Menu.cpp(100,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\project\Dictionary\Dictionary\Menu.cpp(181,61): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\project\Dictionary\Dictionary\Menu.cpp(339,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\project\Dictionary\Dictionary\Menu.cpp(365,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Source.cpp
+  Generating Code...
   Dictionary.vcxproj -> D:\project\Dictionary\x64\Debug\Dictionary.exe

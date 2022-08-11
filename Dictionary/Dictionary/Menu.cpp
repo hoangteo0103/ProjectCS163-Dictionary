@@ -9,10 +9,10 @@ int curTreeState;
 void quitAndSave(BackendGui& gui)
 {
     cout << "quit and save" << endl;
-    /*if (curTreeState == 1) treeEn = tree;
+    if (curTreeState == 1) treeEn = tree;
     if (curTreeState == 2) treeVn = tree;
     if (curTreeState == 3) treeSlang = tree;
-    if (curTreeState == 4) treeEmo = tree;*/
+    if (curTreeState == 4) treeEmo = tree;
 
     tree.saveTreeToTxt("currentData/tree/tree.txt");
     treeEn.saveTreeToTxt("currentData/tree/treeEn.txt");
@@ -31,6 +31,8 @@ void quitAndSave(BackendGui& gui)
     treeVn.saveHistoryListToFile("currentData/historyList/treeVn.txt");
     treeSlang.saveHistoryListToFile("currentData/historyList/treeSlang.txt");
     treeEmo.saveHistoryListToFile("currentData/historyList/treeEmo.txt");
+
+    //window.close();
 }
 
 void startup(BackendGui& gui)

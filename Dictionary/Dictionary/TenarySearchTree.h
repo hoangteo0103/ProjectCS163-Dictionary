@@ -637,6 +637,19 @@ struct TenarySearchTree {
         {
             listFavouriteWord.push_back(s);
         }
+        fin.close();
+    }
+    
+    void loadHistoryListFromTxt(string filePath)
+    {
+        ifstream fin(filePath.c_str());
+        listHistoryWord.clear();
+        string s;
+        while (fin >> s)
+        {
+            listHistoryWord.push_back(s);
+        }
+        fin.close();
     }
 };
 
