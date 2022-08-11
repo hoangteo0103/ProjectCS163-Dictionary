@@ -93,7 +93,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
 
     int ansSize = ans.size();
 
-    for (int i = 0; i < min(ansSize, 3); i++)
+    for (int i = 0; i < 3; i++)
     {
         string InputIndex = "NewDef" + to_string(i + 1);
         string index = "Def" + to_string(i + 1);
@@ -132,7 +132,6 @@ void convertStringToLowercase(string& s)
 void onSearch(BackendGui& gui)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
-    convertStringToLowercase(word);
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
 
     if (ans.empty()) return;
@@ -155,7 +154,6 @@ void suggestWord(BackendGui& gui)
     gui.get<Group>("suggestWordGroup")->removeAllWidgets();
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
     if ((int)word.size() == 0) return;
-    convertStringToLowercase(word);
     vector<string> res = tree.autoComplete(tree.root, word);
 
     for (int i = 0; i < res.size(); i++)
@@ -205,6 +203,9 @@ void onRemove(BackendGui& gui)
 {
     string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
     tree.remove(tree.root, word, 0);
+    tree.removeWordFromFavouriteList(word);
+    tree.removeWordFromHistoryList(word);
+
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText("");
     for (int i = 0; i < 3; i++)
     {
@@ -239,8 +240,6 @@ void onEdit(BackendGui& gui,int index)
          string Newdef = gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->getText().toStdString();
          if (Newdef == "") return;
          string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
-         convertStringToLowercase(word);
-         convertStringToLowercase(Newdef);
          vector<string> ans = tree.searchDefinition(tree.root, word, 0);
          if (ans.size() == 0)
          {

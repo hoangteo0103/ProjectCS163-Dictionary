@@ -182,6 +182,14 @@ struct TenarySearchTree {
         }
     }
 
+    void removeWordFromHistoryList(string word) {
+        int cnt = 0;
+        for (auto i: listHistoryWord) {
+            if (i == word) listHistoryWord.erase(listHistoryWord.begin() + cnt);
+            ++cnt;
+        }
+    }
+
     // return a vector contains all definition of my searching word
     vector <string> searchDefinition(Node* root, string word, int pos = 0) {
         if (root == nullptr) {
@@ -189,7 +197,6 @@ struct TenarySearchTree {
             res.clear();
             return res;
         }
-        word[pos] = convertUpperCaseToLowerCase(word[pos]);
 
         if (root->data > word[pos])
             return searchDefinition(root->left, word, pos);
