@@ -182,6 +182,14 @@ struct TenarySearchTree {
         }
     }
 
+    void removeWordFromHistoryList(string word) {
+        int cnt = 0;
+        for (auto i : listHistoryWord) {
+            if (i == word) listHistoryWord.erase(listHistoryWord.begin() + cnt);
+            ++cnt;
+        }
+    }
+
     // return a vector contains all definition of my searching word
     vector <string> searchDefinition(Node* root, string word, int pos = 0) {
         if (root == nullptr) {
@@ -189,7 +197,6 @@ struct TenarySearchTree {
             res.clear();
             return res;
         }
-        word[pos] = convertUpperCaseToLowerCase(word[pos]);
 
         if (root->data > word[pos])
             return searchDefinition(root->left, word, pos);
@@ -440,40 +447,6 @@ struct TenarySearchTree {
     void selectData(string filePath) {
         ifstream fin;
         fin.open(filePath.c_str());
-           
-        string myWord;
-
-        while (getline(fin, myWord)) {
-            string keyWord = "";
-            vector <string> definitionList;
-            int i = 0;
-            while (i < myWord.size() - 2) {
-                if (myWord[i] == ' ' && myWord[i + 1] == ' ' && myWord[i + 2] == ':' && myWord[i + 3] == ' ' && myWord[i + 4]== ' ') break;
-                keyWord += myWord[i++];
-            }
-
-            i += 5;
-
-            string tmpStr = "";
-            while (i < myWord.size()) {
-                if(myWord[i] == ';') {
-                    definitionList.push_back(tmpStr);
-                    tmpStr = "";
-                    i += 2;
-                }
-                else {
-                    tmpStr += myWord[i++];
-                }
-            }
-
-            if(keyWord != "")
-                for(auto definition: definitionList)
-                    this->insert(this->root, keyWord, definition);
-        }
-    }
-    void selectDataDef(string filePath) {
-        ifstream fin;
-        fin.open(filePath.c_str());
 
         string myWord;
 
@@ -500,8 +473,9 @@ struct TenarySearchTree {
                 }
             }
 
-            if (keyWord != "" && definitionList.size() && definitionList[0]!="")
-                this->insert(this->root, definitionList[0], keyWord);
+            if (keyWord != "")
+                for (auto definition : definitionList)
+                    this->insert(this->root, keyWord, definition);
         }
     }
 
@@ -694,7 +668,7 @@ struct TenarySearchTree {
         }
         fin.close();
     }
-    
+
     void loadHistoryListFromTxt(string filePath)
     {
         ifstream fin(filePath.c_str());
@@ -707,5 +681,4 @@ struct TenarySearchTree {
         fin.close();
     }
 };
-
 

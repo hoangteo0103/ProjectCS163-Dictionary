@@ -14,6 +14,7 @@ void quitAndSave(BackendGui& gui)
     if (curTreeState == 3) treeSlang = tree;
     if (curTreeState == 4) treeEmo = tree;
 
+    treeDef.saveTreeToTxt("Assets/TreeFormat/DefEnToVn.txt");
     treeEn.saveTreeToTxt("Assets/TreeFormat/EnToVn.txt");
     treeVn.saveTreeToTxt("Assets/TreeFormat/VnToEn.txt");
     treeSlang.saveTreeToTxt("Assets/TreeFormat/Slang.txt");
@@ -129,12 +130,29 @@ void convertStringToLowercase(string& s)
     }
 }
 
+void onSearchDef(BackendGui& gui , string def)
+{
+    vector<string> ans = treeDef.searchDefinition(treeDef.root, def, 0);
+    if (ans.empty()) return; 
+    string word = ans[0];
+
+    gui.get<Group>("suggestWordGroup")->removeAllWidgets();
+    tree.addWordToHistoryList(word);
+
+    onSwitchToDefinition(gui, word);
+    return;
+}
+
 void onSearch(BackendGui& gui)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
 
-    if (ans.empty()) return;
+    if (ans.empty() ) {
+        if (curTreeState == 1)
+            onSearchDef(gui, word);
+        return;
+    }
     gui.get<Group>("suggestWordGroup")->removeAllWidgets();
     tree.addWordToHistoryList(word);
 
@@ -203,6 +221,16 @@ void onRemove(BackendGui& gui)
 {
     string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
     tree.remove(tree.root, word, 0);
+
+    if (curTreeState == 1)
+    {
+        vector<string> def = tree.searchDefinition(tree.root, word, 0);
+        if (!def.empty())
+        {
+            string gg = def[0];
+            treeDef.remove(treeDef.root, gg, 0);
+        }
+    }
     tree.removeWordFromFavouriteList(word);
     tree.removeWordFromHistoryList(word);
 
@@ -306,6 +334,11 @@ void onAddNewWord(BackendGui& gui)
     if (Def2 != "") def.push_back(Def2);
     if (Def3 != "") def.push_back(Def3);
     tree.insertVec(tree.root, word, def);
+    if (curTreeState == 1)
+    {
+        if (def.size() > 0 && def[0] != "")
+            treeDef.insert(treeDef.root, def[0], word);
+    }
     gui.get<Group>("groupAdd")->get<EditBox>("WordInput")->setText("");
     gui.get<Group>("groupAdd")->get<EditBox>("Def1Input")->setText("");
     gui.get<Group>("groupAdd")->get<EditBox>("Def2Input")->setText("");
@@ -434,6 +467,7 @@ void onReset(BackendGui& gui)
     treeVn = oriTreeVn;
     treeSlang = oriTreeSlang;
     treeEmo = oriTreeEmo;
+    treeDef = oriTreeDef;
 
     if (curTreeState == 1) tree = treeEn;
     if (curTreeState == 2)  tree = treeVn;
@@ -528,6 +562,9 @@ bool runMenu(BackendGui& gui) {
         texture.loadTexture();
         loadWidgetsMenu(gui);
         startup(gui);
+
+        oriTreeDef.loadTreeFromTxt("Assets/OriginalTreeFormat/DefEnToVn.txt");
+        treeDef.loadTreeFromTxt("Assets/TreeFormat/DefEnToVn.txt");
 
         oriTreeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
         oriTreeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
