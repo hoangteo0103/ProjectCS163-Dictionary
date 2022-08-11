@@ -9,6 +9,28 @@ int curTreeState;
 void quitAndSave(BackendGui& gui)
 {
     cout << "quit and save" << endl;
+    /*if (curTreeState == 1) treeEn = tree;
+    if (curTreeState == 2) treeVn = tree;
+    if (curTreeState == 3) treeSlang = tree;
+    if (curTreeState == 4) treeEmo = tree;*/
+
+    tree.saveTreeToTxt("currentData/tree/tree.txt");
+    treeEn.saveTreeToTxt("currentData/tree/treeEn.txt");
+    treeVn.saveTreeToTxt("currentData/tree/treeVn.txt");
+    treeSlang.saveTreeToTxt("currentData/tree/treeSlang.txt");
+    treeEmo.saveTreeToTxt("currentData/tree/treeEmo.txt");
+
+    tree.saveFavouriteListToFile("currentData/favouriteList/tree.txt");
+    treeEn.saveFavouriteListToFile("currentData/favouriteList/treeEn.txt");
+    treeVn.saveFavouriteListToFile("currentData/favouriteList/treeVn.txt");
+    treeSlang.saveFavouriteListToFile("currentData/favouriteList/treeSlang.txt");
+    treeEmo.saveFavouriteListToFile("currentData/favouriteList/treeEmo.txt");
+
+    tree.saveHistoryListToFile("currentData/historyList/tree.txt");
+    treeEn.saveHistoryListToFile("currentData/historyList/treeEn.txt");
+    treeVn.saveHistoryListToFile("currentData/historyList/treeVn.txt");
+    treeSlang.saveHistoryListToFile("currentData/historyList/treeSlang.txt");
+    treeEmo.saveHistoryListToFile("currentData/historyList/treeEmo.txt");
 }
 
 void startup(BackendGui& gui)

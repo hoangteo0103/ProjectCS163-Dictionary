@@ -1,0 +1,3529 @@
+# 5 % 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User has been staring at a green screen for 15 hours straight.
+# -1 
+# -1 
+# 2 ( 0 0
+# 1 - 0 0
+# 1 : 1 1
+User is left handed.
+# -1 
+# 2 8 0 0
+# 1 - 0 0
+# 1 o 1 1
+It's Mr. Bill!
+# -1 
+# -1 
+# 2 : 0 0
+# 1 I 1 1
+User is an egghead.
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 * 0 0
+# 1 : 0 0
+# 1 o 0 0
+# 1 ) 1 1
+And Bozo the Clown!
+# -1 
+# -1 
+# 2 < 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is wearing a Santa Claus Hat.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 + 0 0
+# 1 - 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is the Pope or holds some other religious office.
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 , 0 0
+# 1 - 0 0
+# 1 ) 1 1
+Ditto...but he's winking.
+# -1 
+# 2 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+Same thing...other side.
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 - 0 0
+# 1 6 0 0
+# 1 % 1 1
+User is braindead.
+# -1 
+# 2 : 0 0
+# 1 - 0 0
+# 1 ( 1 1
+Real punk rockers don't smile.
+# 2 ) 1 1
+User is a punk rocker.
+# -1 
+# -1 
+# -1 
+# 2 = 0 0
+# 1 * 0 0
+# 1   0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is a TeX wizard.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 . 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User only has one eye.
+# -1 
+# -1 
+# 2 2 0 0
+# 1 M 0 0
+# 1 F 0 0
+# 1 M 1 1
+To much for me
+# -1 
+# -1 
+# 2 U 0 0
+# 1 2 1 1
+To you too
+# -1 
+# -1 
+# -1 
+# 2 3 0 0
+# 1 : 0 0
+# 1 [ 1 1
+Mean Pet smiley.
+# 2 ] 1 1
+Pet smiley.
+# -1 
+# -1 
+# -1 
+# 2 4 0 0
+# 1 A 0 0
+# 1 Y 0 0
+# 1 N 1 1
+For all you know
+# -1 
+# -1 
+# 2 C 0 0
+# 1 O 0 0
+# 1 L 1 1
+For crying out loud
+# -1 
+# -1 
+# 2 S 0 0
+# 1 A 0 0
+# 1 L 0 0
+# 1 E 1 1
+For sale
+# -1 
+# -1 
+# -1 
+# 2 U 1 1
+For you
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 8 0 0
+# 1   0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is a wizard.
+# 2 I 1 1
+Net.unix-wizards
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 - 0 0
+# 1 ) 1 1
+User is wearing sunglasses.
+# -1 
+# 2 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is a little girl.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 : 0 0
+# 1 ' 0 0
+# 1 - 0 0
+# 1 ( 1 1
+User is crying.
+# 2 ) 1 1
+User is so happy, s/he is crying.
+# -1 
+# -1 
+# -1 
+# 2 ( 1 1
+Sad.
+# 2 ) 1 1
+Happy.
+# 2 * 1 1
+Kisses.
+# 1 ) 1 1
+User is drunk.
+# -1 
+# 2 , 0 0
+# 1 ( 1 1
+Crying.
+# -1 
+# 2 - 0 0
+# 1 # 1 1
+User wears braces.
+# 2 & 1 1
+User is tongue tied.
+# 2 ( 1 1
+boo hoo
+# 2 ) 1 1
+ha ha
+# 1 - 0 0
+# 1 8 1 1
+User is a Big girl.
+# -1 
+# 2 ~ 1 1
+User drools.
+# -1 
+# -1 
+# 2 * 1 1
+User just ate something sour.
+# 2 / 1 1
+User is skeptical.
+# 2 0 1 1
+No Yelling!(Quiet Lab)
+# 2 7 1 1
+User juust made a wry statement.
+# 2 9 1 1
+User is licking his/her lips.
+# 2 : 1 2
+Mutant smiley
+the invisible smiley.
+# 2 > 1 1
+hey hey
+# 2 ? 1 1
+User smokes a pipe.
+# 2 @ 1 1
+User is screaming.
+# 2 C 1 1
+User is really bummed.
+# 2 D 1 1
+User is laughing (at you!)
+# 2 E 1 1
+Bucktoothed vampire.
+# 2 F 1 1
+Bucktoothed vampire with one tooth missing.
+# 2 I 1 1
+hmmm
+# 2 O 1 1
+oops
+# 2 P 1 1
+nyahhhh!
+# 2 Q 1 1
+User is a smoker.
+# 2 S 1 1
+User just made an incoherent statement.
+# 2 X 1 1
+User's lips are sealed.
+# 2 [ 1 1
+User is a vampire.
+# 2 ` 1 1
+User spitting out its chewing tobacco.
+# 2 o 1 1
+Uh oh!
+# 2 { 0 0
+# 1 ) 1 1
+User has a mustache.
+# 2 } 1 1
+User wears lipstick.
+# -1 
+# -1 
+# 2 ~ 0 0
+# 1 ) 1 1
+User has a cold.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User wears normal glasses.
+# -1 
+# -1 
+# 2 < 1 1
+What?
+# 1 ) 1 1
+User is from an Ivy League School.
+# -1 
+# 2 = 0 0
+# 1 ) 1 1
+User has two noses.
+# -1 
+# 2 > 1 1
+What?
+# 2 @ 1 1
+What?
+# 2 C 1 1
+What?
+# 2 D 1 1
+Laughter.
+# 2 I 1 1
+Hmmm...
+# 2 O 1 1
+Yelling.
+# 2 Q 1 1
+What?
+# 2 [ 1 1
+Real Downer.
+# 2 ] 1 1
+Gleep...a friendly midget smiley who will gladly be your friend.
+# 2 ^ 0 0
+# 1 ) 1 1
+User has a broken nose.
+# -1 
+# 2 _ 0 0
+# 1 ) 1 1
+User's nose is sliding off of his face.
+# -1 
+# 2 v 0 0
+# 1 ) 1 1
+User has a broken nose, but it's the other way.
+# -1 
+# 2 { 1 1
+What?
+# 2 } 1 1
+What should we call these? (what?)
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 ; 0 0
+# 1 - 0 0
+# 1 ) 1 1
+Winky smiley. User just made a flirtatious and/or sarcastic remark.More of a "don't hit me for what I just said" smiley.
+# -1 
+# -1 
+# 2 < 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 I 1 1
+User is a dunce.
+# -1 
+# -1 
+# 2 | 0 0
+# 1 - 0 0
+# 1 ( 1 1
+User is Chinese and doesn't like these kind of jokes.
+# 2 ) 1 1
+User is Chinese.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 = 0 0
+# 1 ) 1 1
+Variation on a theme...
+# 1 ) 1 1
+Full of laughing
+# -1 
+# 2 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is a hosehead.
+# -1 
+# -1 
+# 2 W 0 0
+# 1 = 1 1
+Whatever
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 > 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 > 1 1
+User just made a really devilish remark.
+# -1 
+# -1 
+# 2 ; 0 0
+# 1 - 0 0
+# 1 > 1 1
+Winky and devil combined. A very lewd remark was just made.
+# -1 
+# -1 
+# 2 U 1 1
+Screw you!
+# -1 
+# -1 
+# -1 
+# 2 ? 1 1
+Huh?
+# 1 4 0 0
+# 1 U 1 1
+Question for you
+# -1 
+# -1 
+# 2 @ 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is wearing a turban.
+# -1 
+# -1 
+# 2 = 1 1
+User is pro-nuclear war.
+# -1 
+# -1 
+# 2 A 0 0
+# 1 / 0 0
+# 1 S 0 0
+# 1 / 0 0
+# 1 L 1 1
+Age/Sex/Location
+# -1 
+# -1 
+# -1 
+# 2 A 0 0
+# 1 M 0 0
+# 1 O 0 0
+# 1 F 1 1
+As a matter of fact
+# -1 
+# -1 
+# -1 
+# 2 B 0 0
+# 1 F 0 0
+# 1 L 1 1
+A big fat lady
+# -1 
+# 2 T 1 1
+About
+# -1 
+# -1 
+# 2 D 0 0
+# 1 N 1 1
+Any day now
+# -1 
+# 2 F 0 0
+# 1 A 0 0
+# 1 I 0 0
+# 1 C 1 1
+As far as I'm concerned
+# 1 S 1 1
+As far as I can see
+# 2 T 1 1
+As far as I can tell
+# -1 
+# -1 
+# 2 K 1 1
+As far as I know
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 C 1 1
+As far as you're concerned
+# -1 
+# -1 
+# -1 
+# 2 K 1 1
+Away from computer keyboard (for wireless users)
+# -1 
+# -1 
+# 2 I 0 0
+# 1 M 1 1
+AOL Instant Messenger, also verb for FTP'ing files via AIM
+# 2 S 0 0
+# 1 I 1 1
+As I see it
+# -1 
+# 2 U 0 0
+# 1 I 1 1
+As I understand it
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 K 0 0
+# 1 A 1 1
+Also known as
+# -1 
+# 2 M 0 0
+# 1 L 1 1
+All my love
+# -1 
+# 2 N 0 0
+# 1 F 0 0
+# 1 S 0 0
+# 1 C 0 0
+# 1 D 1 1
+And now for something completely different
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 S 0 0
+# 1 A 0 0
+# 1 P 1 1
+As soon as possible
+# -1 
+# 2 L 1 1
+Assistant section leader
+# 2 O 0 0
+# 1 P 1 1
+Assistant system operator
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 M 1 1
+At the moment
+# -1 
+# 2 W 0 0
+# 1 A 1 1
+As well as
+# 2 G 0 0
+# 1 T 0 0
+# 1 H 0 0
+# 1 T 0 0
+# 1 G 0 0
+# 1 T 0 0
+# 1 T 0 0
+# 1 A 1 1
+Are we going to have to go trough this again?
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 H 0 0
+# 1 F 0 0
+# 1 Y 1 1
+Are we having fun yet?
+# -1 
+# -1 
+# 2 O 0 0
+# 1 L 1 1
+Absent without leave
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 O 0 0
+# 1 R 1 1
+At your own risk
+# -1 
+# 2 P 0 0
+# 1 I 0 0
+# 1 ? 1 1
+And your point is?
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 B 1 1
+Back
+# 1 - 0 0
+# 1 ) 1 1
+User wears horn-rimmed glasses.
+# -1 
+# 2 / 0 0
+# 1 C 1 1
+Because
+# 2 F 1 1
+Boyfriend
+# -1 
+# -1 
+# 2 4 1 1
+Before
+# 1 N 1 1
+Bye for now
+# -1 
+# 2 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+Sunglasses on head.
+# -1 
+# -1 
+# 2 A 0 0
+# 1 C 1 1
+Back at computer
+# 2 G 1 1
+Busting a gut
+# 2 K 1 1
+Back at the keyboard
+# -1 
+# -1 
+# -1 
+# 2 B 0 0
+# 1 I 0 0
+# 1 A 0 0
+# 1 B 1 1
+Be back in a bit
+# -1 
+# -1 
+# 2 L 1 1
+Be back later
+# 1 B 0 0
+# 1 N 0 0
+# 1 T 0 0
+# 1 S 0 0
+# 1 B 0 0
+# 1 O 0 0
+# 1 . 0 0
+# 1 . 0 0
+# 1 . 1 1
+Be back later but not to soon because of...
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 R 1 1
+Burnt beyond repair
+# 2 S 1 1
+Be back soon
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 C 1 1
+Because
+# 1 N 0 0
+# 1 U 1 1
+Be Seein' You
+# -1 
+# -1 
+# 2 E 0 0
+# 1 G 1 1
+Big evil grin
+# -1 
+# 2 F 1 1
+Boyfriend
+# 1 N 1 1
+Bye for now
+# -1 
+# 2 G 1 1
+Big grin
+# 2 I 0 0
+# 1 C 0 0
+# 1 B 0 0
+# 1 W 1 1
+But I could be wrong
+# -1 
+# -1 
+# 2 O 0 0
+# 1 N 1 1
+Believe it or not
+# 2 Y 0 0
+# 1 I 0 0
+# 1 O 0 0
+# 1 B 1 1
+Blow it out your I/O port
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 M 0 0
+# 1 T 1 1
+But in the meantime
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 K 0 0
+# 1 A 1 1
+Better known as
+# -1 
+# 2 L 1 1
+Belly laughing
+# 2 M 1 1
+Bite me
+# 1 B 1 1
+bite my bum
+# 2 G 1 1
+Be my guest
+# 2 T 0 0
+# 1 I 0 0
+# 1 P 0 0
+# 1 G 1 1
+Brilliant minds think in parallel gutters
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 B 1 1
+Back off bastard
+# 2 L 1 1
+Be on later
+# 2 M 1 1
+Bitch of mine
+# 2 T 1 1
+Back on topic
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 R 0 0
+# 1 B 1 1
+Be right back
+# 1 B 1 1
+Be right back bitch
+# 2 S 1 1
+Be right back soon
+# -1 
+# -1 
+# 2 H 1 1
+Be right here
+# 2 S 1 1
+Big red switch
+# -1 
+# -1 
+# -1 
+# 2 S 1 1
+Big smile
+# 1 F 1 1
+But seriously folks
+# 2 T 1 1
+But seriously though
+# -1 
+# -1 
+# 2 T 0 0
+# 1 A 1 1
+But then again
+# 1 I 0 0
+# 1 M 1 1
+Be that as it may
+# -1 
+# -1 
+# 2 D 0 0
+# 1 T 1 1
+Been there done that
+# -1 
+# 2 O 0 0
+# 1 B 0 0
+# 1 D 1 1
+Be there or be dead
+# 2 S 1 1
+Be there or be square
+# -1 
+# -1 
+# -1 
+# 2 S 0 0
+# 1 O 0 0
+# 1 O 0 0
+# 1 M 1 1
+Beats the shit out of me
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+By the way
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 D 0 0
+# 1 W 0 0
+# 1 E 0 0
+# 1 I 0 0
+# 1 S 0 0
+# 1 E 0 0
+# 1 R 1 1
+Because you deserve what every individual should ever receive
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 W 0 0
+# 1 Q 1 1
+Buzz word quotient
+# 2 T 0 0
+# 1 H 0 0
+# 1 D 0 0
+# 1 I 0 0
+# 1 K 1 1
+But what the heck do I know
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 O 0 0
+# 1 B 1 1
+Bring your own bottle
+# 2 H 1 1
+Bat You Onna Head
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 C 0 0
+# 1 & 0 0
+# 1 G 1 1
+Chuckle and grin
+# -1 
+# 2 = 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is a chef.
+# -1 
+# -1 
+# 2 } 0 0
+# 1 > 0 0
+# 1 ; 0 0
+# 1 * 0 0
+# 1 { 0 0
+# 1 ) 0 0
+# 1 ) 1 1
+A drunk, devilish chef with a toupee in an updraft, a mustache, and a double chin.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 A 0 0
+# 1 D 1 1
+Ctrl-alt-delete
+# 1 E 0 0
+# 1 T 1 1
+Can't add, doesn't even try
+# -1 
+# -1 
+# -1 
+# 2 D 0 0
+# 1 I 0 0
+# 1 W 0 0
+# 1 Y 1 1
+Couldn't do it without you
+# -1 
+# -1 
+# -1 
+# 2 F 0 0
+# 1 N 1 1
+Ciao for now
+# 2 S 1 1
+Care for secret?
+# 2 V 1 1
+Call for votes
+# 2 Y 1 1
+Calling for you
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 I 0 0
+# 1 D 1 1
+Consider it done
+# 2 M 1 1
+CompuServe information manager
+# -1 
+# -1 
+# 2 L 0 0
+# 1 M 1 1
+Career limiting move
+# -1 
+# 2 M 0 0
+# 1 @ 0 0
+# 1 T 0 0
+# 1 W 1 1
+Catch me at the web
+# -1 
+# -1 
+# 2 I 0 0
+# 1 I 0 0
+# 1 W 1 1
+Correct me if I'm wrong
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 N 0 0
+# 1 P 1 1
+Continue in next post
+# -1 
+# 2 O 1 1
+Conference
+# 2 R 0 0
+# 1 A 0 0
+# 1 F 0 0
+# 1 T 1 1
+Can't remember a frighten thing
+# -1 
+# -1 
+# 2 S 1 1
+Can?t remember shit
+# -1 
+# -1 
+# 2 S 0 0
+# 1 G 1 1
+Chuckle snicker grin
+# -1 
+# 2 T 0 0
+# 1 S 1 1
+Changing the subject
+# -1 
+# 2 U 1 1
+See you
+# 1 2 1 1
+See you too
+# 2 L 1 1
+See you later
+# 1 8 0 0
+# 1 R 1 1
+See you later
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 W 0 0
+# 1 O 0 0
+# 1 T 1 1
+Complete waste of time
+# -1 
+# 2 Y 0 0
+# 1 L 1 1
+Chat with you later
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 A 1 1
+See ya
+# 1 L 0 0
+# 1 8 0 0
+# 1 R 1 1
+See ya later
+# -1 
+# -1 
+# -1 
+# 2 O 1 1
+See you online
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 D 0 0
+# 1 B 0 0
+# 1 A 1 1
+Doing business as
+# -1 
+# 2 C 0 0
+# 1 E 0 0
+# 1 D 1 1
+Disconnected
+# -1 
+# -1 
+# 2 F 0 0
+# 1 L 0 0
+# 1 A 1 1
+Disenhanced four-letter acronym
+# -1 
+# -1 
+# 2 G 0 0
+# 1 A 1 1
+Digital guardian angel
+# -1 
+# 2 H 1 1
+Darling husband
+# 2 I 0 0
+# 1 I 0 0
+# 1 K 1 1
+Darn if i know
+# -1 
+# 2 K 0 0
+# 1 U 1 1
+Do I know you?
+# -1 
+# 2 T 0 0
+# 1 Y 0 0
+# 1 I 0 0
+# 1 D 1 1
+Did I tell you I'm distressed
+# -1 
+# -1 
+# -1 
+# 2 Y 1 1
+Do it yourself
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 L 1 1
+Dead link
+# 1 T 0 0
+# 1 B 0 0
+# 1 B 0 0
+# 1 B 1 1
+Don't let the bad bugs bite
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 M 0 0
+# 1 M 0 0
+# 1 G 0 0
+# 1 H 1 1
+Don't make me get hostile
+# -1 
+# -1 
+# -1 
+# 2 N 0 0
+# 1 D 1 1
+Do not disturb
+# -1 
+# 2 Q 0 0
+# 1 M 0 0
+# 1 O 0 0
+# 1 T 1 1
+Don't quote me on this
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 C 1 1
+Damn this computer
+# 2 R 0 0
+# 1 T 1 1
+Do the right thing
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 C 0 0
+# 1 T 1 1
+Did you see that?
+# -1 
+# -1 
+# 2 W 0 0
+# 1 A 0 0
+# 1 I 1 1
+Don't worry about it
+# -1 
+# 2 I 0 0
+# 1 M 1 1
+Do what I mean
+# 1 C 1 1
+Do what I mean, correctly
+# -1 
+# 2 S 0 0
+# 1 N 0 0
+# 1 W 0 0
+# 1 I 0 0
+# 1 D 1 1
+Do what I say, not what I do
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 J 0 0
+# 1 H 0 0
+# 1 I 0 0
+# 1 W 1 1
+Don't you just hate it when...
+# -1 
+# -1 
+# -1 
+# 2 K 1 1
+Do you know
+# 2 O 0 0
+# 1 H 1 1
+Do your own homework
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 E 0 0
+# 1 - 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is a Ham radio operator.
+# 2 I 1 1
+Net.ham-radio
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 A 0 0
+# 1 K 1 1
+Eating at keyboard
+# -1 
+# 2 G 1 1
+Evil grin
+# 2 I 0 0
+# 1 E 1 1
+Enough is enough
+# -1 
+# 2 M 0 0
+# 1 F 0 0
+# 1 J 0 0
+# 1 I 1 1
+Excuse me for jumping in
+# -1 
+# -1 
+# 2 S 0 0
+# 1 G 1 1
+Email message
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 D 1 1
+End of discussion
+# 2 F 1 1
+End of file
+# 2 L 1 1
+End of lecture
+# 2 M 1 1
+End of message
+# 2 T 1 1
+End of thread
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 L 0 0
+# 1 A 1 1
+Extended three letter acronym
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 F 1 1
+Female
+# 1 / 0 0
+# 1 F 1 1
+Face to face
+# -1 
+# 2 2 0 0
+# 1 F 1 1
+Face to face
+# -1 
+# 2 A 0 0
+# 1 Q 1 1
+Frequently asked questions
+# 2 W 0 0
+# 1 C 1 1
+For anyone who cares
+# -1 
+# -1 
+# -1 
+# 2 B 0 0
+# 1 O 0 0
+# 1 W 1 1
+For better or worse
+# -1 
+# 2 T 0 0
+# 1 W 1 1
+Fine, be that way
+# -1 
+# -1 
+# -1 
+# 2 C 0 0
+# 1 F 0 0
+# 1 S 1 1
+First come, first served
+# -1 
+# 2 O 0 0
+# 1 L 1 1
+For crying out loud
+# -1 
+# -1 
+# -1 
+# 2 I 0 0
+# 1 F 0 0
+# 1 O 1 1
+First in, first out
+# -1 
+# 2 S 0 0
+# 1 H 1 1
+First in, still here
+# -1 
+# -1 
+# -1 
+# 2 L 0 0
+# 1 A 1 1
+Four-letter acronym
+# -1 
+# 2 O 0 0
+# 1 A 0 0
+# 1 D 1 1
+Fight over and die
+# 2 F 1 1
+Friend of a friend
+# -1 
+# -1 
+# 2 B 1 1
+Full of bless
+# 2 C 1 1
+Free of charge
+# 1 L 1 1
+Falling of chair laughing
+# -1 
+# 2 F 0 0
+# 1 L 1 1
+Falling on the floor laughing
+# -1 
+# 2 S 1 1
+Freedom of speech
+# 2 T 0 0
+# 1 C 0 0
+# 1 L 1 1
+Falling of the chair laughing
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 F 1 1
+Face to face
+# 2 T 0 0
+# 1 T 1 1
+From time to time
+# -1 
+# -1 
+# -1 
+# 2 U 1 1
+F*cked up
+# 1 B 0 0
+# 1 A 0 0
+# 1 R 1 1
+F*cked up beyond all recognition
+# -1 
+# -1 
+# 2 D 1 1
+Fear, uncertainty and doubt
+# 2 R 0 0
+# 1 T 0 0
+# 1 B 1 1
+Full up ready to burst (about hard disk drives)
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+Forward
+# 1 I 0 0
+# 1 W 1 1
+For what it's worth
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 A 1 1
+For your amusement
+# 2 E 1 1
+For your entertainment
+# 1 O 1 1
+For your eyes only
+# -1 
+# 2 I 1 1
+For your information
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 G 1 1
+Grin
+# 1 & 0 0
+# 1 B 0 0
+# 1 I 0 0
+# 1 T 1 1
+Grin and bear it
+# -1 
+# -1 
+# -1 
+# 2 2 0 0
+# 1 B 1 1
+Going to bed
+# 2 G 1 1
+Got to go
+# 1 G 0 0
+# 1 S 0 0
+# 1 2 0 0
+# 1 D 1 1
+Got to go get something to drink
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 A 1 1
+Good afternoon
+# 1 F 0 0
+# 1 I 0 0
+# 1 A 1 1
+Get away from it all
+# -1 
+# -1 
+# 2 L 1 1
+Get a life
+# 2 S 1 1
+Greetings and salutations
+# -1 
+# -1 
+# -1 
+# 2 B 0 0
+# 1 H 1 1
+Great big hug
+# 1 & 0 0
+# 1 K 1 1
+Great big huh and kisses
+# -1 
+# -1 
+# 2 R 1 1
+Garbled beyond recovery
+# 2 Y 1 1
+God bless you
+# -1 
+# -1 
+# -1 
+# 2 D 0 0
+# 1 & 0 0
+# 1 H 1 1
+Grinning, ducking and hiding
+# 2 R 1 1
+Grinning, ducking and running
+# 1 A 0 0
+# 1 F 0 0
+# 1 A 0 0
+# 1 P 1 1
+Grinning, ducking and running as fast as possible
+# -1 
+# -1 
+# -1 
+# 2 E 0 0
+# 1 F 0 0
+# 1 & 0 0
+# 1 F 1 1
+grinning, ducking and running even further and faster
+# -1 
+# -1 
+# -1 
+# 2 F 1 1
+Grinning, ducking and running fast
+# 2 V 0 0
+# 1 F 1 1
+Grinning, ducking and running very
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+Grin, duck and wave
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+Grin, duck and wave
+# -1 
+# -1 
+# 2 E 1 1
+Good evening
+# 2 F 1 1
+Girlfriend
+# 1 E 0 0
+# 1 T 0 0
+# 1 E 1 1
+Grinning from ear to ear
+# -1 
+# -1 
+# 2 N 1 1
+Gone for now
+# 2 U 1 1
+Good for you
+# -1 
+# -1 
+# -1 
+# 2 G 1 1
+Good game
+# 1 U 0 0
+# 1 2 1 1
+Good game you two
+# -1 
+# -1 
+# 2 I 0 0
+# 1 G 0 0
+# 1 O 1 1
+Garbage in garbage out
+# -1 
+# -1 
+# 2 J 1 1
+Good job
+# 2 L 1 1
+Good luck
+# 1 & 0 0
+# 1 G 0 0
+# 1 H 1 1
+Good luck and good hunting
+# -1 
+# -1 
+# -1 
+# 2 M 1 1
+Good morning
+# 1 A 0 0
+# 1 B 1 1
+Give me a break
+# -1 
+# 2 T 0 0
+# 1 A 1 1
+Great minds think alike
+# -1 
+# -1 
+# -1 
+# 2 N 1 1
+Good night
+# 2 O 0 0
+# 1 K 1 1
+God only knows
+# 2 W 0 0
+# 1 I 1 1
+Get on with it
+# -1 
+# -1 
+# -1 
+# 2 P 0 0
+# 1 F 1 1
+General protection fault
+# -1 
+# 2 R 0 0
+# 1 & 0 0
+# 1 D 1 1
+Grinning, running and ducking
+# -1 
+# 2 8 1 1
+Great
+# 2 A 1 1
+Go right ahead
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 G 1 1
+Got to go
+# 2 S 0 0
+# 1 Y 1 1
+Glad to see you
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+Good work
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 H 1 1
+Hug
+# 1 & 0 0
+# 1 K 1 1
+Hug and kiss
+# -1 
+# 2 / 0 0
+# 1 O 1 1
+Hold on
+# -1 
+# 2 A 0 0
+# 1 G 0 0
+# 1 1 1 1
+Have a good one
+# 2 D 1 1
+Have a good day
+# 2 N 1 1
+Have a good night
+# 2 S 1 1
+Have a good summer
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 H 0 0
+# 1 A 1 1
+Having a heart attack
+# -1 
+# 2 K 1 1
+Hug and kiss
+# 2 N 0 0
+# 1 D 1 1
+Have a nice day
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 B 1 1
+Hug back
+# 2 D 0 0
+# 1 Y 0 0
+# 1 W 0 0
+# 1 T 0 0
+# 1 D 0 0
+# 1 T 1 1
+How do you work this dratted thing
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 F 1 1
+Have fun
+# 2 H 1 1
+Holding hands
+# 1 I 0 0
+# 1 S 1 1
+Hanging head in shame
+# -1 
+# 2 J 0 0
+# 1 K 1 1
+Ha ha, just kidding
+# -1 
+# 2 O 0 0
+# 1 J 1 1
+Ha ha, only joking
+# 2 K 1 1
+Ha ha, only kidding
+# 2 S 1 1
+Ha ha, only seriously
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 I 0 0
+# 1 H 1 1
+Hope it helps
+# 2 L 0 0
+# 1 I 0 0
+# 1 A 0 0
+# 1 C 0 0
+# 1 A 0 0
+# 1 C 0 0
+# 1 L 0 0
+# 1 O 1 1
+Help I lapsed into a coma and can?t log off
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 W 0 0
+# 1 T 0 0
+# 1 H 1 1
+Hate it when that happens
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 L 0 0
+# 1 M 1 1
+He loves me
+# -1 
+# 2 M 0 0
+# 1 S 1 1
+Home made smiley
+# 2 T 1 1
+Here?s my try
+# 2 W 0 0
+# 1 K 1 1
+Homework
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 A 0 0
+# 1 S 1 1
+Hold on a second
+# -1 
+# -1 
+# 2 S 0 0
+# 1 I 0 0
+# 1 K 1 1
+How should i know
+# -1 
+# -1 
+# 2 T 1 1
+Hi there
+# 1 H 1 1
+Hope this helps
+# 1 B 0 0
+# 1 E 1 1
+Hope this has been enlightening
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 L 0 0
+# 1 M 0 0
+# 1 S 1 1
+Hate you like my sister
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 I 0 0
+# 1 A 0 0
+# 1 A 0 0
+# 1 A 1 1
+I am an accountant
+# 2 L 1 1
+I am a lawyer
+# -1 
+# -1 
+# 2 C 1 1
+In any case
+# 2 E 1 1
+In any event
+# 2 G 1 1
+It's all good
+# 2 I 0 0
+# 1 M 1 1
+In an Irish minute
+# -1 
+# 2 N 0 0
+# 1 A 0 0
+# 1 A 1 1
+I am not an accountant
+# 2 L 1 1
+I am not a lawyer
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 B 0 0
+# 1 N 1 1
+I'm bucked naked
+# -1 
+# 2 C 1 1
+I see
+# 1 O 0 0
+# 1 C 0 0
+# 1 B 0 0
+# 1 W 1 1
+I could of course be wrong
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 D 0 0
+# 1 C 1 1
+I don't care
+# 2 G 0 0
+# 1 I 1 1
+I don't get it
+# 2 W 1 1
+In a good way
+# -1 
+# -1 
+# 2 I 1 1
+I doubt it
+# 2 K 1 1
+I don't know
+# 2 T 0 0
+# 1 T 1 1
+I'll drink to that
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 F 0 0
+# 1 V 0 0
+# 1 B 1 1
+I feel very bad
+# -1 
+# -1 
+# 2 G 0 0
+# 1 P 1 1
+I gotta pee
+# 2 T 0 0
+# 1 P 1 1
+I get the point
+# -1 
+# -1 
+# -1 
+# 2 H 0 0
+# 1 T 0 0
+# 1 F 0 0
+# 1 P 1 1
+I hate this fountain place
+# -1 
+# -1 
+# 2 U 1 1
+I hate you
+# 2 Y 1 1
+I hate you
+# -1 
+# -1 
+# -1 
+# 2 I 1 1
+I?m impressed
+# 1 R 1 1
+If I recall
+# 1 C 1 1
+If I recall correctly
+# -1 
+# 2 T 1 1
+I?m impressed too
+# -1 
+# -1 
+# 2 J 0 0
+# 1 W 0 0
+# 1 T 0 0
+# 1 K 1 1
+I just want to know
+# 2 S 1 1
+I just want to say
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 K 1 1
+I know
+# 1 W 0 0
+# 1 U 0 0
+# 1 M 1 1
+I know what you mean
+# -1 
+# -1 
+# -1 
+# 2 L 0 0
+# 1 B 0 0
+# 1 C 0 0
+# 1 N 0 0
+# 1 U 1 1
+I"ll be seeing you
+# -1 
+# -1 
+# -1 
+# 2 U 1 1
+I love you
+# 2 Y 1 1
+I love you
+# 1 F 0 0
+# 1 A 0 0
+# 1 E 1 1
+I love you forever and ever
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 M 1 1
+Instant message
+# 1 A 0 0
+# 1 O 1 1
+In my arrogant opinion
+# -1 
+# 2 B 0 0
+# 1 O 1 1
+In my bloody opinion
+# -1 
+# 2 C 0 0
+# 1 O 1 1
+In my considered opinion
+# -1 
+# 2 E 1 1
+In my experience
+# 2 F 0 0
+# 1 A 0 0
+# 1 O 1 1
+In my fooling arrogant opinion
+# -1 
+# -1 
+# 2 H 0 0
+# 1 O 1 1
+In my humble opinion
+# -1 
+# 2 N 0 0
+# 1 S 0 0
+# 1 H 0 0
+# 1 O 1 1
+In my, not so humble opinion
+# -1 
+# -1 
+# -1 
+# 2 O 1 1
+In my opinion
+# 1 B 0 0
+# 1 O 1 1
+In my own biased opinion
+# -1 
+# -1 
+# 2 P 1 1
+I might be pregnant
+# 1 O 0 0
+# 1 V 1 1
+In my point of view
+# -1 
+# -1 
+# 2 S 1 1
+I am sorry
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 N 0 0
+# 1 A 0 0
+# 1 L 1 1
+I'm not a lawyer
+# -1 
+# 2 P 0 0
+# 1 O 1 1
+In no particular order
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 I 0 0
+# 1 T 1 1
+I'm on Irish Time
+# -1 
+# 2 W 1 1
+In other words
+# -1 
+# -1 
+# 2 R 0 0
+# 1 C 1 1
+Internet Relay Chat, an multiuser, multinetwork conversing platform (http://www.irc.org)
+# 2 L 1 1
+In real life
+# 2 M 0 0
+# 1 F 0 0
+# 1 I 1 1
+I reply merely for information
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 S 1 1
+I'm sorry
+# 1 T 0 0
+# 1 M 1 1
+It seems to me
+# 2 R 1 1
+I seem to recall
+# -1 
+# -1 
+# 2 W 0 0
+# 1 Y 0 0
+# 1 M 1 1
+I see what you mean
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 F 0 0
+# 1 A 1 1
+In the final analysis
+# -1 
+# 2 R 0 0
+# 1 O 1 1
+In the reality of
+# 2 W 1 1
+In the real world
+# -1 
+# -1 
+# 2 S 0 0
+# 1 F 0 0
+# 1 W 0 0
+# 1 I 1 1
+If the shoe fits, wear it
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 V 0 0
+# 1 L 1 1
+In virtual live
+# -1 
+# 2 W 0 0
+# 1 A 0 0
+# 1 L 0 0
+# 1 Y 1 1
+I will always love you
+# -1 
+# -1 
+# 2 B 0 0
+# 1 N 0 0
+# 1 I 1 1
+It would be nice if
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 K 0 0
+# 1 W 0 0
+# 1 I 0 0
+# 1 M 1 1
+If you know what I mean
+# -1 
+# -1 
+# -1 
+# 2 S 0 0
+# 1 W 0 0
+# 1 I 0 0
+# 1 M 1 1
+If you see what I mean
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 J 0 0
+# 1 / 0 0
+# 1 K 1 1
+Just kidding
+# 2 P 1 1
+Just playing
+# -1 
+# -1 
+# 2 A 0 0
+# 1 M 1 1
+Just a minute
+# 2 S 1 1
+Just a second
+# 1 E 1 1
+Just another system error
+# -1 
+# 2 W 0 0
+# 1 S 1 1
+Just another windows shell
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 I 0 0
+# 1 C 1 1
+Just in case
+# -1 
+# 2 J 0 0
+# 1 W 0 0
+# 1 Y 1 1
+Just joking with you
+# -1 
+# -1 
+# 2 K 1 1
+Just kidding
+# 2 M 0 0
+# 1 H 0 0
+# 1 O 1 1
+Just my humble opinion
+# -1 
+# 2 O 1 1
+Just my opinion
+# -1 
+# -1 
+# 2 P 1 1
+Just playing
+# 2 T 0 0
+# 1 L 0 0
+# 1 Y 0 0
+# 1 K 1 1
+Just to let you know
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+Just wondering
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 K 1 1
+Kiss (rarely used)
+# 1 : 0 0
+# 1 P 1 1
+User is a little kid with a propeller beenie.
+# -1 
+# 2 B 1 1
+Kiss back
+# 2 H 0 0
+# 1 Y 0 0
+# 1 F 1 1
+Know how you feel
+# -1 
+# -1 
+# 2 I 0 0
+# 1 S 1 1
+Keep it simple
+# 1 S 1 1
+Keeping it sweetly simple
+# -1 
+# 2 T 1 1
+Keep in touch
+# -1 
+# -1 
+# 2 O 0 0
+# 1 T 0 0
+# 1 C 1 1
+Kiss on the cheek
+# 2 L 1 1
+Kiss on the lips
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 T 0 0
+# 1 G 0 0
+# 1 W 1 1
+Keep up the good work
+# -1 
+# -1 
+# -1 
+# 2 W 0 0
+# 1 I 0 0
+# 1 M 1 1
+Know what I mean?
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 L 1 1
+Laugh
+# 1 8 0 0
+# 1 R 1 1
+Later
+# 1   0 0
+# 1 G 0 0
+# 1 8 0 0
+# 1 R 1 1
+Later gator
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 A 0 0
+# 1 B 1 1
+Life's a bitch
+# -1 
+# 2 B 0 0
+# 1 R 1 1
+Little boys room
+# -1 
+# 2 D 1 1
+Long distance
+# 2 G 0 0
+# 1 R 1 1
+Little girls room
+# -1 
+# 2 H 0 0
+# 1 M 1 1
+Lord help me
+# 2 U 1 1
+Lord help us
+# -1 
+# -1 
+# 2 L 0 0
+# 1 & 0 0
+# 1 P 1 1
+Live long & prosper
+# -1 
+# -1 
+# 2 M 0 0
+# 1 A 1 1
+Leave me alone
+# 2 H 0 0
+# 1 O 1 1
+Laughing my head off
+# -1 
+# 2 K 1 1
+Let me know
+# -1 
+# -1 
+# -1 
+# 2 N 0 0
+# 1 K 1 1
+Love and kisses
+# -1 
+# 2 O 0 0
+# 1 L 1 1
+Lots of love
+# 1 A 1 1
+Laughing out loud again
+# -1 
+# 2 M 0 0
+# 1 L 1 1
+Light of my life (or love of my life)
+# 1 I 0 0
+# 1 L 0 0
+# 1 Y 1 1
+Light of my life, I love you
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 L 1 1
+Laughing out outrageously loud
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 S 0 0
+# 1 H 0 0
+# 1 I 0 0
+# 1 P 0 0
+# 1 M 0 0
+# 1 P 1 1
+Laughing so hard I pissed my pants
+# -1 
+# -1 
+# -1 
+# 2 M 0 0
+# 1 B 0 0
+# 1 B 1 1
+Laughing so hard my belly is bouncing
+# 2 H 1 1
+Laughing so hard my belly hurts
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 N 0 0
+# 1 S 1 1
+Long time no see
+# -1 
+# 2 R 1 1
+Long term relationship
+# 2 S 1 1
+Laughing to self
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 L 0 0
+# 1 A 0 0
+# 1 S 1 1
+Love you like a sister
+# -1 
+# -1 
+# 2 W 0 0
+# 1 A 0 0
+# 1 M 0 0
+# 1 H 1 1
+Love you with all my heart
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 1 1
+Love ya
+# 1 K 1 1
+Let you know
+# 2 L 1 1
+Love ya lots
+# 1 A 0 0
+# 1 B 1 1
+Love ya like a brother
+# 2 S 1 1
+Love ya like a sister
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 M 1 1
+Male
+# 1 8 1 1
+Mate
+# 2 B 1 1
+Maybe
+# 2 Y 0 0
+# 1 O 0 0
+# 1 B 1 1
+Mind your own business
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 N 1 1
+In
+# 1 / 0 0
+# 1 C 1 1
+Not cool
+# 2 M 1 2
+Never mind
+nothing much
+# 2 S 1 1
+No shit
+# -1 
+# -1 
+# -1 
+# 2 2 0 0
+# 1 M 1 1
+Not too much
+# -1 
+# 2 B 0 0
+# 1 D 1 1
+No big deal
+# -1 
+# 2 E 0 0
+# 1 1 1 1
+Anyone
+# 2 T 0 0
+# 1 U 0 0
+# 1 A 1 1
+Nobody ever tells us anything
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 F 0 0
+# 1 I 1 1
+No found idea
+# -1 
+# 2 L 1 1
+Not likely
+# 2 M 1 2
+Never mind
+nothing much
+# 1 H 1 1
+Not much here
+# 2 J 0 0
+# 1 C 1 1
+Nothing much, just chillin'
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 M 1 1
+No offense meant
+# 2 T 0 0
+# 1 T 0 0
+# 1 O 0 0
+# 1 M 0 0
+# 1 H 1 1
+Not of the top of my mind
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 B 1 1
+None of your business
+# 2 F 0 0
+# 1 B 1 1
+None of your failing business
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 P 1 1
+No problem
+# 2 R 0 0
+# 1 N 1 1
+No response necessary
+# -1 
+# 2 S 1 1
+No shit
+# 2 T 0 0
+# 1 A 1 1
+Non-technical acronym
+# -1 
+# 2 V 0 0
+# 1 M 1 1
+Nevermind
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1   0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is an angel (at heart, at least).
+# -1 
+# -1 
+# 2 | 0 0
+# 1 - 0 0
+# 1 ) 1 1
+Net.religion
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 - 0 0
+# 1 ) 1 1
+Megaton Man On Patrol!(or else, user is a scuba diver)
+# -1 
+# 2 B 0 0
+# 1 T 0 0
+# 1 W 1 1
+Oh, by the way
+# -1 
+# -1 
+# 2 F 1 1
+On fire
+# 1 I 0 0
+# 1 S 1 1
+On floor with stitches
+# -1 
+# -1 
+# 2 H 1 1
+Off hand
+# 2 I 0 0
+# 1 C 1 1
+Oh I see
+# -1 
+# 2 K 1 1
+Abbreviation of oll korrect (all correct)
+# 2 L 1 1
+Old lady (wife, girlfriend)
+# 2 M 1 1
+Old man (husband, boyfriend)
+# 1 G 1 3
+Oh my god
+gosh
+goodness
+# -1 
+# 2 O 0 0
+# 1 C 1 1
+Out of character
+# -1 
+# 2 T 1 2
+Off topic
+other topic
+# 1 O 0 0
+# 1 H 1 1
+On the other hand
+# -1 
+# 2 P 1 1
+On the phone
+# 2 T 0 0
+# 1 O 0 0
+# 1 M 0 0
+# 1 H 1 1
+Off the top of my head
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 P 0 0
+# 1 A 0 0
+# 1 W 1 1
+Parents are watching
+# -1 
+# 2 D 0 0
+# 1 S 1 1
+Please don't shoot
+# -1 
+# 2 E 0 0
+# 1 B 0 0
+# 1 C 0 0
+# 1 A 0 0
+# 1 K 1 1
+Problem exists between chair and keyboard
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 L 0 0
+# 1 S 1 1
+Please
+# 2 Z 1 1
+Please
+# -1 
+# -1 
+# 2 M 1 1
+Private message
+# 1 F 0 0
+# 1 J 0 0
+# 1 I 1 1
+Pardon me for jumping in
+# -1 
+# -1 
+# 2 J 0 0
+# 1 I 1 1
+Pardon my jumping in (Another way for PMFJI)
+# -1 
+# 2 P 1 1
+Peed my pants
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 A 0 0
+# 1 H 0 0
+# 1 F 1 1
+Put on a happy face
+# -1 
+# -1 
+# 2 C 1 1
+Point of contact
+# 2 O 0 0
+# 1 F 1 1
+I have left the chat
+# -1 
+# 2 S 1 1
+Parents over shoulder
+# 2 T 0 0
+# 1 B 1 1
+Pats on the back
+# -1 
+# 2 V 1 1
+Point of view
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 P 0 0
+# 1 L 1 1
+People
+# -1 
+# 2 S 1 1
+Post script
+# 1 A 1 1
+Public show of affection
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Q 0 0
+# 1 4 0 0
+# 1 U 1 1
+Question for you
+# -1 
+# 2 S 0 0
+# 1 L 1 1
+Reply
+# 2 O 1 1
+Conversation
+# -1 
+# -1 
+# 2 T 1 1
+Cutie
+# -1 
+# -1 
+# -1 
+# 2 R 0 0
+# 1 C 0 0
+# 1 E 0 0
+# 1 D 1 1
+Reconnected
+# -1 
+# -1 
+# 2 E 1 1
+Hi again (same as re's)
+# 2 O 0 0
+# 1 F 0 0
+# 1 L 1 1
+Rolling on floor laughing
+# 1 O 0 0
+# 1 L 0 0
+# 1 A 0 0
+# 1 Y 1 1
+Rolling on floor laughing out loud at you
+# -1 
+# 2 T 0 0
+# 1 S 0 0
+# 1 D 0 0
+# 1 M 0 0
+# 1 C 1 1
+Rolling on floor laughing out loud tears streaming down my cheeks
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 T 0 0
+# 1 S 1 1
+Rolling on floor laughing out loud unable to speak
+# -1 
+# -1 
+# 2 W 0 0
+# 1 T 0 0
+# 1 I 0 0
+# 1 M 0 0
+# 1 E 1 1
+Rolling on floor laughing out loud with tears in my eyes
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 F 0 0
+# 1 L 1 1
+Rolling on the floor laughing
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 S 0 0
+# 1 N 1 1
+Real soon now
+# -1 
+# 2 T 0 0
+# 1 F 1 1
+Read the FAQ
+# 2 S 0 0
+# 1 M 1 1
+Read the stupid manual
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 O 0 0
+# 1 K 0 0
+# 1 ? 1 1
+Are you okay?
+# -1 
+# -1 
+# 2 T 0 0
+# 1 T 0 0
+# 1 M 1 1
+Are you talking to me
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 V 0 0
+# 1 D 1 1
+Really very dumb
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 S 1 1
+Smile
+# 1 2 0 0
+# 1 R 1 1
+Send to receive
+# -1 
+# 2 A 0 0
+# 1 M 0 0
+# 1 A 0 0
+# 1 G 0 0
+# 1 A 0 0
+# 1 L 1 1
+Stop annoying me and get a live
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 C 0 0
+# 1 N 0 0
+# 1 R 1 1
+Sorry, could not resist
+# -1 
+# -1 
+# 2 E 0 0
+# 1 T 0 0
+# 1 E 1 1
+Smiling ear to ear
+# -1 
+# -1 
+# 2 H 1 1
+So hot
+# 1 I 0 0
+# 1 C 0 0
+# 1 P 0 0
+# 1 M 0 0
+# 1 P 1 1
+So happy I could piss my pants
+# -1 
+# -1 
+# -1 
+# 2 D 1 1
+Slaps head in disgust
+# -1 
+# -1 
+# 2 M 0 0
+# 1 I 0 0
+# 1 L 0 0
+# 1 Y 1 1
+See how much I love you
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 I 0 0
+# 1 M 1 1
+Shit, it's Monday
+# 2 T 0 0
+# 1 W 0 0
+# 1 B 1 1
+Sorry, in the wrong box
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 N 0 0
+# 1 A 0 0
+# 1 F 0 0
+# 1 U 1 1
+Situation normal, all fed up
+# -1 
+# -1 
+# -1 
+# 2 O 1 1
+Significant other
+# 1 H 0 0
+# 1 F 1 1
+Sense of humor failure
+# -1 
+# 2 M 0 0
+# 1 Y 1 1
+Sick of me yet?
+# -1 
+# -1 
+# -1 
+# 2 P 0 0
+# 1 A 0 0
+# 1 M 1 1
+Stupid persons' advertisement
+# -1 
+# -1 
+# 2 R 0 0
+# 1 Y 1 1
+Sorry
+# -1 
+# 2 T 0 0
+# 1 W 1 1
+Search the web
+# -1 
+# 2 W 0 0
+# 1 A 0 0
+# 1 K 1 1
+Sealed with a kiss
+# 2 L 0 0
+# 1 K 1 1
+Sweet, with all love, kisses
+# -1 
+# -1 
+# -1 
+# 2 L 1 1
+Screaming with laughter
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 S 1 1
+See you soon
+# 1 O 0 0
+# 1 P 1 1
+System operator
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 T 1 1
+Tickle
+# 1 A 1 1
+Thanks again
+# 1 F 0 0
+# 1 N 1 1
+That's all for now
+# -1 
+# -1 
+# 2 B 0 0
+# 1 A 1 1
+To be announced
+# 2 H 1 1
+To be honest
+# -1 
+# -1 
+# 2 C 0 0
+# 1 O 1 1
+Taken care of
+# -1 
+# 2 G 0 0
+# 1 I 0 0
+# 1 F 1 1
+Thank god its Friday
+# -1 
+# -1 
+# 2 H 0 0
+# 1 T 0 0
+# 1 H 1 1
+To hot to handle
+# -1 
+# 2 X 1 1
+Thanks
+# -1 
+# -1 
+# 2 I 0 0
+# 1 A 1 1
+Thanks in advance
+# 2 I 0 0
+# 1 C 1 1
+The idiots in charge
+# -1 
+# -1 
+# -1 
+# 2 J 0 0
+# 1 M 1 1
+That's just me
+# -1 
+# 2 L 0 0
+# 1 A 1 1
+Three-letter acronym
+# -1 
+# 2 M 0 0
+# 1 A 1 1
+Take my advice
+# 2 I 1 1
+To much information
+# -1 
+# -1 
+# 2 N 0 0
+# 1 S 0 0
+# 1 T 0 0
+# 1 A 0 0
+# 1 A 0 0
+# 1 F 0 0
+# 1 L 1 1
+There's no such thing as a free lunch
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 X 1 1
+Thanks
+# -1 
+# -1 
+# 2 O 0 0
+# 1 H 1 1
+To other half
+# 2 Y 1 1
+Thinking of you
+# -1 
+# -1 
+# 2 P 0 0
+# 1 T 0 0
+# 1 B 1 1
+The powers that be
+# -1 
+# -1 
+# 2 S 0 0
+# 1 D 0 0
+# 1 M 0 0
+# 1 C 1 1
+Tears streaming down my cheeks
+# -1 
+# -1 
+# -1 
+# 2 T 0 0
+# 1 2 0 0
+# 1 T 1 1
+To tired to talk
+# -1 
+# 2 F 0 0
+# 1 N 1 1
+Ta ta for now
+# -1 
+# 2 T 1 1
+Thought that, too
+# 2 U 0 0
+# 1 L 1 1
+Talk to you later
+# -1 
+# 2 Y 0 0
+# 1 L 1 1
+Talk to you later
+# 1 M 0 0
+# 1 F 1 1
+Talk to you later my friend
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 U 1 1
+Thank you
+# 2 W 0 0
+# 1 M 0 0
+# 1 A 1 1
+Till we meet again
+# -1 
+# -1 
+# 2 X 1 1
+Thanx
+# 2 Y 1 1
+Thank you
+# 1 V 0 0
+# 1 M 1 1
+Thank you very much
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 U 0 0
+# 1 2 1 1
+You too
+# 2 R 1 1
+Your
+# 1 A 0 0
+# 1 Q 0 0
+# 1 T 0 0
+# 1 ! 1 1
+You are a cutie!
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+You're welcom
+# -1 
+# -1 
+# -1 
+# 2 V 0 0
+# 1 B 0 0
+# 1 G 1 1
+Very big grin
+# 2 S 1 1
+Very big smile
+# -1 
+# -1 
+# -1 
+# 2 W 1 1
+Wink
+# 1 / 0 0
+# 1 E 1 1
+Whatever
+# -1 
+# 2 8 1 1
+Wait
+# 1 A 0 0
+# 1 M 1 1
+Wait a minute
+# -1 
+# -1 
+# 2 A 0 0
+# 1 Y 1 1
+Who are you
+# -1 
+# 2 B 1 1
+Welcome back
+# 1 S 1 1
+Write back soon
+# -1 
+# 2 D 0 0
+# 1 H 0 0
+# 1 L 0 0
+# 1 M 1 1
+Why doesn't he love me
+# -1 
+# -1 
+# -1 
+# 2 E 1 1
+Whatever
+# 2 F 0 0
+# 1 M 1 1
+Works for me
+# -1 
+# 2 N 0 0
+# 1 D 0 0
+# 1 I 0 0
+# 1 T 0 0
+# 1 W 0 0
+# 1 B 1 1
+We never did it this way before
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 P 1 1
+Wrong person
+# 2 R 0 0
+# 1 T 1 1
+With respect to
+# -1 
+# 2 T 0 0
+# 1 F 1 2
+What
+who the fool?
+# 2 G 1 1
+Way to go
+# 1 P 1 1
+Want to go private?
+# -1 
+# 2 H 1 2
+What
+who the heck?
+# 2 M 0 0
+# 1 I 1 1
+Way to much information
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 U 1 1
+What's up?
+# 1 ? 1 1
+What's up?
+# 2 D 1 1
+What's up dog?
+# 2 F 1 1
+Where are you from?
+# 2 W 0 0
+# 1 T 1 1
+Whats up with that
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 M 0 0
+# 1 M 1 1
+Will you marry me?
+# -1 
+# 2 S 0 0
+# 1 I 0 0
+# 1 W 0 0
+# 1 Y 0 0
+# 1 G 1 1
+What you see is what you get
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 X 0 0
+# 1 - 0 0
+# 1 ( 1 1
+Net.suicide
+# -1 
+# 2 T 0 0
+# 1 L 0 0
+# 1 A 1 1
+Extended three letter acronym
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 1 1
+Why?
+# 1 2 0 0
+# 1 K 1 1
+You're too kind
+# -1 
+# 2 A 0 0
+# 1 T 0 0
+# 1 B 1 1
+You are the best
+# -1 
+# -1 
+# 2 B 0 0
+# 1 S 1 1
+You'll be sorry
+# -1 
+# 2 G 1 1
+Young gentleman
+# 2 H 0 0
+# 1 B 0 0
+# 1 B 0 0
+# 1 Y 0 0
+# 1 B 0 0
+# 1 D 1 1
+You'd have better bet your bottom dollar
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 L 1 1
+You 'll live
+# 2 M 1 1
+You mean
+# 1 M 0 0
+# 1 D 1 1
+You've made my day
+# 2 V 1 1
+Your mileage may vary
+# -1 
+# -1 
+# -1 
+# 2 O 0 0
+# 1 Y 0 0
+# 1 O 1 1
+You're on your own
+# -1 
+# -1 
+# 2 T 0 0
+# 1 ? 1 1
+You there?
+# -1 
+# 2 V 0 0
+# 1 W 1 1
+You're very welcome
+# -1 
+# 2 W 1 1
+You are welcome
+# 1 I 0 0
+# 1 A 1 1
+You're welcome in advance
+# -1 
+# 2 T 0 0
+# 1 K 0 0
+# 1 M 1 1
+You want to kiss me
+# -1 
+# 2 L 0 0
+# 1 M 1 1
+You want to love me
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 Y 0 0
+# 1 4 0 0
+# 1 U 1 1
+Two wise for you
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 [ 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User is wearing a walkman.
+# -1 
+# 2 ] 1 1
+User is a robot.
+# -1 
+# -1 
+# 2 ] 1 1
+Hugs and ...
+# -1 
+# -1 
+# 2 ^ 0 0
+# 1 - 0 0
+# 1 ^ 1 1
+Satisfied Smile
+# 2 ~ 1 1
+Wink
+# -1 
+# -1 
+# 2 _ 0 0
+# 1 - 1 1
+Wink
+# 2 ^ 1 1
+Smile
+# -1 
+# -1 
+# 2 o 1 1
+Snoring.
+# -1 
+# -1 
+# -1 
+# 2 ` 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User shaved one of his eyebrows off this morning.
+# -1 
+# -1 
+# -1 
+# 2 d 0 0
+# 1 8 0 0
+# 1 = 1 1
+Your pet beaver is wearing goggles and a hard hat.
+# -1 
+# -1 
+# 2 n 0 0
+# 1 0 0 0
+# 1 0 0 0
+# 1 b 1 1
+Leetspeak for beginner
+# -1 
+# -1 
+# -1 
+# 2 { 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ) 1 1
+User wears a toupee.
+# -1 
+# -1 
+# -1 
+# 2 | 0 0
+# 1 - 0 0
+# 1 ) 1 1
+hee hee
+# 2 D 1 1
+ho ho
+# 2 I 1 1
+User is asleep.
+# 2 O 1 1
+User is yawning/snoring.
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 I 1 1
+Asleep.
+# -1 
+# -1 
+# 2 } 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ( 1 1
+Toupee in an updraft.
+# -1 
+# 2 ^ 0 0
+# 1 # 0 0
+# 1 } 0 0
+# 1 ) 1 1
+Updrafted bushy-mustached pointy nosed smiley with a double-chin.
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# 2 ~ 0 0
+# 1 ~ 0 0
+# 1 : 0 0
+# 1 - 0 0
+# 1 ( 1 1
+Net.flame
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 
+# -1 

@@ -627,6 +627,11 @@ struct TenarySearchTree {
 
         fin.close();
     }
+
+    void loadFavouriteListFromTxt(string filePath)
+    {
+
+    }
 };
 
 
