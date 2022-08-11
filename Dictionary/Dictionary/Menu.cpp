@@ -31,17 +31,13 @@ void quitAndSave(BackendGui& gui)
     treeVn.saveHistoryListToFile("currentData/historyList/treeVn.txt");
     treeSlang.saveHistoryListToFile("currentData/historyList/treeSlang.txt");
     treeEmo.saveHistoryListToFile("currentData/historyList/treeEmo.txt");
+    exit(0);
 
 }
 
 void startup(BackendGui& gui)
 {
     // creater quit button
-    gui.add(tgui::Button::create(), "quitButton");
-    gui.get<Button>("quitButton")->setSize(50, 30);
-    gui.get<Button>("quitButton")->setPosition(35, 840);
-    gui.get<Button>("quitButton")->setVisible(true);
-    gui.get<Button>("quitButton")->setText("Quit");
     gui.get<Button>("quitButton")->onClick(&quitAndSave, ref(gui));
 
 
@@ -286,11 +282,6 @@ void onChangeDataset(BackendGui& gui,  int index)
     onSwitchForm(gui, 1);
 }
 
-
-void loadWordOfTheDay(BackendGui& gui)
-{
-
-}
 
 void loadWidgetsMenu(tgui::BackendGui& gui)
 {

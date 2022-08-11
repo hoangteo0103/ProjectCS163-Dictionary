@@ -39,8 +39,8 @@ EditBox.SearchBar {
 }
 
 Button.FavouriteButton {
-    Position = (35, 291);
-    Size = (48, 50);
+    Position = (34, 291);
+    Size = (47, 53);
     TextSize = 60;
 
     Renderer {
@@ -102,7 +102,7 @@ Button.HistoryButton {
 
 Button.GameButton {
     Position = (33, 521);
-    Size = (52, 52);
+    Size = (49, 52);
     TextSize = 20;
 
     Renderer {
@@ -259,7 +259,7 @@ Button.AddWordButton {
 
 Button.ResetButton {
     Position = (34, 754);
-    Size = (51, 51);
+    Size = (47, 51);
     TextSize = 15;
 
     Renderer {
@@ -285,5 +285,36 @@ Button.ResetButton {
         TextureDownHover = None;
         TextureFocused = None;
         TextureHover = "reset-button-clicked.png" Smooth;
+    }
+}
+
+Button.quitButton {
+    Position = (1074, 34);
+    Size = (47, 60);
+    TextSize = 15;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        TextStyle = Bold;
+        Texture = "quit-button-unclicked.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "quit-button-clicked.png" Smooth;
     }
 }
