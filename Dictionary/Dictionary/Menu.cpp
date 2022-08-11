@@ -2,8 +2,8 @@
 #include "WordGame.h"
 // Menu Form
 
-TenarySearchTree tree , treeEn, treeVn, treeSlang , treeEmo , treeDef;
-TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo , oriTreeDef;
+TenarySearchTree tree, treeEn, treeVn, treeSlang, treeEmo , treeDef;
+TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo, oriTreeDef;
 int curTreeState;
 
 void quitAndSave(BackendGui& gui)
@@ -69,7 +69,7 @@ void onSwitchForm(BackendGui& gui, int id)
 void onSwitchToDefinition(BackendGui& gui, string word)
 {
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
-    if (ans.empty()) return; 
+    if (ans.empty()) return;
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText(word);
 
     /*
@@ -78,7 +78,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
     for (auto i : tree.listFavouriteWord) cout << i << ' ';
     cout << endl << endl;
     */
-    
+
     bool ok = tree.isInFavouriteList(word);
     if (ok == false)
     {
@@ -93,7 +93,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
 
     int ansSize = ans.size();
 
-    for (int i = 0; i < min(ansSize, 3); i++)
+    for (int i = 0; i < 3; i++)
     {
         string InputIndex = "NewDef" + to_string(i + 1);
         string index = "Def" + to_string(i + 1);
@@ -132,7 +132,6 @@ void convertStringToLowercase(string& s)
 void onSearch(BackendGui& gui)
 {
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
-    convertStringToLowercase(word);
     vector<string> ans = tree.searchDefinition(tree.root, word, 0);
 
     if (ans.empty()) return;
@@ -155,7 +154,6 @@ void suggestWord(BackendGui& gui)
     gui.get<Group>("suggestWordGroup")->removeAllWidgets();
     string word = gui.get<EditBox>("SearchBar")->getText().toStdString();
     if ((int)word.size() == 0) return;
-    convertStringToLowercase(word);
     vector<string> res = tree.autoComplete(tree.root, word);
 
     for (int i = 0; i < res.size(); i++)
@@ -205,6 +203,9 @@ void onRemove(BackendGui& gui)
 {
     string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
     tree.remove(tree.root, word, 0);
+    tree.removeWordFromFavouriteList(word);
+    tree.removeWordFromHistoryList(word);
+
     gui.get<Group>("groupWordDefinition")->get<Button>("Word")->setText("");
     for (int i = 0; i < 3; i++)
     {
@@ -212,21 +213,21 @@ void onRemove(BackendGui& gui)
         gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
     }
     for (int i = 0; i < 3; i++)
-        {
-            string InputIndex = "NewDef" + to_string(i + 1);
-            string index = "Def" + to_string(i + 1);
-            string EditIndex = "Edit" + to_string(i + 1);
-            string SaveIndex = "Save" + to_string(i + 1);
+    {
+        string InputIndex = "NewDef" + to_string(i + 1);
+        string index = "Def" + to_string(i + 1);
+        string EditIndex = "Edit" + to_string(i + 1);
+        string SaveIndex = "Save" + to_string(i + 1);
 
-            gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(false);
-            gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
-            gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(false);
-            gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
-            gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
-        }
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setVisible(false);
+        gui.get<Group>("groupWordDefinition")->get<Button>(index)->setText("");
+        gui.get<Group>("groupWordDefinition")->get<Button>(EditIndex)->setVisible(false);
+        gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
+        gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
+    }
 
 }
-void onEdit(BackendGui& gui,int index)
+void onEdit(BackendGui& gui, int index)
 {
     if (1 <= index && index <= 3)
     {
@@ -235,31 +236,29 @@ void onEdit(BackendGui& gui,int index)
     }
     else
     {
-         string InputIndex = "NewDef" + to_string(index - 3);
-         string Newdef = gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->getText().toStdString();
-         if (Newdef == "") return;
-         string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
-         convertStringToLowercase(word);
-         convertStringToLowercase(Newdef);
-         vector<string> ans = tree.searchDefinition(tree.root, word, 0);
-         if (ans.size() == 0)
-         {
-             cout << "ERROR!!";
-             return;
-         }
-         ans[index - 4] = Newdef;
-         tree.remove(tree.root, word, 0);
-         for (int i = 0; i < ans.size(); i++)
-             tree.insert(tree.root, word, ans[i]);
-         gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setText("");
-         gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
-         onSwitchToDefinition(gui, word);
-         
+        string InputIndex = "NewDef" + to_string(index - 3);
+        string Newdef = gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->getText().toStdString();
+        if (Newdef == "") return;
+        string word = gui.get<Group>("groupWordDefinition")->get<Button>("Word")->getText().toStdString();
+        vector<string> ans = tree.searchDefinition(tree.root, word, 0);
+        if (ans.size() == 0)
+        {
+            cout << "ERROR!!";
+            return;
+        }
+        ans[index - 4] = Newdef;
+        tree.remove(tree.root, word, 0);
+        for (int i = 0; i < ans.size(); i++)
+            tree.insert(tree.root, word, ans[i]);
+        gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setText("");
+        gui.get<Group>("groupWordDefinition")->get<EditBox>(InputIndex)->setVisible(false);
+        onSwitchToDefinition(gui, word);
+
     }
 
 }
 
-void onChangeDataset(BackendGui& gui,  int index)
+void onChangeDataset(BackendGui& gui, int index)
 {
     string button;
 
@@ -272,7 +271,7 @@ void onChangeDataset(BackendGui& gui,  int index)
 
     switch (index)
     {
-    case 1 :
+    case 1:
         tree = treeEn;
         button = "EnToVn";
         break;
@@ -388,10 +387,10 @@ void resetFavourite(BackendGui& gui) {
 void viewFavouriteList(BackendGui& gui) {
     gui.get<Group>("groupFavourite")->get<Button>("ReloadButton")->onClick(&resetFavourite, ref(gui));
     gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->removeAllWidgets();
-        
+
     int len = tree.listFavouriteWord.size();
 
-    for(int i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
     {
         string word = tree.listFavouriteWord[len - i - 1];
         auto cur = tgui::Button::copy(gui.get<Group>("groupFavourite")->get<Button>("FavouriteListWordButton"));
@@ -411,7 +410,7 @@ void loadRandomWord(BackendGui& gui)
     string st = tree.genRandomWord();
     gui.get<Group>("groupHome")->get<Button>("WordDay1")->setText(st);
     mp[st] = true;
-    while(mp[st])
+    while (mp[st])
         st = tree.genRandomWord();
     gui.get<Group>("groupHome")->get<Button>("WordDay2")->setText(st);
     mp[st] = true;
@@ -481,7 +480,7 @@ void setAction(BackendGui& gui)
     // Word Definition
     gui.get<Group>("groupWordDefinition")->get<Button>("LikeButton")->onClick(&onLike, ref(gui));
     gui.get<Group>("groupWordDefinition")->get<Button>("RemoveButton")->onClick(&onRemove, ref(gui));
-    gui.get<Group>("groupWordDefinition")->get<Button>("Edit1")->onClick(&onEdit, ref(gui),1);
+    gui.get<Group>("groupWordDefinition")->get<Button>("Edit1")->onClick(&onEdit, ref(gui), 1);
     gui.get<Group>("groupWordDefinition")->get<Button>("Edit2")->onClick(&onEdit, ref(gui), 2);
     gui.get<Group>("groupWordDefinition")->get<Button>("Edit3")->onClick(&onEdit, ref(gui), 3);
     gui.get<Group>("groupWordDefinition")->get<Button>("Save1")->onClick(&onEdit, ref(gui), 4);
@@ -491,14 +490,14 @@ void setAction(BackendGui& gui)
     // Home
     gui.get<Button>("HomeButton")->onClick(&onSwitchForm, ref(gui), 1);
     loadRandomWord(gui);
-    
+
     // Favourite
     gui.get<Button>("FavouriteButton")->onClick(&onSwitchForm, ref(gui), 2);
     gui.get<Button>("FavouriteButton")->onClick(&viewFavouriteList, ref(gui));
-    
+
 
     //Change Language
-    gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchForm, ref(gui),3);
+    gui.get<Button>("ChooseLangagueButton")->onClick(&onSwitchForm, ref(gui), 3);
 
     // Choose Langague
     gui.get<Group>("groupChooseLangague")->get<Button>("EnToVn")->onClick(&onChangeDataset, ref(gui), 1);
@@ -529,23 +528,12 @@ bool runMenu(BackendGui& gui) {
         texture.loadTexture();
         loadWidgetsMenu(gui);
         startup(gui);
-        //treeEn.selectData("Assets/Data/EnToVn.txt");
-        //treeVn.selectData("Assets/Data/VnToEn.txt");
-        //treeSlang.selectData("Assets/Data/Slang.txt");
-        //treeEmo.selectData("Assets/Data/Emotional.txt");
-          
-        //treeEn.saveTreeToTxt("Assets/TreeFormat/EnToVn.txt");
-        //treeVn.saveTreeToTxt("Assets/TreeFormat/VnToEn.txt");
-        //treeSlang.saveTreeToTxt("Assets/TreeFormat/Slang.txt");
-        //treeEmo.saveTreeToTxt("Assets/TreeFormat/Emotional.txt");
 
         oriTreeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
         oriTreeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
         oriTreeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
         oriTreeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
-        
-        oriTreeDef.loadTreeFromTxt("Assets/OriginalTreeFormat/DefEnToVn.txt");
-        
+
         treeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
         treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
         treeSlang.loadTreeFromTxt("Assets/TreeFormat/Slang.txt");
@@ -574,4 +562,3 @@ bool runMenu(BackendGui& gui) {
         return false;
     }
 }
-
