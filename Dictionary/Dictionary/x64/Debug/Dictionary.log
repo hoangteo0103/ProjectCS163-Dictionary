@@ -1,13 +1,4 @@
-﻿  Core.cpp
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(236,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(308,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
-          with
-          [
-              _Rep=__int64
-          ]
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(323,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(334,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  Menu.cpp
+﻿  Menu.cpp
 E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(236,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\TenarySearchTree.h(308,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
           with
@@ -23,8 +14,8 @@ E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary
           ]
 E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
 E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(140,61): warning C4305: 'argument': truncation from 'double' to 'float'
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(298,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(324,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(63,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(143,61): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(301,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\Dictionary\Menu.cpp(327,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Dictionary.vcxproj -> E:\HCMUS SEMESTER 3\DATA STRUCTURES\TASK\DictionaryProject\Dictionary\Dictionary\x64\Debug\Dictionary.exe

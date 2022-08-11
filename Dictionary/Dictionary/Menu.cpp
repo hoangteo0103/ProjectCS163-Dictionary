@@ -60,7 +60,9 @@ void onSwitchToDefinition(BackendGui& gui, string word)
 
     onSwitchForm(gui, 5);
 
-    for (int i = 0; i < 3; i++)
+    int ansSize = ans.size();
+
+    for (int i = 0; i < min(ansSize, 3); i++)
     {
         string index = "Def" + to_string(i + 1);
         string EditIndex = "Edit" + to_string(i + 1);
@@ -72,7 +74,7 @@ void onSwitchToDefinition(BackendGui& gui, string word)
         gui.get<Group>("groupWordDefinition")->get<Button>(SaveIndex)->setVisible(false);
     }
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < min(ansSize, 3); i++)
     {
         string index = "Def" + to_string(i + 1);
         string EditIndex = "Edit" + to_string(i + 1);
@@ -104,6 +106,7 @@ void onSearch(BackendGui& gui)
     tree.addWordToHistoryList(word);
 
     onSwitchToDefinition(gui, word);
+    return;
 }
 
 void clickSuggestWord(BackendGui& gui, string word)
