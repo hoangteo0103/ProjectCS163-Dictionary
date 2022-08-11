@@ -630,7 +630,13 @@ struct TenarySearchTree {
 
     void loadFavouriteListFromTxt(string filePath)
     {
-
+        ifstream fin(filePath.c_str());
+        listFavouriteWord.clear();
+        string s;
+        while (fin >> s)
+        {
+            listFavouriteWord.push_back(s);
+        }
     }
 };
 
