@@ -32,7 +32,6 @@ void quitAndSave(BackendGui& gui)
     treeSlang.saveHistoryListToFile("currentData/historyList/treeSlang.txt");
     treeEmo.saveHistoryListToFile("currentData/historyList/treeEmo.txt");
 
-    //window.close();
 }
 
 void startup(BackendGui& gui)
