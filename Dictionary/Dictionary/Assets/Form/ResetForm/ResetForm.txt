@@ -34,7 +34,7 @@ Picture.Picture1 {
 }
 
 Button.YesButton {
-    Position = (380, 483.866);
+    Position = (290, 483.866);
     Renderer = &1;
     Size = (268, 103.621);
     Text = YES;
@@ -42,7 +42,7 @@ Button.YesButton {
 }
 
 Button.NoButton {
-    Position = (930, 483.866);
+    Position = (670, 483.866);
     Renderer = &1;
     Size = (268, 103.621);
     Text = NO;
