@@ -285,7 +285,15 @@ void loadWidgetsMenu(tgui::BackendGui& gui)
     gui.add(groupGame, "groupGame");
 }
 
+void resetHistory(BackendGui& gui) {
+    gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->removeAllWidgets();
+    tree.resetHistoryList();
+}
+
 void viewHistoryWord(BackendGui& gui) {
+    gui.get<Group>("groupHistory")->get<Button>("ResetButton")->onClick(&resetHistory, ref(gui));
+    gui.get<Group>("groupHistory")->get<Panel>("HistoryListPanel")->removeAllWidgets();
+
     //cout << "Here\n";
     int len = tree.listHistoryWord.size();
     for (int i = 1; i <= len; i++) {
@@ -304,7 +312,13 @@ void viewHistoryWord(BackendGui& gui) {
     }
 }
 
+void resetFavourite(BackendGui& gui) {
+    gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->removeAllWidgets();
+    tree.resetFavouriteList();
+}
+
 void viewFavouriteList(BackendGui& gui) {
+    gui.get<Group>("groupFavourite")->get<Button>("ReloadButton")->onClick(&resetFavourite, ref(gui));
     gui.get<Group>("groupFavourite")->get<Panel>("FavouriteWordListPanel")->removeAllWidgets();
         
     int len = tree.listFavouriteWord.size();

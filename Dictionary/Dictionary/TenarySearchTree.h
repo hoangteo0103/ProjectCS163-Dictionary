@@ -119,6 +119,14 @@ struct TenarySearchTree {
         return (c >= 'A' && c <= 'Z') ? char(int(c) + 32) : c;
     }
 
+    void resetHistoryList() {
+        listHistoryWord.clear();
+    }
+
+    void resetFavouriteList() {
+        listFavouriteWord.clear();
+    }
+
     void addWordToHistoryList(string word) {
         if (listHistoryWord.size() < numHistoryWord)
             listHistoryWord.push_back(word);
