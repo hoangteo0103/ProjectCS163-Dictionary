@@ -1,16 +1,16 @@
 Picture.Picture2 {
     Position = (0, -1.77942);
-    Size = (1150, 907.779);
+    Size = (1150, 907);
 
     Renderer {
-        Texture = "background.png" Smooth;
+        Texture = "background2.png" Smooth;
         TransparentTexture = false;
     }
 }
 
 EditBox.SearchBar {
     DefaultText = "Look up your word";
-    Position = (340, 31.2341);
+    Position = (280, 31.2341);
     Size = (521, 65);
     TextSize = 25;
 
@@ -39,8 +39,8 @@ EditBox.SearchBar {
 }
 
 Button.FavouriteButton {
-    Position = (35, 350);
-    Size = (50, 50);
+    Position = (35, 291);
+    Size = (48, 50);
     TextSize = 60;
 
     Renderer {
@@ -70,7 +70,7 @@ Button.FavouriteButton {
 }
 
 Button.HistoryButton {
-    Position = (34, 488);
+    Position = (34, 410);
     Size = (51, 51);
     TextSize = 20;
 
@@ -101,7 +101,7 @@ Button.HistoryButton {
 }
 
 Button.GameButton {
-    Position = (35, 626);
+    Position = (33, 521);
     Size = (52, 52);
     TextSize = 20;
 
@@ -132,7 +132,7 @@ Button.GameButton {
 }
 
 Button.HomeButton {
-    Position = (35, 198.07);
+    Position = (34, 174.07);
     Size = (50, 50);
     TextSize = 20;
 
@@ -163,7 +163,7 @@ Button.HomeButton {
 }
 
 Button.SearchButton {
-    Position = (800, 45.3846);
+    Position = (740, 45.3846);
     Size = (45, 35);
     TextSize = 13;
 
@@ -195,7 +195,7 @@ Button.SearchButton {
 }
 
 Button.ChooseLangagueButton {
-    Position = (920, 35.5173);
+    Position = (830, 35.5173);
     Size = (208, 55);
     Text = EnToVN;
     TextSize = 30;
@@ -227,7 +227,7 @@ Button.ChooseLangagueButton {
 }
 
 Button.AddWordButton {
-    Position = (35, 760);
+    Position = (34, 634);
     Size = (51, 51);
     TextSize = 15;
 
