@@ -72,6 +72,28 @@ struct TenarySearchTree {
             }
         }
     }
+    void insertVec(Node*& root, string word, vector<string> definition, int pos = 0) {
+        if (root == nullptr) {
+            root = new Node(word[pos]);
+        }
+
+        if (word[pos] < root->data) {
+            insertVec(root->left, word, definition, pos);
+        }
+        else if (word[pos] > root->data)
+        {
+            insertVec(root->right, word, definition, pos);
+        }
+        else {
+            if (pos < word.size() - 1) {
+                insertVec(root->middle, word, definition, pos + 1);
+            }
+            else {
+                root->EOS = 1;
+                root->listDef = definition;
+            }
+        }
+    }
 
     // to remove a word
     void remove(Node*& root, string word, int pos = 0) {

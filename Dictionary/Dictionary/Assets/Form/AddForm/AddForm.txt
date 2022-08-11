@@ -7,28 +7,6 @@ Renderer.1 {
     TextureBackground = None;
 }
 
-Renderer.2 {
-    BackgroundColor = None;
-    BackgroundColorDisabled = None;
-    BackgroundColorHover = None;
-    BorderColor = #3C3C3C;
-    BorderColorDisabled = #7D7D7D;
-    BorderColorHover = black;
-    Borders = (0, 0, 0, 0);
-    CaretColor = black;
-    CaretWidth = 1;
-    DefaultTextColor = #A0A0A0;
-    Padding = (0, 0, 0, 0);
-    SelectedTextBackgroundColor = #006EFF;
-    SelectedTextColor = white;
-    TextColor = #3C3C3C;
-    TextColorDisabled = #7D7D7D;
-    Texture = "inputbox.png" Smooth;
-    TextureDisabled = None;
-    TextureFocused = None;
-    TextureHover = None;
-}
-
 Picture.Picture1 {
     Position = (120, 120);
     Size = (1030, 777);
@@ -76,34 +54,118 @@ Label.Label4 {
 }
 
 EditBox.WordInput {
-    Position = (550, 410);
-    Renderer = &2;
-    Size = (380, 32);
-    TextSize = 13;
+    Position = (550, 403);
+    Size = (380, 40);
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        CaretColor = black;
+        CaretWidth = 1;
+        DefaultTextColor = #A0A0A0;
+        Padding = (9, 0, 0, 0);
+        SelectedTextBackgroundColor = #006EFF;
+        SelectedTextColor = white;
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        Texture = "inputbox.png" Smooth;
+        TextureDisabled = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
 }
 
 EditBox.Def1Input {
-    Position = (550, 490);
-    Renderer = &2;
-    Size = (380, 32);
-    TextSize = 13;
+    Position = (550, 485);
+    Size = (380, 40);
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        CaretColor = black;
+        CaretWidth = 1;
+        DefaultTextColor = #A0A0A0;
+        Padding = (9, 0, 0, 0);
+        SelectedTextBackgroundColor = #006EFF;
+        SelectedTextColor = white;
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        Texture = "inputbox.png" Smooth;
+        TextureDisabled = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
 }
 
 EditBox.Def2Input {
-    Position = (550, 570);
-    Renderer = &2;
-    Size = (380, 32);
-    TextSize = 13;
+    Position = (552, 570);
+    Size = (380, 40);
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        CaretColor = black;
+        CaretWidth = 1;
+        DefaultTextColor = #A0A0A0;
+        Padding = (9, 0, 0, 0);
+        SelectedTextBackgroundColor = #006EFF;
+        SelectedTextColor = white;
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        Texture = "inputbox.png" Smooth;
+        TextureDisabled = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
 }
 
 EditBox.Def3Input {
     Position = (550, 650);
-    Renderer = &2;
-    Size = (380, 32);
-    TextSize = 13;
+    Size = (380, 40);
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        CaretColor = black;
+        CaretWidth = 1;
+        DefaultTextColor = #A0A0A0;
+        Padding = (9, 0, 0, 0);
+        SelectedTextBackgroundColor = #006EFF;
+        SelectedTextColor = white;
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        Texture = "inputbox.png" Smooth;
+        TextureDisabled = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
 }
 
-Button."Add Button" {
+Button."Add Word Button" {
     Position = (520, 770);
     Size = (191, 60);
     Text = Add;

@@ -282,6 +282,24 @@ void onChangeDataset(BackendGui& gui,  int index)
     onSwitchForm(gui, 1);
 }
 
+void onAddNewWord(BackendGui& gui)
+{
+    string word = gui.get<Group>("groupAdd")->get<EditBox>("WordInput")->getText().toStdString();
+    string Def1 = gui.get<Group>("groupAdd")->get<EditBox>("Def1Input")->getText().toStdString();
+    string Def2 = gui.get<Group>("groupAdd")->get<EditBox>("Def2Input")->getText().toStdString();
+    string Def3 = gui.get<Group>("groupAdd")->get<EditBox>("Def3Input")->getText().toStdString();
+    vector<string> def;
+    if (Def1 != "") def.push_back(Def1);
+    if (Def2 != "") def.push_back(Def2);
+    if (Def3 != "") def.push_back(Def3);
+    tree.insertVec(tree.root, word, def);
+    gui.get<Group>("groupAdd")->get<EditBox>("WordInput")->setText("");
+    gui.get<Group>("groupAdd")->get<EditBox>("Def1Input")->setText("");
+    gui.get<Group>("groupAdd")->get<EditBox>("Def2Input")->setText("");
+    gui.get<Group>("groupAdd")->get<EditBox>("Def3Input")->setText("");
+
+}
+
 
 void loadWidgetsMenu(tgui::BackendGui& gui)
 {
@@ -401,6 +419,12 @@ void onOutMouse(BackendGui& gui)
 {
     gui.get<Group>("suggestWordGroup")->removeAllWidgets();
 }
+
+void setAddWordAction(BackendGui& gui)
+{
+    gui.get<Group>("groupAdd")->get<Button>("Add Word Button")->onClick(&onAddNewWord, ref(gui));
+}
+
 void setAction(BackendGui& gui)
 {
     // Menu
@@ -446,6 +470,7 @@ void setAction(BackendGui& gui)
 
     // Add New Word
     gui.get<Button>("AddWordButton")->onClick(&onSwitchForm, ref(gui), 6);
+    setAddWordAction(gui);
 }
 
 bool runMenu(BackendGui& gui) {
