@@ -1,11 +1,20 @@
 Renderer.1 {
-    BackgroundColor = #F5F5F5;
-    BackgroundColorDisabled = #E6E6E6;
-    BackgroundColorHover = white;
+    BackgroundColor = transparent;
+    BorderColor = #3C3C3C;
+    Borders = (0, 0, 0, 0);
+    Font = "../MenuForm/..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+    TextColor = #3C3C3C;
+    TextureBackground = None;
+}
+
+Renderer.2 {
+    BackgroundColor = None;
+    BackgroundColorDisabled = None;
+    BackgroundColorHover = None;
     BorderColor = #3C3C3C;
     BorderColorDisabled = #7D7D7D;
     BorderColorHover = black;
-    Borders = (1, 1, 1, 1);
+    Borders = (0, 0, 0, 0);
     CaretColor = black;
     CaretWidth = 1;
     DefaultTextColor = #A0A0A0;
@@ -14,48 +23,108 @@ Renderer.1 {
     SelectedTextColor = white;
     TextColor = #3C3C3C;
     TextColorDisabled = #7D7D7D;
-    Texture = None;
+    Texture = "inputbox.png" Smooth;
     TextureDisabled = None;
     TextureFocused = None;
     TextureHover = None;
 }
 
-Renderer.2 {
-    BackgroundColor = transparent;
-    BorderColor = #3C3C3C;
-    Borders = (0, 0, 0, 0);
-    TextColor = #3C3C3C;
-    TextureBackground = None;
+Picture.Picture1 {
+    Position = (120, 120);
+    Size = (1030, 777);
+
+    Renderer {
+        Texture = "Add Screen.png" Smooth;
+        TransparentTexture = false;
+    }
 }
 
-EditBox.NewWord {
-    Position = (630, 290);
+Label.Label1 {
+    Position = (280, 400);
     Renderer = &1;
-    Size = (160, 22);
+    ScrollbarPolicy = Never;
+    Size = (157.2, 38);
+    Text = "New Word";
+    TextSize = 30;
+}
+
+Label.Label2 {
+    Position = (280, 480);
+    Renderer = &1;
+    ScrollbarPolicy = Never;
+    Size = (227.2, 38);
+    Text = "First Definition";
+    TextSize = 30;
+}
+
+Label.Label3 {
+    Position = (280, 570);
+    Renderer = &1;
+    ScrollbarPolicy = Never;
+    Size = (257.2, 38);
+    Text = "Second Definition";
+    TextSize = 30;
+}
+
+Label.Label4 {
+    Position = (280, 650);
+    Renderer = &1;
+    ScrollbarPolicy = Never;
+    Size = (237.2, 38);
+    Text = "Third Definition";
+    TextSize = 30;
+}
+
+EditBox.WordInput {
+    Position = (550, 410);
+    Renderer = &2;
+    Size = (380, 32);
     TextSize = 13;
 }
 
-Button.AddIntoDatasetButton {
-    Position = (670, 610);
-    Text = "Add ";
+EditBox.Def1Input {
+    Position = (550, 490);
+    Renderer = &2;
+    Size = (380, 32);
+    TextSize = 13;
+}
+
+EditBox.Def2Input {
+    Position = (550, 570);
+    Renderer = &2;
+    Size = (380, 32);
+    TextSize = 13;
+}
+
+EditBox.Def3Input {
+    Position = (550, 650);
+    Renderer = &2;
+    Size = (380, 32);
+    TextSize = 13;
+}
+
+Button."Add Button" {
+    Position = (520, 770);
+    Size = (191, 60);
+    Text = Add;
     TextSize = 13;
 
     Renderer {
-        BackgroundColor = #F5F5F5;
-        BackgroundColorDisabled = #E6E6E6;
-        BackgroundColorDown = #EBEBEB;
-        BackgroundColorHover = white;
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
         BorderColor = #3C3C3C;
         BorderColorDisabled = #7D7D7D;
         BorderColorDown = black;
         BorderColorFocused = #1E1EB4;
         BorderColorHover = black;
-        Borders = (1, 1, 1, 1);
-        TextColor = #3C3C3C;
+        Borders = (0, 0, 0, 0);
+        TextColor = None;
         TextColorDisabled = #7D7D7D;
         TextColorDown = black;
         TextColorHover = black;
-        Texture = None;
+        Texture = "AddButton.png" Smooth;
         TextureDisabled = None;
         TextureDown = None;
         TextureDownFocused = None;
@@ -63,70 +132,4 @@ Button.AddIntoDatasetButton {
         TextureFocused = None;
         TextureHover = None;
     }
-}
-
-EditBox.FMean {
-    Position = (630, 360);
-    Renderer = &1;
-    Size = (160, 22);
-    TextSize = 13;
-}
-
-EditBox.SMean {
-    Position = (630, 420);
-    Renderer = &1;
-    Size = (160, 22);
-    TextSize = 13;
-}
-
-EditBox.TMean {
-    Position = (630, 500);
-    Renderer = &1;
-    Size = (160, 22);
-    TextSize = 13;
-}
-
-Label.Label1 {
-    Position = (650, 210);
-    Renderer = &2;
-    ScrollbarPolicy = Never;
-    Size = (127.2, 18);
-    Text = "Add New Word\n";
-    TextSize = 13;
-}
-
-Label.Label2 {
-    Position = (410, 290);
-    Renderer = &2;
-    ScrollbarPolicy = Never;
-    Size = (57.2, 18);
-    Text = Word;
-    TextSize = 13;
-}
-
-Label.Label3 {
-    Position = (410, 360);
-    Renderer = &2;
-    ScrollbarPolicy = Never;
-    Size = (137.2, 18);
-    Text = "First Meaning";
-    TextSize = 13;
-}
-
-Label.Label4 {
-    Position = (410, 420);
-    Renderer = &2;
-    ScrollbarPolicy = Never;
-    Size = (137.2, 18);
-    Text = "Second Meaning";
-    TextSize = 13;
-}
-
-Label.Label5 {
-    Position = (410, 500);
-    Renderer = &2;
-    ScrollbarPolicy = Never;
-    Size = (137.2, 18);
-    Text = "Third Meaning";
-    TextSize = 13;
 }
