@@ -258,21 +258,6 @@ void onEdit(BackendGui& gui,int index)
     }
 
 }
-void onReset(BackendGui& gui)
-{
-    treeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
-    treeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
-    treeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
-    treeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
-
-    if (curTreeState == 1) tree = treeEn ;
-    if (curTreeState == 2)  tree = treeVn ;
-    if (curTreeState == 3)  tree = treeSlang;
-    if (curTreeState == 4)  tree = treeEmo;
-
-    onSwitchForm( ref(gui), 1);
-    loadRandomWord(gui);
-}
 
 void onChangeDataset(BackendGui& gui,  int index)
 {
@@ -442,6 +427,25 @@ void loadRandomWord(BackendGui& gui)
     gui.get<Group>("groupHome")->get<Button>("WordDay2")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay2")->getText().toStdString());
     gui.get<Group>("groupHome")->get<Button>("WordDay3")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay3")->getText().toStdString());
     gui.get<Group>("groupHome")->get<Button>("WordDay4")->onClick(&onSwitchToDefinition, ref(gui), gui.get<Group>("groupHome")->get<Button>("WordDay4")->getText().toStdString());
+}
+
+void onReset(BackendGui& gui)
+{
+    treeEn = oriTreeEn;
+    treeVn = oriTreeVn;
+    treeSlang = oriTreeSlang;
+    treeEmo = oriTreeEmo;
+
+    if (curTreeState == 1) tree = treeEn;
+    if (curTreeState == 2)  tree = treeVn;
+    if (curTreeState == 3)  tree = treeSlang;
+    if (curTreeState == 4)  tree = treeEmo;
+
+    resetFavourite(gui);
+    resetHistory(gui);
+
+    onSwitchForm(ref(gui), 1);
+    loadRandomWord(gui);
 }
 
 long long random(int L, int R) {
