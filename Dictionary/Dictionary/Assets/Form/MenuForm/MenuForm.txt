@@ -289,8 +289,8 @@ Button.ResetButton {
 }
 
 Button.quitButton {
-    Position = (1074, 34);
-    Size = (47, 60);
+    Position = (1064, 34);
+    Size = (60, 60);
     TextSize = 15;
 
     Renderer {
