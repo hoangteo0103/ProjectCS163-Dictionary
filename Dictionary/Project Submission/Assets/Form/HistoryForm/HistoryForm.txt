@@ -1,0 +1,84 @@
+Picture.Picture1 {
+    Position = (120, 130);
+    Size = (1288, 879);
+
+    Renderer {
+        Texture = "History Screen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+ScrollablePanel.HistoryListPanel {
+    ContentSize = (0, 0);
+    Position = (190, 350);
+    Size = (840, 520);
+
+    Renderer {
+        BackgroundColor = white;
+        BorderColor = black;
+        TextureBackground = None;
+    }
+}
+
+Button.HistoryListPanelButton {
+    Position = (190, 350);
+    Size = (840, 75);
+    Text = Apple;
+    TextSize = 30;
+    Visible = false;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Regular.ttf";
+        TextColor = white;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "word-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.ResetButton {
+    Position = (970, 220);
+    Size = (60, 60);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = white;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "Reload.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "ReloadHover.png" Smooth;
+    }
+}

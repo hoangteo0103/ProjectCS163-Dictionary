@@ -1,0 +1,302 @@
+Renderer.1 {
+    BackgroundColor = transparent;
+    BackgroundColorDisabled = transparent;
+    BackgroundColorDown = transparent;
+    BackgroundColorHover = transparent;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = transparent;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "remove-button-unhovered.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = "remove-button-hovered.png" Smooth;
+}
+
+Renderer.2 {
+    BackgroundColor = transparent;
+    BackgroundColorDisabled = transparent;
+    BackgroundColorDown = transparent;
+    BackgroundColorHover = transparent;
+    BorderColor = transparent;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = white;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "definition.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
+Renderer.3 {
+    BackgroundColor = #F5F5F5;
+    BackgroundColorDisabled = #E6E6E6;
+    BackgroundColorHover = white;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    CaretColor = black;
+    CaretWidth = 1;
+    DefaultTextColor = black;
+    Font = "../MenuForm/..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    Padding = (20, 0, 50, 0);
+    SelectedTextBackgroundColor = #006EFF;
+    SelectedTextColor = white;
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    Texture = "../MenuForm/searchbar-unhovered.png" Smooth;
+    TextureDisabled = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
+Renderer.4 {
+    BackgroundColor = transparent;
+    BackgroundColorDisabled = transparent;
+    BackgroundColorDown = transparent;
+    BackgroundColorHover = transparent;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = transparent;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "remove-button-unhovered.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = "remove-button-hovered.png" Smooth;
+}
+
+Picture.Picture8 {
+    Position = (90, 136.186);
+    Size = (1030, 878);
+
+    Renderer {
+        Texture = "WordScreen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Button.LikeButton {
+    Position = (1030, 160);
+    Size = (90, 90);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = None;
+        BorderColorFocused = None;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "star-button-unclicked.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "star-button-clicked.png" Smooth;
+    }
+}
+
+Button.Word {
+    Position = (190, 190);
+    Size = (200, 42);
+    TextSize = 40;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BackgroundColorDisabled = transparent;
+        BackgroundColorDown = transparent;
+        BackgroundColorHover = transparent;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = transparent;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = None;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.RemoveButton {
+    Position = (910, 190);
+    Size = (98, 51.0345);
+    Text = Remove;
+    TextSize = 25;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BackgroundColorDisabled = transparent;
+        BackgroundColorDown = transparent;
+        BackgroundColorHover = transparent;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = transparent;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "remove-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "remove-button-hovered.png" Smooth;
+    }
+}
+
+Button.Def1 {
+    Position = (240, 300);
+    Renderer = &2;
+    Size = (360, 115.667);
+    TextSize = 40;
+}
+
+Button.Def2 {
+    Position = (240, 480);
+    Renderer = &2;
+    Size = (360, 115.667);
+    TextSize = 40;
+    Visible = false;
+}
+
+Button.Def3 {
+    Position = (240, 650);
+    Renderer = &2;
+    Size = (360, 115.667);
+    TextSize = 40;
+    Visible = false;
+}
+
+Button.Edit1 {
+    Position = (610, 320);
+    Renderer = &1;
+    Size = (58, 30.2041);
+    Text = Edit;
+    TextSize = 15;
+}
+
+Button.Edit2 {
+    Position = (610, 500);
+    Renderer = &1;
+    Size = (58, 30.2041);
+    Text = Edit;
+    TextSize = 15;
+    Visible = false;
+}
+
+Button.Edit3 {
+    Position = (610, 670);
+    Renderer = &1;
+    Size = (58, 30.2041);
+    Text = Edit;
+    TextSize = 15;
+    Visible = false;
+}
+
+EditBox.NewDef1 {
+    DefaultText = "New Definition";
+    Position = (690, 311.234);
+    Renderer = &3;
+    Size = (421, 95);
+    TextSize = 25;
+    Visible = false;
+}
+
+EditBox.NewDef2 {
+    DefaultText = "New Definition";
+    Position = (690, 491.234);
+    Renderer = &3;
+    Size = (421, 95);
+    TextSize = 25;
+    Visible = false;
+}
+
+EditBox.NewDef3 {
+    DefaultText = "New Definition";
+    Position = (690, 661.234);
+    Renderer = &3;
+    Size = (421, 95);
+    TextSize = 25;
+    Visible = false;
+}
+
+Button.Save1 {
+    Position = (610, 360);
+    Renderer = &4;
+    Size = (58, 30.2041);
+    Text = Save;
+    TextSize = 15;
+}
+
+Button.Save2 {
+    Position = (610, 540);
+    Renderer = &4;
+    Size = (58, 30.2041);
+    Text = Save;
+    TextSize = 15;
+    Visible = false;
+}
+
+Button.Save3 {
+    Position = (610, 710);
+    Renderer = &4;
+    Size = (58, 30.2041);
+    Text = Save;
+    TextSize = 15;
+    Visible = false;
+}

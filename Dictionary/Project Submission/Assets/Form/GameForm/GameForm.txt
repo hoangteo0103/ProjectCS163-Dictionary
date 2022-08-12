@@ -1,0 +1,50 @@
+Renderer.1 {
+    BackgroundColor = None;
+    BackgroundColorDisabled = None;
+    BackgroundColorDown = #EBEBEB;
+    BackgroundColorHover = None;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorDown = black;
+    BorderColorFocused = #1E1EB4;
+    BorderColorHover = black;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+    TextColor = white;
+    TextColorDisabled = #7D7D7D;
+    TextColorDown = black;
+    TextColorHover = black;
+    Texture = "gamemode-button-unhovered.png" Smooth;
+    TextureDisabled = None;
+    TextureDown = None;
+    TextureDownFocused = None;
+    TextureDownHover = None;
+    TextureFocused = None;
+    TextureHover = "gamemode-button-hovered.png" Smooth;
+}
+
+Picture.Picture8 {
+    Position = (120, 126.186);
+    Size = (1030, 780);
+
+    Renderer {
+        Texture = "Start Game Screen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Button.ChooseGameModeButton1 {
+    Position = (390, 390);
+    Renderer = &1;
+    Size = (478, 120);
+    Text = "Practice Mode 1";
+    TextSize = 50;
+}
+
+Button.ChooseGameModeButton2 {
+    Position = (390, 560);
+    Renderer = &1;
+    Size = (478, 120);
+    Text = "Practice Mode 2";
+    TextSize = 50;
+}

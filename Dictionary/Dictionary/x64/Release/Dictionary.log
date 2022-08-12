@@ -1,7 +1,74 @@
-﻿Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual void __cdecl tgui::BackendGuiSFML::mainLoop(class tgui::Color)" (__imp_?mainLoop@BackendGuiSFML@tgui@@UEAAXVColor@2@@Z)
+﻿  Menu.cpp
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(265,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(337,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(352,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(363,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\WordGame.h(17,18): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Project_CS163\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(95,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(193,61): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(398,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(424,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual void __cdecl tgui::BackendGuiSFML::mainLoop(class tgui::Color)" (__imp_?mainLoop@BackendGuiSFML@tgui@@UEAAXVColor@2@@Z)
+Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Texture::~Texture(void)" (__imp_??1Texture@tgui@@QEAA@XZ)
 Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl tgui::SFML_GRAPHICS::Gui::~Gui(void)" (__imp_??1Gui@SFML_GRAPHICS@tgui@@UEAA@XZ)
 Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::SFML_GRAPHICS::Gui::Gui(class sf::RenderWindow &)" (__imp_??0Gui@SFML_GRAPHICS@tgui@@QEAA@AEAVRenderWindow@sf@@@Z)
+Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Texture::Texture(void)" (__imp_??0Texture@tgui@@QEAA@XZ)
 Core.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@tgui@@QEAA@EEEE@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) private: static bool tgui::Texture::m_defaultSmooth" (__imp_?m_defaultSmooth@Texture@tgui@@0_NA)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class std::shared_ptr<class tgui::Group> __cdecl tgui::Group::create(class tgui::Layout2d const &)" (__imp_?create@Group@tgui@@SA?AV?$shared_ptr@VGroup@tgui@@@std@@AEBVLayout2d@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class tgui::String const & __cdecl tgui::ButtonBase::getText(void)const " (__imp_?getText@ButtonBase@tgui@@QEBAAEBVString@2@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class tgui::ButtonRenderer * __cdecl tgui::ButtonBase::getRenderer(void)" (__imp_?getRenderer@ButtonBase@tgui@@QEAAPEAVButtonRenderer@2@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::BackendGui::loadWidgetsFromFile(class tgui::String const &,bool)" (__imp_?loadWidgetsFromFile@BackendGui@tgui@@QEAAXAEBVString@2@_N@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::BackendGui::add(class std::shared_ptr<class tgui::Widget> const &,class tgui::String const &)" (__imp_?add@BackendGui@tgui@@QEAAXAEBV?$shared_ptr@VWidget@tgui@@@std@@AEBVString@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Texture::load(class tgui::String const &,class tgui::Rect<unsigned int> const &,class tgui::Rect<unsigned int> const &,bool)" (__imp_?load@Texture@tgui@@QEAAXAEBVString@2@AEBV?$Rect@I@2@1_N@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class std::shared_ptr<class tgui::Button> __cdecl tgui::Button::copy(class std::shared_ptr<class tgui::Button const >)" (__imp_?copy@Button@tgui@@SA?AV?$shared_ptr@VButton@tgui@@@std@@V?$shared_ptr@$$CBVButton@tgui@@@4@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class std::shared_ptr<class tgui::Button> __cdecl tgui::Button::create(class tgui::String const &)" (__imp_?create@Button@tgui@@SA?AV?$shared_ptr@VButton@tgui@@@std@@AEBVString@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: unsigned int __cdecl tgui::Widget::getTextSize(void)const " (__imp_?getTextSize@Widget@tgui@@QEBAIXZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::setTextSize(unsigned int)" (__imp_?setTextSize@Widget@tgui@@QEAAXI@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::setInheritedOpacity(float)" (__imp_?setInheritedOpacity@Widget@tgui@@QEAAXM@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::moveToFront(void)" (__imp_?moveToFront@Widget@tgui@@QEAAXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::hideWithEffect(enum tgui::ShowEffectType,class tgui::Duration)" (__imp_?hideWithEffect@Widget@tgui@@QEAAXW4ShowEffectType@2@VDuration@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Layout::~Layout(void)" (__imp_??1Layout@tgui@@QEAA@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl tgui::String::toStdString(void)const " (__imp_?toStdString@String@tgui@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::String::operator class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >(void)const " (__imp_??BString@tgui@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::String::String(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_??0String@tgui@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
     Hint on symbols that are defined and could potentially match:
-      "__declspec(dllimport) public: __cdecl sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QEAA@EEEE@Z)
-D:\Project_CS163\Dictionary\x64\Release\Dictionary.exe : fatal error LNK1120: 4 unresolved externals
+      "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::String::String(char const *)" (__imp_??0String@tgui@@QEAA@PEBD@Z)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) protected: static unsigned int tgui::Signal::m_lastSignalId" (__imp_?m_lastSignalId@Signal@tgui@@1IA)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Label::setText(class tgui::String const &)" (__imp_?setText@Label@tgui@@QEAAXAEBVString@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::ButtonRenderer::setTextureHover(class tgui::Texture const &)" (__imp_?setTextureHover@ButtonRenderer@tgui@@QEAAXAEBVTexture@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::ButtonRenderer::setTexture(class tgui::Texture const &)" (__imp_?setTexture@ButtonRenderer@tgui@@QEAAXAEBVTexture@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Container::loadWidgetsFromFile(class tgui::String const &,bool)" (__imp_?loadWidgetsFromFile@Container@tgui@@QEAAXAEBVString@2@_N@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class std::shared_ptr<class tgui::Widget> __cdecl tgui::Container::get(class tgui::String const &)const " (__imp_?get@Container@tgui@@QEBA?AV?$shared_ptr@VWidget@tgui@@@std@@AEBVString@2@@Z)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: class std::basic_istream<char,struct std::char_traits<char> > & __cdecl std::basic_istream<char,struct std::char_traits<char> >::get(char &)" (__imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@AEAD@Z)
+      "__declspec(dllimport) public: int __cdecl std::basic_istream<char,struct std::char_traits<char> >::get(void)" (__imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAHXZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class tgui::String const & __cdecl tgui::EditBox::getText(void)const " (__imp_?getText@EditBox@tgui@@QEBAAEBVString@2@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::EditBox::setText(class tgui::String const &)" (__imp_?setText@EditBox@tgui@@QEAAXAEBVString@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Layout2d::~Layout2d(void)" (__imp_??1Layout2d@tgui@@QEAA@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::setHeight(class tgui::Layout)" (__imp_?setHeight@Widget@tgui@@QEAAXVLayout@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::setWidth(class tgui::Layout)" (__imp_?setWidth@Widget@tgui@@QEAAXVLayout@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class tgui::Vector2<float> __cdecl tgui::Widget::getPosition(void)const " (__imp_?getPosition@Widget@tgui@@QEBA?AV?$Vector2@M@2@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl tgui::Widget::setPosition(class tgui::Layout,class tgui::Layout)" (__imp_?setPosition@Widget@tgui@@QEAAXVLayout@2@0@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::String::String(void)" (__imp_??0String@tgui@@QEAA@XZ)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Layout2d::Layout2d(class tgui::Layout,class tgui::Layout)" (__imp_??0Layout2d@tgui@@QEAA@VLayout@1@0@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::Layout::Layout(char const *)" (__imp_??0Layout@tgui@@QEAA@PEBD@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl tgui::String::~String(void)" (__imp_??1String@tgui@@QEAA@XZ)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: __cdecl sf::String::~String(void)" (__imp_??1String@sf@@QEAA@XZ)
+D:\Project_CS163\Dictionary\x64\Release\Dictionary.exe : fatal error LNK1120: 42 unresolved externals

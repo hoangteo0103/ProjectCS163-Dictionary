@@ -1,0 +1,137 @@
+Picture.Picture8 {
+    Position = (120, 126.186);
+    Size = (1030, 772.813);
+
+    Renderer {
+        Texture = "MenuScreen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Button.WordDay1 {
+    Position = (250, 460);
+    Size = (140, 212);
+    TextSize = 22;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = None;
+        BorderColorDown = None;
+        BorderColorFocused = None;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        RoundedBorderRadius = 20;
+        TextColor = white;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "wordday-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "wordday-button-hovered.png" Smooth;
+    }
+}
+
+Button.WordDay2 {
+    Position = (440, 460);
+    Size = (140, 212);
+    TextSize = 22;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = None;
+        BorderColorDown = None;
+        BorderColorFocused = None;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        RoundedBorderRadius = 20;
+        TextColor = white;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "wordday-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "wordday-button-hovered.png" Smooth;
+    }
+}
+
+Button.WordDay3 {
+    Position = (850, 460);
+    Size = (140, 212);
+    TextSize = 22;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = None;
+        BorderColorDown = None;
+        BorderColorFocused = None;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        RoundedBorderRadius = 20;
+        TextColor = white;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "wordday-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "wordday-button-hovered.png" Smooth;
+    }
+}
+
+Button.WordDay4 {
+    Position = (640, 460);
+    Size = (140, 212);
+    TextSize = 22;
+
+    Renderer {
+        BackgroundColor = #F5F5F5;
+        BackgroundColorDisabled = #E6E6E6;
+        BackgroundColorDown = #EBEBEB;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = None;
+        BorderColorDown = None;
+        BorderColorFocused = None;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        RoundedBorderRadius = 20;
+        TextColor = white;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = black;
+        Texture = "wordday-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "wordday-button-hovered.png" Smooth;
+    }
+}

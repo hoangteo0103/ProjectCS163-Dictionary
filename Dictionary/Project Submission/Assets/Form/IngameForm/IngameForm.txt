@@ -1,0 +1,255 @@
+Renderer.1 {
+    BackgroundColor = transparent;
+    BorderColor = #3C3C3C;
+    Borders = (0, 0, 0, 0);
+    Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+    TextColor = white;
+    TextureBackground = None;
+}
+
+Picture.Veil {
+    Position = (120, 130);
+    Size = (770, 770);
+    Visible = false;
+
+    Renderer {
+        Texture = None;
+    }
+}
+
+Picture.Picture8 {
+    Position = (120, 126.186);
+    Size = (1029, 780);
+
+    Renderer {
+        Texture = "In Game Screen.png" Smooth;
+        TransparentTexture = false;
+    }
+}
+
+Label.GameModeLabel {
+    Position = (495, 153);
+    ScrollbarPolicy = Never;
+    Size = (45.2, 58);
+    TextSize = 53;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BorderColor = #3C3C3C;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+        TextColor = #3C3C3C;
+        TextStyle = Italic;
+        TextureBackground = None;
+    }
+}
+
+Label.GameRuleLabel {
+    Position = (303, 250);
+    ScrollbarPolicy = Never;
+    Size = (429.2, 28);
+    Text = "Choose the right definition for the word";
+    TextSize = 22;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BorderColor = #3C3C3C;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Regular.ttf";
+        TextColor = #3C3C3C;
+        TextStyle = Regular;
+        TextureBackground = None;
+    }
+}
+
+Label.GameRoundNumberLabel {
+    Position = (189, 313);
+    Renderer = &1;
+    ScrollbarPolicy = Never;
+    Size = (125, 41);
+    Text = "30/50";
+    TextSize = 40;
+}
+
+Label.Label2 {
+    Position = (988, 303);
+    Renderer = &1;
+    ScrollbarPolicy = Never;
+    Size = (24.9756, 71);
+    Text = "|";
+    TextSize = 50;
+}
+
+Label.RightNumber {
+    Position = (879, 322);
+    ScrollbarPolicy = Never;
+    Size = (101.8, 32);
+    Text = "1 Right";
+    TextSize = 25;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BorderColor = #3C3C3C;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+        TextColor = #0AE220;
+        TextureBackground = None;
+    }
+}
+
+Label.WrongNumber {
+    Position = (1012, 322);
+    ScrollbarPolicy = Never;
+    Size = (120.8, 32);
+    Text = "2 Wrong";
+    TextSize = 25;
+
+    Renderer {
+        BackgroundColor = transparent;
+        BorderColor = #3C3C3C;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+        TextColor = #F80F0F;
+        TextureBackground = None;
+    }
+}
+
+Button."Word Label" {
+    Position = (510, 430);
+    Size = (218, 64);
+    Text = Apple;
+    TextSize = 30;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Bold.ttf";
+        TextColor = white;
+        TextColorDisabled = None;
+        TextColorDown = None;
+        TextColorHover = None;
+        Texture = "Word-Label.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.NextButton {
+    Position = (520, 840);
+    Size = (180, 46);
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        TextColor = #3C3C3C;
+        TextColorDisabled = None;
+        TextColorDown = None;
+        TextColorDownFocused = None;
+        TextColorHover = black;
+        Texture = "NextButton.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Panel.AnswerButtonPanel {
+    Position = (180, 543);
+    Size = (880, 275);
+
+    Renderer {
+        BackgroundColor = #FAFBFD;
+        BorderColor = black;
+        TextureBackground = None;
+    }
+}
+
+Button.Noti {
+    Position = (560, 509);
+    Size = (130, 21);
+    Text = Button;
+    TextSize = 13;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = None;
+        BorderColorDisabled = None;
+        BorderColorDown = None;
+        BorderColorDownFocused = None;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Regular.ttf";
+        TextColor = white;
+        TextColorDisabled = None;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "noti-button.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = None;
+    }
+}
+
+Button.AnswerButton {
+    Position = (70, 20);
+    Size = (258, 101.724);
+    Text = Button;
+    TextSize = 25;
+    Visible = false;
+
+    Renderer {
+        BackgroundColor = None;
+        BackgroundColorDisabled = None;
+        BackgroundColorDown = None;
+        BackgroundColorHover = None;
+        BorderColor = #3C3C3C;
+        BorderColorDisabled = #7D7D7D;
+        BorderColorDown = black;
+        BorderColorFocused = #1E1EB4;
+        BorderColorHover = black;
+        Borders = (0, 0, 0, 0);
+        Font = "..\\..\\..\\Assets\\Font\\Lato_Semibold.ttf";
+        TextColor = #3C3C3C;
+        TextColorDisabled = #7D7D7D;
+        TextColorDown = black;
+        TextColorHover = None;
+        Texture = "answer-button-unhovered.png" Smooth;
+        TextureDisabled = None;
+        TextureDown = None;
+        TextureDownFocused = None;
+        TextureDownHover = None;
+        TextureFocused = None;
+        TextureHover = "answer-button-hovered.png" Smooth;
+    }
+}
