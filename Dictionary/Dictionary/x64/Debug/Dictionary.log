@@ -13,7 +13,7 @@ D:\Project_CS163\Dictionary\Dictionary\WordGame.h(17,18): warning C4244: 'argume
               _Rep=__int64
           ]
 D:\Project_CS163\Dictionary\Dictionary\WordGame.h(37,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-D:\Project_CS163\Dictionary\Dictionary\WordGame.h(86,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\WordGame.h(93,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(95,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(193,61): warning C4305: 'argument': truncation from 'double' to 'float'
 D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(398,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data

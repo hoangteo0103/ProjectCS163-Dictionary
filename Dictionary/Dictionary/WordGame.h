@@ -36,8 +36,15 @@ public :
 		gui.get<Group>("groupIngame")->get<Picture>("Veil")->setVisible(false);
 		seed = random(1, 100000);
 		updateGameScreen(gui);
-		string wordGame = tree.genRandomWord();
+		string wordGame;
+		wordGame = tree.genRandomWord();
 		vector<string> listOrigin = tree.searchDefinition(tree.root, wordGame);
+
+		while(listOrigin.empty())
+		{
+			wordGame = tree.genRandomWord();
+			listOrigin = tree.searchDefinition(tree.root, wordGame);
+		}
 		string ansDef = listOrigin[0];
 		vector<string> listAns;
 		if (mode == 1)
