@@ -463,11 +463,15 @@ void loadRandomWord(BackendGui& gui)
 
 void onReset(BackendGui& gui)
 {
-    treeEn = oriTreeEn;
+   /*/ treeEn = oriTreeEn;
     treeVn = oriTreeVn;
     treeSlang = oriTreeSlang;
     treeEmo = oriTreeEmo;
-    treeDef = oriTreeDef;
+    treeDef = oriTreeDef;*/
+    treeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
+    treeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
+    treeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
+    treeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
 
     if (curTreeState == 1) tree = treeEn;
     if (curTreeState == 2)  tree = treeVn;
