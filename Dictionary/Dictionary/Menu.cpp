@@ -466,7 +466,6 @@ void onReset(BackendGui& gui)
     treeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
     treeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
     treeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
-    treeDef.loadTreeFromTxt("Assets/OriginalTreeFormat/DefEnToVn.txt");
 
     if (curTreeState == 1) tree = treeEn;
     if (curTreeState == 2)  tree = treeVn;
