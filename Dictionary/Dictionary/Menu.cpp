@@ -3,7 +3,6 @@
 // Menu Form
 
 TenarySearchTree tree, treeEn, treeVn, treeSlang, treeEmo , treeDef;
-TenarySearchTree oriTreeEn, oriTreeVn, oriTreeSlang, oriTreeEmo, oriTreeDef;
 int curTreeState;
 
 void quitAndSave(BackendGui& gui)
@@ -463,15 +462,11 @@ void loadRandomWord(BackendGui& gui)
 
 void onReset(BackendGui& gui)
 {
-   /*/ treeEn = oriTreeEn;
-    treeVn = oriTreeVn;
-    treeSlang = oriTreeSlang;
-    treeEmo = oriTreeEmo;
-    treeDef = oriTreeDef;*/
     treeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
     treeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
     treeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
     treeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
+    treeDef.loadTreeFromTxt("Assets/OriginalTreeFormat/DefEnToVn.txt");
 
     if (curTreeState == 1) tree = treeEn;
     if (curTreeState == 2)  tree = treeVn;
@@ -567,13 +562,7 @@ bool runMenu(BackendGui& gui) {
         loadWidgetsMenu(gui);
         startup(gui);
 
-        oriTreeDef.loadTreeFromTxt("Assets/OriginalTreeFormat/DefEnToVn.txt");
         treeDef.loadTreeFromTxt("Assets/TreeFormat/DefEnToVn.txt");
-
-        oriTreeEn.loadTreeFromTxt("Assets/OriginalTreeFormat/EnToVn.txt");
-        oriTreeVn.loadTreeFromTxt("Assets/OriginalTreeFormat/VnToEn.txt");
-        oriTreeSlang.loadTreeFromTxt("Assets/OriginalTreeFormat/Slang.txt");
-        oriTreeEmo.loadTreeFromTxt("Assets/OriginalTreeFormat/Emotional.txt");
 
         treeEn.loadTreeFromTxt("Assets/TreeFormat/EnToVn.txt");
         treeVn.loadTreeFromTxt("Assets/TreeFormat/VnToEn.txt");
