@@ -1,4 +1,13 @@
-﻿  Menu.cpp
+﻿  Core.cpp
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(265,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(337,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(352,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(363,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Menu.cpp
 D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(265,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\TenarySearchTree.h(337,25): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
           with
@@ -18,4 +27,8 @@ D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(95,29): warning C4267: 'initiali
 D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(193,61): warning C4305: 'argument': truncation from 'double' to 'float'
 D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(398,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\Project_CS163\Dictionary\Dictionary\Menu.cpp(424,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Source.cpp
+  TenarySearchTree.cpp
+  WordDefinitionGroup.cpp
+  Generating Code...
   Dictionary.vcxproj -> D:\Project_CS163\Dictionary\x64\Debug\Dictionary.exe
