@@ -332,6 +332,7 @@ void onAddNewWord(BackendGui& gui)
     if (Def1 != "") def.push_back(Def1);
     if (Def2 != "") def.push_back(Def2);
     if (Def3 != "") def.push_back(Def3);
+
     tree.insertVec(tree.root, word, def);
     if (curTreeState == 1)
     {

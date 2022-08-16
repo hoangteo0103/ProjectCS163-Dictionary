@@ -150,6 +150,12 @@ struct TenarySearchTree {
     }
 
     void addWordToHistoryList(string word) {
+        int cnt = 0;
+        for (auto i : listHistoryWord) {
+            if (i == word) listHistoryWord.erase(listHistoryWord.begin() + cnt);
+            ++cnt;
+        }
+
         if (listHistoryWord.size() < numHistoryWord)
             listHistoryWord.push_back(word);
         else {
@@ -165,6 +171,12 @@ struct TenarySearchTree {
     }
 
     void addWordToFavouriteList(string word) {
+        int cnt = 0;
+        for (auto i : listFavouriteWord) {
+            if (i == word) listFavouriteWord.erase(listFavouriteWord.begin() + cnt);
+            ++cnt;
+        }
+
         if (listFavouriteWord.size() < numFavouriteWord) {
             listFavouriteWord.push_back(word);
         }
