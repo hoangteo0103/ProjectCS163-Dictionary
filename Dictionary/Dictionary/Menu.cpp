@@ -273,6 +273,12 @@ void onEdit(BackendGui& gui, int index)
             cout << "ERROR!!";
             return;
         }
+        if (index == 4)
+        {
+            vector<string> now = treeDef.searchDefinition(treeDef.root, word, 0);
+            treeDef.remove(treeDef.root, now[0], 0);
+            tree.insert(treeDef.root, Newdef, word, 0);
+        }
         ans[index - 4] = Newdef;
         tree.remove(tree.root, word, 0);
         for (int i = 0; i < ans.size(); i++)
