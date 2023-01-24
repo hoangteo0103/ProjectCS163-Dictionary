@@ -35,5 +35,30 @@ Beside searching word, our application also has some outstanding features:
 * The detail of our Dictionary Application is in the [Report.pdf](https://github.com/hoangteo0103/ProjectCS163-Dictionary/blob/main/Project%20-%20Final%20Submission%20-%20Group12/Manual/Manual.pdf).
 * Download and read [Report.pdf](https://github.com/hoangteo0103/ProjectCS163-Dictionary/blob/main/Project%20-%20Final%20Submission%20-%20Group12/Manual/Manual.pdf) to get the general view of Dictionary Application.
 
+* Menu
+<div align = "center">
+  <img src = "App-Demo/Menu.jpg" style = "width: 50%;">
+</div>
+
+* Searching bar and Word of the day
+<div align = "center">
+  <img src = "App-Demo/Search.png" style = "width: 50%;">
+</div>
+
+* In searching
+<div align = "center">
+  <img src = "App-Demo/Insearch.png" style = "width: 50%;">
+</div>
+
+* Game
+<div align = "center">
+  <img src = "App-Demo/Game.png" style = "width: 50%;">
+</div>
+
+* Add a new word
+<div align = "center">
+  <img src = "App-Demo/AddWord" style = "width: 50%;">
+</div>
+
 ## Contact
 Tran Tuan Viet - ttviet2805@gmail.com
