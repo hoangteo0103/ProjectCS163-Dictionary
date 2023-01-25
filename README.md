@@ -57,7 +57,7 @@ Beside searching word, our application also has some outstanding features:
 
 * Add a new word
 <div align = "center">
-  <img src = "App-Demo/AddWord" style = "width: 50%;">
+  <img src = "App-Demo/AddWord.png" style = "width: 50%;">
 </div>
 
 ## Contact
