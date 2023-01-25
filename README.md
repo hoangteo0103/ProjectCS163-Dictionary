@@ -15,8 +15,8 @@ Beside searching word, our application also has some outstanding features:
 * Friendly Interface to interact with users
 * Word of the day: Generate random 4 words for users to review new words each time we go to Home of our App
 * View history of our searching
-* View our favourite word
-* Adding new word and Remove existed word
+* View our favourite words
+* Adding new word and Remove existed words
 * Game: to practice our vocabulary
 
 ## Getting Started
